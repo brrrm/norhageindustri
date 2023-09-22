@@ -1,0 +1,41 @@
+{
+	"name": "bramdeleeuw/norhageindustri",
+	"authors": [
+		{
+			"name": "bram de leeuw",
+			"email": "bramdeleeuw@gmail.com"
+		}
+	],
+	"require": {
+		"johnpbloch/wordpress": "^6.3"
+	},
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://wpackagist.org",
+			"only": [
+				"wpackagist-plugin/*",
+				"wpackagist-theme/*"
+	    	]
+		}
+	],
+	"extra": {
+		"wordpress-install-dir": "public",
+		"installer-paths": {
+			"wordpress/wp-content/mu-plugins/{$name}/": [
+				"type:wordpress-muplugin"
+			],
+			"wordpress/wp-content/plugins/{$name}/": [
+				"type:wordpress-plugin"
+			],
+			"wordpress/wp-content/themes/{$name}/": [
+				"type:wordpress-theme"
+			]
+		}
+	},
+	"config": {
+		"allow-plugins": {
+			"johnpbloch/wordpress-core-installer": true
+		}
+	}
+}
