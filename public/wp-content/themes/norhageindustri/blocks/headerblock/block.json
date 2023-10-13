@@ -1,0 +1,25 @@
+{
+    "name": "norhageindustri/headerblock",
+    "title": "Page header block",
+    "description": "A page header block for the homepage.",
+    "style": [ "file:./headerblock.css" ],
+    "category": "design",
+    "icon": "layout",
+    "keywords": ["header"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "headerblock.php"
+    },
+    "supports": {
+        "anchor": true,
+        "align": [ "full"],
+        "alignWide": true
+    },
+    "attributes": {
+        "align": {
+            "type": "string",
+            "default": "full"
+        }
+    },
+    "editorStyle": "file:./editor.css"
+}

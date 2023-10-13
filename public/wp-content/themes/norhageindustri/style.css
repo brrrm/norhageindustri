@@ -4,3 +4,28 @@ Author: Garbo
 Author URI: https://garbo.nl
 Version: 0.1
 */
+
+:root{
+	--dark-blue: #0A4164;
+	--white: #fff;
+	--bright-orange: #FF7F00;
+}
+html, body{
+	margin: 0;
+	overflow-x: hidden;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+.site-main .entry-content > *{
+	max-width: var(--wp--style--global--content-size);
+	margin: auto;
+}
+.site-main .entry-content > *.alignfull{
+	max-width: none;
+	width: auto;
+	margin-right: -25%;
+}

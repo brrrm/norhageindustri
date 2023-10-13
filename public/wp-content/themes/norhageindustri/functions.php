@@ -70,6 +70,8 @@ function norhageindustri_setup() {
 		)
 	);
 
+	add_theme_support( 'align-wide' );
+
 	// Set up the WordPress core custom background feature.
 	add_theme_support(
 		'custom-background',
@@ -103,16 +105,43 @@ function norhageindustri_setup() {
 add_action( 'after_setup_theme', 'norhageindustri_setup' );
 
 /**
+ * We use WordPress's init hook to make sure
+ * our blocks are registered early in the loading
+ * process.
+ *
+ * @link https://developer.wordpress.org/reference/hooks/init/
+ */
+function norhageindustri_register_acf_blocks() {
+    /**
+     * We register our block's with WordPress's handy
+     * register_block_type();
+     *
+     * @link https://developer.wordpress.org/reference/functions/register_block_type/
+     */
+    register_block_type( __DIR__ . '/blocks/headerblock' );
+    register_block_type( __DIR__ . '/blocks/product-header-block' );
+    register_block_type( __DIR__ . '/blocks/text-image-block' );
+    register_block_type( __DIR__ . '/blocks/projects-block' );
+    register_block_type( __DIR__ . '/blocks/cta-block' );
+    register_block_type( __DIR__ . '/blocks/cta-within-text-block' );
+    register_block_type( __DIR__ . '/blocks/reviews-block' );
+}
+// Here we call our tt3child_register_acf_block() function on init.
+add_action( 'init', 'norhageindustri_register_acf_blocks' );
+
+/**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
  * Priority 0 to make it available to lower priority callbacks.
  *
  * @global int $content_width
  */
+/*
 function norhageindustri_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'norhageindustri_content_width', 800 );
 }
 add_action( 'after_setup_theme', 'norhageindustri_content_width', 0 );
+*/
 
 /**
  * Enqueue scripts and styles.

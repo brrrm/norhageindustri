@@ -1,0 +1,22 @@
+{
+	"version": 2,
+	"$schema": "https://schemas.wp.org/wp/6.2/theme.json",
+	"settings": {
+		"useRootPaddingAwareAlignments": false,
+		"layout": {
+			"contentSize": "40%"
+		}
+	},
+	"styles": {
+		"spacing": {
+			"blockGap": "24px",
+			"padding": {
+				"top": "0px",
+				"right": "20%",
+				"bottom": "0px",
+				"left": "0px"
+			}
+		},
+		"css": "*.alignfull{margin-right: -25%;}"
+	}
+}

@@ -1,0 +1,25 @@
+{
+    "name": "norhageindustri/product-header-block",
+    "title": "Product header block",
+    "description": "header block for product pages with image slider and text",
+    "style": [ "file:./productHeaderBlock.css" ],
+    "category": "design",
+    "icon": "layout",
+    "keywords": ["header", "picture", "image", "product"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "productHeaderBlock.php"
+    },
+    "supports": {
+        "anchor": true,
+        "align": [ "full"],
+        "alignWide": true
+    },
+    "attributes": {
+        "align": {
+            "type": "string",
+            "default": "full"
+        }
+    },
+    "editorStyle": "file:./editor.css"
+}

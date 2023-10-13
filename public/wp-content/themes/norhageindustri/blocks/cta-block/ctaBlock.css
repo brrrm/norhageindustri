@@ -1,0 +1,32 @@
+.cta-block{
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	min-height: 50vh;
+}
+.cta-block .text-col{
+	flex: 40% 0 0;
+	background: var(--dark-blue);
+	color: var(--white);
+}
+.cta-block .image-col{
+	flex: 60% 0 0;
+}
+.cta-block .image-col figure{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	display: block;
+	position: relative;
+}
+.cta-block .image-col figure.dummy{
+	background: #ccc;
+}
+.cta-block .image-col figure img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+}

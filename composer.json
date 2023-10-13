@@ -7,7 +7,9 @@
 		}
 	],
 	"require": {
-		"johnpbloch/wordpress": "^6.3"
+		"johnpbloch/wordpress": "^6.3",
+		"wpengine/advanced-custom-fields-pro": "6.2.1.1",
+		"wpackagist-plugin/instagram-feed": "^6.2"
 	},
 	"repositories": [
 		{
@@ -17,25 +19,30 @@
 				"wpackagist-plugin/*",
 				"wpackagist-theme/*"
 	    	]
+		},
+		{
+			"type": "composer",
+			"url": "https://connect.advancedcustomfields.com"
 		}
 	],
 	"extra": {
 		"wordpress-install-dir": "public",
 		"installer-paths": {
-			"wordpress/wp-content/mu-plugins/{$name}/": [
+			"public/wp-content/mu-plugins/{$name}/": [
 				"type:wordpress-muplugin"
 			],
-			"wordpress/wp-content/plugins/{$name}/": [
+			"public/wp-content/plugins/{$name}/": [
 				"type:wordpress-plugin"
 			],
-			"wordpress/wp-content/themes/{$name}/": [
+			"public/wp-content/themes/{$name}/": [
 				"type:wordpress-theme"
 			]
 		}
 	},
 	"config": {
 		"allow-plugins": {
-			"johnpbloch/wordpress-core-installer": true
+			"johnpbloch/wordpress-core-installer": true,
+			"composer/installers": true
 		}
 	}
 }

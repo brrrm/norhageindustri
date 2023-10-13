@@ -1,0 +1,25 @@
+{
+    "name": "norhageindustri/projects-block",
+    "title": "Projects slider block",
+    "description": "A slider with projects to promote",
+    "style": [ "file:./projectsBlock.css" ],
+    "category": "design",
+    "icon": "layout",
+    "keywords": ["image", "projects"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "projectsBlock.php"
+    },
+    "supports": {
+        "anchor": true,
+        "align": [ "full"],
+        "alignWide": true
+    },
+    "attributes": {
+        "align": {
+            "type": "string",
+            "default": "full"
+        }
+    },
+    "editorStyle": "file:./editor.css"
+}
