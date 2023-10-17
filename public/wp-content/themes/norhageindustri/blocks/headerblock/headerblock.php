@@ -25,11 +25,26 @@ if ( ! empty( $block['className'] ) ) {
 if ( ! empty( $block['align'] ) ) {
     $class_name .= ' align' . $block['align'];
 }
+
+$innerBlocksTemplate = [
+	[
+		'core/post-title',
+		[
+			'level'	=> 1
+		]
+	]
+];
+$allowedBlocks = ['core/post-title'];
+
 ?>
 
 <div <?php echo esc_attr( $anchor ); ?>class="<?php echo esc_attr( $class_name ); ?>" >
 	<div class="headerblock-text-col">
-		<h2><?php echo esc_html( $title ); ?></h2>
+		<InnerBlocks 
+			allowedBlocks="<?php echo esc_attr( wp_json_encode( $allowedBlocks ) ); ?>" 
+			template="<?php echo esc_attr( wp_json_encode( $innerBlocksTemplate ) ); ?>" 
+			templateLock="all" />
+
 		<div class="text">
 			<?php echo esc_html( $text ); ?>
 		</div>

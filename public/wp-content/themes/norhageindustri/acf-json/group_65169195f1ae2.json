@@ -3,26 +3,6 @@
     "title": "Block:Hompage headerblock",
     "fields": [
         {
-            "key": "field_65169196db19e",
-            "label": "Title",
-            "name": "title",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "Advanced & durable industrial greenhouse development",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
             "key": "field_65169931c72b9",
             "label": "Intro text",
             "name": "intro_text",
@@ -86,5 +66,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1695980231
+    "modified": 1697555297
 }

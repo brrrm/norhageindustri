@@ -7,7 +7,7 @@
     "icon": "layout",
     "keywords": ["header"],
     "acf": {
-        "mode": "auto",
+        "mode": "preview",
         "renderTemplate": "headerblock.php"
     },
     "supports": {
