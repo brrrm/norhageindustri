@@ -2,7 +2,7 @@
 /**
  * Functions which enhance the theme by hooking into WordPress
  *
- * @package blah
+ * @package norhageindustri
  */
 
 /**
@@ -11,7 +11,7 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function blah_body_classes( $classes ) {
+function norhageindustri_body_classes( $classes ) {
 	// Adds a class of hfeed to non-singular pages.
 	if ( ! is_singular() ) {
 		$classes[] = 'hfeed';
@@ -24,14 +24,14 @@ function blah_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'blah_body_classes' );
+add_filter( 'body_class', 'norhageindustri_body_classes' );
 
 /**
  * Add a pingback url auto-discovery header for single posts, pages, or attachments.
  */
-function blah_pingback_header() {
+function norhageindustri_pingback_header() {
 	if ( is_singular() && pings_open() ) {
 		printf( '<link rel="pingback" href="%s">', esc_url( get_bloginfo( 'pingback_url' ) ) );
 	}
 }
-add_action( 'wp_head', 'blah_pingback_header' );
+add_action( 'wp_head', 'norhageindustri_pingback_header' );

@@ -7,13 +7,14 @@
     "icon": "layout",
     "keywords": ["header", "picture", "image", "product"],
     "acf": {
-        "mode": "edit",
+        "mode": "preview",
         "renderTemplate": "productHeaderBlock.php"
     },
     "supports": {
         "anchor": true,
         "align": [ "full"],
-        "alignWide": true
+        "alignWide": true,
+        "jsx": true
     },
     "attributes": {
         "align": {

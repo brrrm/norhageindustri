@@ -50,6 +50,8 @@ function norhageindustri_setup() {
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'norhageindustri' ),
+			'menu-2' => esc_html__( 'Secondary navigation', 'norhageindustri' ),
+			'menu-3' => esc_html__( 'Footer navigation', 'norhageindustri' ),
 		)
 	);
 
@@ -128,6 +130,117 @@ function norhageindustri_register_acf_blocks() {
 }
 // Here we call our tt3child_register_acf_block() function on init.
 add_action( 'init', 'norhageindustri_register_acf_blocks' );
+
+// Our custom post type function
+function norhageindustri_create_posttypes() {
+	register_taxonomy('product-type', 'product', [
+		// Hierarchical taxonomy (like categories)
+		'hierarchical' => false,
+		// This array of options controls the labels displayed in the WordPress Admin UI
+		'labels' => [
+			'name' => _x( 'Product type', 'taxonomy general name' ),
+			'singular_name' => _x( 'Product types', 'taxonomy singular name' ),
+			'search_items' =>  __( 'Search product types' ),
+			'all_items' => __( 'All product types' ),
+			'parent_item' => __( 'Parent product type' ),
+			'parent_item_colon' => __( 'Parent product type:' ),
+			'edit_item' => __( 'Edit product type' ),
+			'update_item' => __( 'Update product type' ),
+			'add_new_item' => __( 'Select a product type' ),
+			'new_item_name' => __( 'New product type name' ),
+			'menu_name' => __( 'Product types' ),
+		],
+		// Control the slugs used for this taxonomy
+		'rewrite' => [
+			'slug' => 'product-types', // This controls the base slug that will display before each term
+			'with_front' => false, // Don't display the category base before "/locations/"
+			'hierarchical' => false // This will allow URL's like "/locations/boston/cambridge/"
+		],
+		'show_in_rest'				=> true,
+	]);
+
+
+
+ 	$productLabels = array(
+		'name' 						=> __( 'Products', 'norhageindustri' ),
+		'singular_name' 			=> __( 'Product', 'norhageindustri' ),
+		'add_new' 					=> __( 'New product', 'norhageindustri' ),
+		'add_new_item' 				=> __( 'Add new product', 'norhageindustri' ),
+		'edit_item' 				=> __( 'Edit product', 'norhageindustri' ),
+		'new_item'					=> __( 'New product', 'norhageindustri' ),
+		'view_item' 				=> __( 'View product', 'norhageindustri' ),
+		'search_items'				=> __( 'Search products', 'norhageindustri' ),
+		'not_found' 				=>  __( 'No products found', 'norhageindustri' ),
+		'not_found_in_trash' 		=> __( 'No products found in trash', 'norhageindustri'),
+	);
+
+    register_post_type( 'product',
+    // CPT Options
+        array(
+            'labels' 				=> $productLabels,
+            'public' 				=> true,
+            'exclude_from_search'	=> false,
+            'has_archive' 			=> false,
+            'rewrite' 				=> array('slug' => 'product'),
+            'show_in_rest' 			=> true,
+            'show_in_menu'			=> true,
+            'show_in_nav_menus'		=> true,
+            'menu_position'			=> 4,
+ 			'menu_icon'				=> 'dashicons-carrot',
+ 			'taxonomies'			=> ['product-type'],
+ 			'supports'				=> [
+ 				'title',
+ 				'editor',
+ 				'author',
+ 				'revisions',
+ 				'thumbnail',
+ 			],
+ 			'template'				=> [
+ 				[
+ 					'norhageindustri/product-header-block',
+ 					[
+ 						'lock'		=> [
+ 							'move'		=> true,
+ 							'remove'	=> true
+ 						]
+ 					]
+ 				]
+ 			]
+        )
+    );
+}
+add_action( 'init', 'norhageindustri_create_posttypes' );
+
+function ggstyle_menu_item_count( $output, $item, $depth, $args ) {
+    // Check if the item is a Category or Custom Taxonomy
+    if( $item->type == 'taxonomy' ) {
+        $object = get_term($item->object_id, $item->object);
+        $posts = get_posts([
+        	'post_type'		=> 'product',
+        	'numberposts'	=> -1,
+        	'tax_query'		=> [
+        		[
+	        		'taxonomy'		=> 'product-type',
+	        		'field'			=> 'term_id',
+	        		'terms'			=> $item->object_id
+	        	]
+        	]
+        ]);
+
+        // Check count, if more than 0 display count
+        if(count($posts) > 0){
+        	$output .= '<ul class="products-sub-menu">';
+        	foreach($posts as $post){
+        		$thumb = get_the_post_thumbnail($post->ID);
+        		$output .= '<li><a href="' . esc_url( get_permalink($post) ) . '">' . $thumb . '<span class="title-link">' . get_the_title($post) . '</span></a></li>' ;
+        	}
+        	$output .= '</ul>';
+        }
+    }    
+
+    return $output;
+}
+add_action( 'walker_nav_menu_start_el', 'ggstyle_menu_item_count', 10, 4 );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
