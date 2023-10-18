@@ -46,6 +46,10 @@ h2{
 	font-weight: 300;
 	font-style: italic;
 }
+h2.alt{
+	font-weight: 700;
+	font-style: normal;
+}
 
 h3{
 	font-size: 1.33333333rem;
@@ -53,31 +57,18 @@ h3{
 	font-weight: 300;
 }
 
-h4{
-	font-size: 1.75rem;
-	line-height: 2.08333333rem;
-	font-weight: 800;
-}
+p{}
 
-h5{
+a{
+	color: var(--bright-orange);
+	text-decoration: none;
+}
+a[href^="tel:"]{
 	font-size: 1.5rem;
 	line-height: 1.79166667rem;
 	font-weight: 700;
 }
-
-p{}
-
-a{
-	line-height: 1.58333333rem;
-	font-style: italic;
-	color: #000000;
-	text-decoration: none;
-}
-
-ul{
-	font-size: 0.75rem;
-	line-height: 1.16666667rem;
-}
+ul{}
 
 li{}
 
