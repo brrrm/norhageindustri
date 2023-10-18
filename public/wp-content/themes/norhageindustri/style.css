@@ -12,6 +12,7 @@ Version: 0.1
 	--bright-orange: #FF7F00;
 	--header-height: 170px;
 }
+
 html, body{
 	margin: 0;
 	overflow-x: hidden;
@@ -22,6 +23,67 @@ img{
 	height: auto;
 }
 
+/**
+ * TYPOGRAFIE
+ */
+@import url("https://use.typekit.net/aus7nxi.css"); 
+html{
+	font-family: kiro, sans-serif;
+	font-weight: 300;
+	font-size: 150%; /* 24px!! */
+	line-height: 1.5em;
+}
+
+h1{
+	font-size: 3rem;
+	line-height: 3rem;
+	font-weight: 700;
+}
+
+h2{
+	font-size: 2.41666667rem;
+	line-height: 2.91666667rem;
+	font-weight: 300;
+	font-style: italic;
+}
+
+h3{
+	font-size: 1.33333333rem;
+	line-height: 1.70833333rem;
+	font-weight: 300;
+}
+
+h4{
+	font-size: 1.75rem;
+	line-height: 2.08333333rem;
+	font-weight: 800;
+}
+
+h5{
+	font-size: 1.5rem;
+	line-height: 1.79166667rem;
+	font-weight: 700;
+}
+
+p{}
+
+a{
+	line-height: 1.58333333rem;
+	font-style: italic;
+	color: #000000;
+	text-decoration: none;
+}
+
+ul{
+	font-size: 0.75rem;
+	line-height: 1.16666667rem;
+}
+
+li{}
+
+/**
+ * PAGE STRUCTURE
+ */
 .site-main .entry-content > *{
 	max-width: var(--wp--style--global--content-size);
 	margin-left: auto;
@@ -33,11 +95,17 @@ img{
 	margin-right: -25%;
 }
 
+
+/**
+ * HEADER
+ * including navigation and subnav
+ */
 header#masthead{
 	width: auto;
 	margin-right: -25%;
 	position: relative;
 	z-index: 1;
+	font-size: 0.875rem;
 }
 header#masthead .site-branding p{
 	width: 1px;

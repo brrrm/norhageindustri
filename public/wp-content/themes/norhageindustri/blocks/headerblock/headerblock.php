@@ -29,7 +29,7 @@ if ( ! empty( $block['align'] ) ) {
 
 <div <?php echo esc_attr( $anchor ); ?>class="<?php echo esc_attr( $class_name ); ?>" >
 	<div class="headerblock-text-col">
-		<h2><?php echo esc_html( $title ); ?></h2>
+		<h1><?php echo esc_html( $title ); ?></h1>
 		<div class="text">
 			<?php echo esc_html( $text ); ?>
 		</div>
