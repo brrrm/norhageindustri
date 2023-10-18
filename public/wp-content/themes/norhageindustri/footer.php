@@ -39,6 +39,7 @@
 		</div>
 
 		<nav id="footer-navigation" class="sitemap">
+			<h2><?php _e('Sitemap', 'norhageindustri'); ?></h2>
 			<button class="menu-toggle" aria-controls="sitemap" aria-expanded="false"><?php esc_html_e( 'Sitemap', 'norhageindustri' ); ?></button>
 			<?php wp_nav_menu(['theme_location' => 'menu-3']); ?>
 		</nav><!-- #site-navigation -->
