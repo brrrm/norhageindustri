@@ -22,10 +22,15 @@ img{
 	height: auto;
 }
 
-.site-main .entry-content > *{
+.site-main .entry-content > *,
+.site-main .entry-header{
 	max-width: var(--wp--style--global--content-size);
 	margin-left: auto;
 	margin-right: auto;
+}
+.site-main .entry-content > *.alignwide{
+	max-width: 75%;
+	width: auto;
 }
 .site-main .entry-content > *.alignfull{
 	max-width: none;
@@ -39,6 +44,7 @@ header#masthead{
 	position: relative;
 	z-index: 1;
 }
+header#masthead .site-branding h1,
 header#masthead .site-branding p{
 	width: 1px;
 	height: 1px;
@@ -193,4 +199,40 @@ header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu 
 	text-align: center;
 	display: block;
 	width: 100%;
+}
+
+
+
+
+ul.product-teasers{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2em;
+}
+ul.product-teasers li{
+	display: block;
+	width: 15em;
+	height: 15em;
+}
+ul.product-teasers li article,
+ul.product-teasers li a{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+ul.product-teasers li a img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+ul.product-teasers li a h2{
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	text-align: center;
+	display: block;
+	width: 100%;
+	margin: 0;
 }
