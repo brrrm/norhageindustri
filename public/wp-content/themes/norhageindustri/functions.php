@@ -334,7 +334,11 @@ function norhageindustri_create_posttypes() {
 }
 add_action( 'init', 'norhageindustri_create_posttypes' );
 
-function ggstyle_menu_item_count( $output, $item, $depth, $args ) {
+
+/**
+ * ADD THE PRODUCTS TO THE CATEGORY MENU ITEMS
+ * */
+function norhage_menu_add_category_posts( $output, $item, $depth, $args ) {
     // Check if the item is a Category or Custom Taxonomy
     if( $item->type == 'taxonomy' ) {
         $object = get_term($item->object_id, $item->object);
@@ -363,31 +367,13 @@ function ggstyle_menu_item_count( $output, $item, $depth, $args ) {
 
     return $output;
 }
-add_action( 'walker_nav_menu_start_el', 'ggstyle_menu_item_count', 10, 4 );
-
-/**
- * Set the content width in pixels, based on the theme's design and stylesheet.
- *
- * Priority 0 to make it available to lower priority callbacks.
- *
- * @global int $content_width
- */
-/*
-function norhageindustri_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'norhageindustri_content_width', 800 );
-}
-add_action( 'after_setup_theme', 'norhageindustri_content_width', 0 );
-*/
+add_action( 'walker_nav_menu_start_el', 'norhage_menu_add_category_posts', 10, 4 );
 
 /**
  * Enqueue scripts and styles.
  */
 function norhageindustri_scripts() {
 	wp_enqueue_style( 'norhageindustri-style', get_stylesheet_uri(), array(), _G_VERSION );
-	/*
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}*/
 }
 add_action( 'wp_enqueue_scripts', 'norhageindustri_scripts' );
 
