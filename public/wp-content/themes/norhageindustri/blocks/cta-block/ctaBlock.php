@@ -34,7 +34,7 @@ if ( ! empty( $block['align'] ) ) {
 	<div class="image-col">
 		<?php if ( $image ) : ?>
 			<figure class="image">
-				<?php echo wp_get_attachment_image( $image['ID'], 'full', '', array( 'class' => 'img' ) ); ?>
+				<?php echo wp_get_attachment_image( $image['ID'], 'full', '', array( 'class' => 'img', 'alt' => $image['alt'] ) ); ?>
 			</figure>
 		<?php else : ?>
 			<figure class="dummy">

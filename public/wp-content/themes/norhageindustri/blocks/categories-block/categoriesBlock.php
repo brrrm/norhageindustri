@@ -36,7 +36,7 @@ if ( ! empty( $block['align'] ) ) {
 			<div class="image">
 				<?php 
 				if(isset($image)){
-					echo wp_get_attachment_image( $image['ID'], 'full', '', array( 'class' => 'header-image__img' ) );
+					echo wp_get_attachment_image( $image['ID'], 'full', '', array( 'class' => 'header-image__img', 'alt' => $image['alt'] ) );
 				}
 				?>
 			</div>

@@ -97,7 +97,7 @@ $allowedBlocks = ['core/post-title'];
 	<?php if ( $image ) : ?>
 		<div class="headerblock-image-col">
 			<figure class="header-image">
-				<?php echo wp_get_attachment_image( $image['ID'], 'full', '', array( 'class' => 'header-image__img' ) ); ?>
+				<?php echo wp_get_attachment_image( $image['ID'], 'full', '', array( 'class' => 'header-image__img', 'alt' => $image['alt'] ) ); ?>
 			</figure>
 		</div>
 	<?php endif; ?>

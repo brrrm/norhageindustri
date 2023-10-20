@@ -41,7 +41,7 @@ if ( ! empty( $block['align'] ) ) {
 	        	</header>
 	        	<figure>
 	        		<?php $image = get_sub_field('review_image'); ?>
-	        		<?php echo wp_get_attachment_image( $image['ID'], 'full' ); ?>
+	        		<?php echo wp_get_attachment_image( $image['ID'], 'full', '', [ 'alt' => $image['alt']] ); ?>
 	        	</figure>
 	        	<div class="review-text"><?php the_sub_field('review_text'); ?></div>
 	        	<footer>
