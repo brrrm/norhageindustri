@@ -316,7 +316,72 @@ add_action('admin_init', function () {
         }
     }
 });
- 
+
+
+/**
+ * CREATE NORHAGE BLOCKS CATEGORY
+ */
+add_filter( 'block_categories_all' , function( $categories ) {
+
+    // Adding a new category.
+	array_unshift( $categories, array(
+		'slug'  => 'norhage',
+		'title' => 'Norhage'
+	));
+
+	return $categories;
+} );
+
+
+
+
+/**
+ * REMOVE POSTS
+ */
+function remove_default_post_type() {
+    remove_menu_page( 'edit.php' );
+}
+add_action( 'admin_menu', 'remove_default_post_type' );
+
+function remove_default_post_type_menu_bar( $wp_admin_bar ) {
+    $wp_admin_bar->remove_node( 'new-post' );
+}
+add_action( 'admin_bar_menu', 'remove_default_post_type_menu_bar', 999 );
+
+function remove_add_new_post_href_in_admin_bar() {
+    ?>
+    <script type="text/javascript">
+        function remove_add_new_post_href_in_admin_bar() {
+            var add_new = document.getElementById('wp-admin-bar-new-content');
+            if(!add_new) return;
+            var add_new_a = add_new.getElementsByTagName('a')[0];
+            if(add_new_a) add_new_a.setAttribute('href','#!');
+        }
+        remove_add_new_post_href_in_admin_bar();
+    </script>
+    <?php
+}
+add_action( 'admin_footer', 'remove_add_new_post_href_in_admin_bar' );
+
+function remove_frontend_post_href(){
+    if( is_user_logged_in() ) {
+        add_action( 'wp_footer', 'remove_add_new_post_href_in_admin_bar' );
+    }
+}
+add_action( 'init', 'remove_frontend_post_href' );
+
+
+
+
+
+
+
+
+
+
+/**
+ * REMOVE COMMENTS
+ */ 
 // Close comments on the front-end
 add_filter('comments_open', '__return_false', 20, 2);
 add_filter('pings_open', '__return_false', 20, 2);
@@ -335,3 +400,7 @@ add_action('init', function () {
         remove_action('admin_bar_menu', 'wp_admin_bar_comments_menu', 60);
     }
 });
+
+
+
+

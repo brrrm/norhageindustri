@@ -3,7 +3,7 @@
     "title": "Call to action block",
     "description": "Block with a cta (\"contact us\")",
     "style": [ "file:./ctaBlock.css" ],
-    "category": "design",
+    "category": "norhage",
     "icon": "layout",
     "keywords": ["cta", "phone"],
     "acf": {
