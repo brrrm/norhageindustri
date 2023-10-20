@@ -134,81 +134,203 @@ add_action( 'init', 'norhageindustri_register_acf_blocks' );
 
 // Our custom post type function
 function norhageindustri_create_posttypes() {
-	register_taxonomy('product-type', 'product', [
+	$taxonomies = [
+		'product-type'		=> [
+			'machine-name'					=> 'product-type',
+			'content-type'					=> 'product',
+			'labels'						=> [
+				'name' => _x( 'Product type', 'taxonomy general name' ),
+				'singular_name' => _x( 'Product types', 'taxonomy singular name' ),
+				'search_items' =>  __( 'Search product types' ),
+				'all_items' => __( 'All product types' ),
+				'parent_item' => __( 'Parent product type' ),
+				'parent_item_colon' => __( 'Parent product type:' ),
+				'edit_item' => __( 'Edit product type' ),
+				'update_item' => __( 'Update product type' ),
+				'add_new_item' => __( 'Save product type' ),
+				'new_item_name' => __( 'New product type name' ),
+				'menu_name' => __( 'Product types' ),
+			]
+		],
+		'plastic-type'		=> [
+			'machine-name'					=> 'plastic-type',
+			'content-type'					=> 'plastic',
+			'labels'						=> [
+				'name' => _x( 'Plastic type', 'taxonomy general name' ),
+				'singular_name' => _x( 'Plastic types', 'taxonomy singular name' ),
+				'search_items' =>  __( 'Search plastic types' ),
+				'all_items' => __( 'All plastic types' ),
+				'parent_item' => __( 'Parent plastic type' ),
+				'parent_item_colon' => __( 'Parent plastic type:' ),
+				'edit_item' => __( 'Edit plastic type' ),
+				'update_item' => __( 'Update plastic type' ),
+				'add_new_item' => __( 'Save plastic type' ),
+				'new_item_name' => __( 'New plastic type name' ),
+				'menu_name' => __( 'Plastic types' ),
+			]
+		],
+		'constr-mat-type'		=> [
+			'machine-name'					=> 'constr-mat-type',
+			'content-type'					=> 'construction',
+			'labels'						=> [
+				'name' => _x( 'Material type', 'taxonomy general name' ),
+				'singular_name' => _x( 'Material types', 'taxonomy singular name' ),
+				'search_items' =>  __( 'Search material types' ),
+				'all_items' => __( 'All Material types' ),
+				'parent_item' => __( 'Parent Material type' ),
+				'parent_item_colon' => __( 'Parent Material type:' ),
+				'edit_item' => __( 'Edit Material type' ),
+				'update_item' => __( 'Update Material type' ),
+				'add_new_item' => __( 'Save Material type' ),
+				'new_item_name' => __( 'New Material type name' ),
+				'menu_name' => __( 'Material types' ),
+			]
+		],
+		'service-type'		=> [
+			'machine-name'					=> 'service-type',
+			'content-type'					=> 'service',
+			'labels'						=> [
+				'name' => _x( 'Service type', 'taxonomy general name' ),
+				'singular_name' => _x( 'Service types', 'taxonomy singular name' ),
+				'search_items' =>  __( 'Search service types' ),
+				'all_items' => __( 'All Service types' ),
+				'parent_item' => __( 'Parent Service type' ),
+				'parent_item_colon' => __( 'Parent Service type:' ),
+				'edit_item' => __( 'Edit Service type' ),
+				'update_item' => __( 'Update Service type' ),
+				'add_new_item' => __( 'Save Service type' ),
+				'new_item_name' => __( 'New Service type name' ),
+				'menu_name' => __( 'Service types' ),
+			]
+		]
+	];
+
+	$defaultTaxonomySettings = [
 		// Hierarchical taxonomy (like categories)
 		'hierarchical' => false,
-		// This array of options controls the labels displayed in the WordPress Admin UI
-		'labels' => [
-			'name' => _x( 'Product type', 'taxonomy general name' ),
-			'singular_name' => _x( 'Product types', 'taxonomy singular name' ),
-			'search_items' =>  __( 'Search product types' ),
-			'all_items' => __( 'All product types' ),
-			'parent_item' => __( 'Parent product type' ),
-			'parent_item_colon' => __( 'Parent product type:' ),
-			'edit_item' => __( 'Edit product type' ),
-			'update_item' => __( 'Update product type' ),
-			'add_new_item' => __( 'Save product type' ),
-			'new_item_name' => __( 'New product type name' ),
-			'menu_name' => __( 'Product types' ),
-		],
 		// Control the slugs used for this taxonomy
 		'rewrite' => [
-			'slug' => 'product-types', // This controls the base slug that will display before each term
 			'with_front' => false, // Don't display the category base before "/locations/"
 			'hierarchical' => false // This will allow URL's like "/locations/boston/cambridge/"
 		],
 		'show_in_rest'				=> true,
-	]);
+	];
+
+	foreach($taxonomies as $type){
+		$settings = $defaultTaxonomySettings;
+		$settings['labels'] = $type['labels'];
+		$settings['rewrite']['slug'] = $type['machine-name'];
+		register_taxonomy($type['machine-name'], $type['content-type'], $settings);
+	}
 
 
 
- 	$productLabels = array(
-		'name' 						=> __( 'Products', 'norhageindustri' ),
-		'singular_name' 			=> __( 'Product', 'norhageindustri' ),
-		'add_new' 					=> __( 'New product', 'norhageindustri' ),
-		'add_new_item' 				=> __( 'Add new product', 'norhageindustri' ),
-		'edit_item' 				=> __( 'Edit product', 'norhageindustri' ),
-		'new_item'					=> __( 'New product', 'norhageindustri' ),
-		'view_item' 				=> __( 'View product', 'norhageindustri' ),
-		'search_items'				=> __( 'Search products', 'norhageindustri' ),
-		'not_found' 				=>  __( 'No products found', 'norhageindustri' ),
-		'not_found_in_trash' 		=> __( 'No products found in trash', 'norhageindustri'),
-	);
+ 	$contentTypes = [
+ 		'product'	=> [
+ 			'slug'		=> 'product',
+ 			'taxonomies'	=> ['product-type'],
+ 			'labels'	=> [
+				'name' 						=> __( 'Products', 'norhageindustri' ),
+				'singular_name' 			=> __( 'Product', 'norhageindustri' ),
+				'add_new' 					=> __( 'New product', 'norhageindustri' ),
+				'add_new_item' 				=> __( 'Add new product', 'norhageindustri' ),
+				'edit_item' 				=> __( 'Edit product', 'norhageindustri' ),
+				'new_item'					=> __( 'New product', 'norhageindustri' ),
+				'view_item' 				=> __( 'View product', 'norhageindustri' ),
+				'search_items'				=> __( 'Search products', 'norhageindustri' ),
+				'not_found' 				=>  __( 'No products found', 'norhageindustri' ),
+				'not_found_in_trash' 		=> __( 'No products found in trash', 'norhageindustri'),
+			]
+		],
+ 		'plastic'	=> [
+ 			'slug'		=> 'plastic',
+ 			'taxonomies'	=> ['plastic-type'],
+ 			'labels'	=> [
+				'name' 						=> __( 'Plastics', 'norhageindustri' ),
+				'singular_name' 			=> __( 'Plastic', 'norhageindustri' ),
+				'add_new' 					=> __( 'New plastic', 'norhageindustri' ),
+				'add_new_item' 				=> __( 'Add new plastic', 'norhageindustri' ),
+				'edit_item' 				=> __( 'Edit plastic', 'norhageindustri' ),
+				'new_item'					=> __( 'New plastic', 'norhageindustri' ),
+				'view_item' 				=> __( 'View plastics', 'norhageindustri' ),
+				'search_items'				=> __( 'Search plastics', 'norhageindustri' ),
+				'not_found' 				=>  __( 'No plastics found', 'norhageindustri' ),
+				'not_found_in_trash' 		=> __( 'No plastics found in trash', 'norhageindustri'),
+			]
+		],
+ 		'service'	=> [
+ 			'slug'		=> 'service',
+ 			'taxonomies'	=> ['service-type'],
+ 			'labels'	=> [
+				'name' 						=> __( 'Services', 'norhageindustri' ),
+				'singular_name' 			=> __( 'Service', 'norhageindustri' ),
+				'add_new' 					=> __( 'New service', 'norhageindustri' ),
+				'add_new_item' 				=> __( 'Add new service', 'norhageindustri' ),
+				'edit_item' 				=> __( 'Edit service', 'norhageindustri' ),
+				'new_item'					=> __( 'New service', 'norhageindustri' ),
+				'view_item' 				=> __( 'View service', 'norhageindustri' ),
+				'search_items'				=> __( 'Search services', 'norhageindustri' ),
+				'not_found' 				=>  __( 'No services found', 'norhageindustri' ),
+				'not_found_in_trash' 		=> __( 'No services found in trash', 'norhageindustri'),
+			]
+		],
+ 		'construction'	=> [
+ 			'slug'		=> 'construction',
+ 			'taxonomies'	=> ['constr-mat-type'],
+ 			'labels'	=> [
+				'name' 						=> __( 'Construction materials', 'norhageindustri' ),
+				'singular_name' 			=> __( 'Construction material', 'norhageindustri' ),
+				'add_new' 					=> __( 'New construction material', 'norhageindustri' ),
+				'add_new_item' 				=> __( 'Add new construction material', 'norhageindustri' ),
+				'edit_item' 				=> __( 'Edit construction material', 'norhageindustri' ),
+				'new_item'					=> __( 'New construction material', 'norhageindustri' ),
+				'view_item' 				=> __( 'View construction material', 'norhageindustri' ),
+				'search_items'				=> __( 'Search construction materials', 'norhageindustri' ),
+				'not_found' 				=>  __( 'No construction materials found', 'norhageindustri' ),
+				'not_found_in_trash' 		=> __( 'No construction materials found in trash', 'norhageindustri'),
+			]
+		]
+	];
 
-    register_post_type( 'product',
-    // CPT Options
-        array(
-            'labels' 				=> $productLabels,
-            'public' 				=> true,
-            'exclude_from_search'	=> false,
-            'has_archive' 			=> false,
-            'rewrite' 				=> array('slug' => 'product'),
-            'show_in_rest' 			=> true,
-            'show_in_menu'			=> true,
-            'show_in_nav_menus'		=> true,
-            'menu_position'			=> 4,
- 			'menu_icon'				=> 'dashicons-carrot',
- 			'taxonomies'			=> ['product-type'],
- 			'supports'				=> [
- 				'title',
- 				'editor',
- 				'author',
- 				'revisions',
- 				'thumbnail',
- 			],
- 			'template'				=> [
- 				[
- 					'norhageindustri/product-header-block',
- 					[
- 						'lock'		=> [
- 							'move'		=> true,
- 							'remove'	=> true
- 						]
- 					]
- 				]
- 			]
-        )
-    );
+	$defaultPostSettings = [
+		'public' 				=> true,
+		'exclude_from_search'	=> false,
+		'has_archive' 			=> false,
+		'rewrite' 				=> array('slug' => 'product'),
+		'show_in_rest' 			=> true,
+		'show_in_menu'			=> true,
+		'show_in_nav_menus'		=> true,
+		'menu_position'			=> 4,
+		'menu_icon'				=> 'dashicons-carrot',
+		'taxonomies'			=> ['product-type'],
+		'supports'				=> [
+			'title',
+			'editor',
+			'author',
+			'revisions',
+			'thumbnail',
+		],
+		'template'				=> [
+			[
+				'norhageindustri/product-header-block',
+				[
+					'lock'		=> [
+						'move'		=> true,
+						'remove'	=> true
+					]
+				]
+			]
+		]
+	];
+
+	foreach($contentTypes as $type){
+		$settings = array_merge($defaultPostSettings, [
+			'labels'			=> $type['labels'],
+            'rewrite' 			=> ['slug' => $type['slug']],
+            'taxonomies'		=> $type['taxonomies']
+		]);
+		register_post_type($type['slug'], $settings);
+	}
 }
 add_action( 'init', 'norhageindustri_create_posttypes' );
 
