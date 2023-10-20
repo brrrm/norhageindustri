@@ -147,7 +147,7 @@ function norhageindustri_create_posttypes() {
 			'parent_item_colon' => __( 'Parent product type:' ),
 			'edit_item' => __( 'Edit product type' ),
 			'update_item' => __( 'Update product type' ),
-			'add_new_item' => __( 'Select a product type' ),
+			'add_new_item' => __( 'Save product type' ),
 			'new_item_name' => __( 'New product type name' ),
 			'menu_name' => __( 'Product types' ),
 		],
