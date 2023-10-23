@@ -4,6 +4,8 @@
 	min-height: 50vh;
 	background: var(--dark-blue);
 	color: var(--white);
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 .reviews-block h2,
 .reviews-block .reviews{
@@ -12,6 +14,9 @@
 }
 .reviews-block h2{
 	text-align: center;
+	font-style: normal;
+	font-weight: 700;
+	margin-top: 0;
 }
 .reviews-block .reviews article{
 	display: grid;
@@ -37,10 +42,13 @@
 }
 .reviews-block .reviews article .review-text{
 	grid-area: text;
+	line-height: 1.5833333rem;
 }
 
 .reviews-block .reviews article header h3{
 	margin: 0;
+	font-size: 1.5rem;
+	line-height: 1.7916667rem;
 }
 .reviews-block .reviews article figure,
 .reviews-block .reviews article figure img{
@@ -51,4 +59,7 @@
 	border-radius: 50%;
 	overflow: hidden;
 	aspect-ratio: 1;
+}
+.reviews-block .reviews footer{
+	font-style: italic;
 }
