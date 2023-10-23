@@ -2,17 +2,23 @@
 	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
+	gap: 1.54166667rem ;
 	width: 100%;
+	padding: 3.875rem 0 4.66666667rem 2.625rem;
 }
 .text-image-block--title-col{
-	flex: 40% 0 0;
-	color: var(--dark-blue);
+  flex: 32.9215625% 0 0; /*	flex: 40% 0 0;*/
+	padding-top: 3.91666667rem;
+}
+.text-image-block--title-col h2{
+	margin: 0;
 }
 .text-image-block--text-col{
-	flex: 20% 0 0;
+  flex: 22.7546875% 0 0; /*	flex: 20% 0 0;*/
+  padding-top: 3.91666667rem;
 }
 .text-image-block--image-col{
-	flex: 40% 0 0;
+	flex: 37.6326562% 1 0;;
 }
 .text-image-block--image-col figure{
 	width: 100%;
