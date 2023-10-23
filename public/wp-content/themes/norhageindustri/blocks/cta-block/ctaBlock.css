@@ -4,11 +4,24 @@
 	flex-wrap: wrap;
 	width: 100%;
 	min-height: 50vh;
+	box-sizing: border-box;
 }
 .cta-block .text-col{
 	flex: 40% 0 0;
 	background: var(--dark-blue);
 	color: var(--white);
+	padding-top: 7.9583333rem;
+	padding-left: 3.125rem;
+	box-sizing: border-box;
+	padding-right: 3.75rem;
+	padding-bottom: 2.9166667rem;
+}
+.cta-block .text-col h2{
+	margin-top: 0;
+  font-size: 1.75rem;
+  line-height: 2.0833333rem;
+	font-style: normal;
+	font-weight: 800;
 }
 .cta-block .image-col{
 	flex: 60% 0 0;
