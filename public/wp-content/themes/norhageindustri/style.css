@@ -86,7 +86,14 @@ li{}
 	margin-right: -25%;
 }
 
-
+a.cta-phone.button {
+    background: blue;
+    padding: 0.5em;
+    border-radius: 125px;
+    color: white;
+    background: #1579B7 url(../norhageindustri/images/phone-icon.png) no-repeat 0.5em center;
+    padding-left: 2em;
+  }
 /**
  * HEADER
  * including navigation and subnav
@@ -257,25 +264,30 @@ header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu 
 }
 
 
+.single-post .site-main > *{
+	padding: 0 360px;
+}
+
 /* 
 * Footer
 */
 footer.site-footer{
 	font-size: 0.75em;
 	line-height: 1.16666667rem;	
-    margin-right: -25%;
-	background-color: #000000;
+	margin-right: -25%;
+	background: linear-gradient(180deg, rgba(22,22,22,1) 0%, rgba(60,60,60,1) 100%);
 	color: #ffffff;
 	display: flex;
 	flex-wrap: wrap;
 	column-gap: 3.08333333em;
-	padding-right: 2.20833333rem;
-    padding-left: 2.625rem;
-    padding-top: 2.20833333rem;
+	row-gap: 2em;
+	padding: 2.20833333rem 15.8rem;
 }
 footer.site-footer h2{
 	font-size: 1.5rem;
 	margin: 0;
+	font-style: normal;
+	font-weight: 700;
 }
 footer.site-footer a{
 	font-weight: 300;
@@ -294,9 +306,9 @@ footer.site-footer .company-info{
 	flex: 40% 0 0;
 	display: block;
 	border-right: 1px solid #ffffff;
-	    padding-right: 1em;
-    box-sizing: border-box;
-    padding-right: 4.08333333rem;
+	padding-right: 1em;
+	box-sizing: border-box;
+	padding-right: 4.08333333rem;
 }
 footer.site-footer .company-info h3{}
 footer.site-footer .company-info p{}
@@ -322,7 +334,9 @@ footer.site-footer nav.sitemap{
 	flex: auto 1 0;
 
 }
-footer.site-footer nav.sitemap button.menu-toggle{}
+footer.site-footer nav.sitemap button.menu-toggle{
+	display: none;
+}
 footer.site-footer nav.sitemap .menu-footer-navigation-container{}
 footer.site-footer nav.sitemap .menu-footer-navigation-container ul.menu{ }
 footer.site-footer nav.sitemap .menu-footer-navigation-container ul.menu > li.menu-item{ 
@@ -342,13 +356,15 @@ footer.site-footer nav#socials-navigation{
 	flex: 100% 0 0;
 	display: flex;
 	column-gap: 1rem;
+	align-items: center;
+	border-top: 1px solid white;
 }
 footer.site-footer nav#socials-navigation h3{
 	font-size: 0.75rem;
 }
 footer.site-footer nav#socials-navigation ul{
 	display: flex;
-	column-gap: 1rem;
+	column-gap: 0.5rem;
 }
 footer.site-footer nav#socials-navigation ul li{
 	margin: 0;
@@ -360,8 +376,9 @@ footer.site-footer nav#socials-navigation ul li a{
 	background-repeat: no-repeat;
 	display: block;
 	object-fit: contain;
-	width: 1.333333em;
-	height: 1.333333em;
+	width: 2.333333em;
+	height: 2.333333em;
+	text-indent: -9999em;
 }
 footer.site-footer nav#socials-navigation ul li.facebook a{
 	background-image: url(../norhageindustri/images/facebook-icon.png);
