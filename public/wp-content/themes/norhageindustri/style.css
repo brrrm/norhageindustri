@@ -75,7 +75,8 @@ li{}
 /**
  * PAGE STRUCTURE
  */
-.site-main .entry-content > *{
+.site-main .entry-content > *,
+.site-main .entry-header{
 	max-width: var(--wp--style--global--content-size);
 	margin-left: auto;
 	margin-right: auto;
