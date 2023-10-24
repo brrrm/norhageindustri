@@ -3,7 +3,7 @@
     "title": "Product header block",
     "description": "header block for product pages with image slider and text",
     "style": [ "file:./productHeaderBlock.css" ],
-    "category": "design",
+    "category": "norhage",
     "icon": "layout",
     "keywords": ["header", "picture", "image", "product"],
     "acf": {

@@ -25,11 +25,26 @@ if ( ! empty( $block['className'] ) ) {
 if ( ! empty( $block['align'] ) ) {
     $class_name .= ' align' . $block['align'];
 }
+
+$innerBlocksTemplate = [
+	[
+		'core/post-title',
+		[
+			'level'	=> 1
+		]
+	]
+];
+$allowedBlocks = ['core/post-title'];
+
 ?>
 
 <div <?php echo esc_attr( $anchor ); ?>class="<?php echo esc_attr( $class_name ); ?>" >
 	<div class="headerblock-text-col">
-		<h1><?php echo esc_html( $title ); ?></h1>
+		<InnerBlocks 
+			allowedBlocks="<?php echo esc_attr( wp_json_encode( $allowedBlocks ) ); ?>" 
+			template="<?php echo esc_attr( wp_json_encode( $innerBlocksTemplate ) ); ?>" 
+			templateLock="all" />
+
 		<div class="text">
 			<?php echo esc_html( $text ); ?>
 		</div>
@@ -82,7 +97,7 @@ if ( ! empty( $block['align'] ) ) {
 	<?php if ( $image ) : ?>
 		<div class="headerblock-image-col">
 			<figure class="header-image">
-				<?php echo wp_get_attachment_image( $image['ID'], 'full', '', array( 'class' => 'header-image__img' ) ); ?>
+				<?php echo wp_get_attachment_image( $image['ID'], 'full', '', array( 'class' => 'header-image__img', 'alt' => $image['alt'] ) ); ?>
 			</figure>
 		</div>
 	<?php endif; ?>

@@ -3,7 +3,7 @@
     "title": "Impulse call to action block",
     "description": "Block with a cta, designed to be used inbetween paragraphs",
     "style": [ "file:./ctaWithinTextBlock.css" ],
-    "category": "design",
+    "category": "norhage",
     "icon": "layout",
     "keywords": ["cta", "phone"],
     "acf": {

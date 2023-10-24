@@ -58,7 +58,7 @@ $allowedBlocks = ['core/post-title'];
 		<div class="image-col">
 			<?php foreach( $images as $image ): ?>
 			<figure class="header-image">
-				<?php echo wp_get_attachment_image( $image['ID'], 'full', '', array( 'class' => 'header-image__img' ) ); ?>
+				<?php echo wp_get_attachment_image( $image['ID'], 'full', '', array( 'class' => 'header-image__img', 'alt' => $image['alt'] ) ); ?>
 			</figure>
 			<?php endforeach; ?>
 		</div>

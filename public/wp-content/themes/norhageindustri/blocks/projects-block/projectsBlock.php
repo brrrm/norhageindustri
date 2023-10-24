@@ -39,7 +39,7 @@ if ( ! empty( $block['align'] ) ) {
 			<?php foreach($projects as $project):
 				$permalink = get_permalink( $project->ID );
         		$title = get_the_title( $project->ID );
-        		$thumb = get_the_post_thumbnail($project->ID)
+        		$thumb = get_the_post_thumbnail($project->ID);
         	?>
 				<li>
 					<h3><a href="<?php echo esc_url( $permalink ); ?>"><?php echo esc_html( $title ); ?></a></h3>

@@ -1,0 +1,20 @@
+{
+    "name": "norhageindustri/categories-block",
+    "title": "Product categories block",
+    "description": "Block with a list of product categories",
+    "style": [ "file:./categoriesBlock.css" ],
+    "category": "norhage",
+    "icon": "layout",
+    "keywords": ["cta", "phone"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "categoriesBlock.php"
+    },
+    "supports": {
+        "anchor": true,
+        "alignWide": false
+    },
+    "attributes": {
+    },
+    "editorStyle": "file:./editor.css"
+}

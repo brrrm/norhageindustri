@@ -3,7 +3,7 @@
     "title": "Projects slider block",
     "description": "A slider with projects to promote",
     "style": [ "file:./projectsBlock.css" ],
-    "category": "design",
+    "category": "norhage",
     "icon": "layout",
     "keywords": ["image", "projects"],
     "acf": {

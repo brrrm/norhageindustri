@@ -3,7 +3,7 @@
     "title": "Reviews block",
     "description": "Block with customer reviews",
     "style": [ "file:./reviewsBlock.css" ],
-    "category": "design",
+    "category": "norhage",
     "icon": "layout",
     "keywords": ["reviews"],
     "acf": {

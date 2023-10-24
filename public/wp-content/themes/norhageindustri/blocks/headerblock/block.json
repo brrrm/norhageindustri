@@ -3,11 +3,11 @@
     "title": "Page header block",
     "description": "A page header block for the homepage.",
     "style": [ "file:./headerblock.css" ],
-    "category": "design",
+    "category": "norhage",
     "icon": "layout",
     "keywords": ["header"],
     "acf": {
-        "mode": "auto",
+        "mode": "preview",
         "renderTemplate": "headerblock.php"
     },
     "supports": {

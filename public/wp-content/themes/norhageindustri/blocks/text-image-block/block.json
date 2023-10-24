@@ -3,7 +3,7 @@
     "title": "Text & image block",
     "description": "A block with a title, a text paragraph and an image",
     "style": [ "file:./textImageBlock.css" ],
-    "category": "design",
+    "category": "norhage",
     "icon": "layout",
     "keywords": ["image", "text", "title"],
     "acf": {
