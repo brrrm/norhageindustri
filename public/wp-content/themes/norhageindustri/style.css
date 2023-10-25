@@ -58,16 +58,29 @@ h3{
 }
 
 p{}
-
+p#breadcrumbs{
+	font-size: 0.75em;
+	
+}
+p#breadcrumbs a{
+	color: #66B73C;
+}
 a{
 	color: var(--bright-orange);
 	text-decoration: none;
 }
-a[href^="tel:"]{
+.cta-phone.button{
 	font-size: 1.5rem;
 	line-height: 1.79166667rem;
 	font-weight: 700;
+	padding:  0.5em 2em; 
+  border-radius: 125px;
+  color: white;
+  background: #1579B7 url(../norhageindustri/images/phone-icon.png) no-repeat 0.5em center;
+	box-sizing: border-box;
 }
+
+
 ul{}
 
 li{}
@@ -76,7 +89,9 @@ li{}
  * PAGE STRUCTURE
  */
 .site-main .entry-content > *,
-.site-main .entry-header{
+.site-main .entry-header,
+.site-main .entry-footer,
+.post-navigation{
 	max-width: var(--wp--style--global--content-size);
 	margin-left: auto;
 	margin-right: auto;
@@ -87,14 +102,7 @@ li{}
 	margin-right: -25%;
 }
 
-a.cta-phone.button {
-    background: blue;
-    padding: 0.5em;
-    border-radius: 125px;
-    color: white;
-    background: #1579B7 url(../norhageindustri/images/phone-icon.png) no-repeat 0.5em center;
-    padding-left: 2em;
-  }
+
 /**
  * HEADER
  * including navigation and subnav
@@ -327,10 +335,6 @@ header#masthead nav#site-navigation .menu-main-navigation-container ul.menu li.p
 }
 
 
-
-.single-post .site-main > *{
-	padding: 0 360px;
-}
 
 /* 
 * Footer
