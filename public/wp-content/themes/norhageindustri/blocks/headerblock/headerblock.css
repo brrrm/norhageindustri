@@ -4,6 +4,8 @@
 	flex-wrap: wrap;
 	width: 100%;
 	height: 100vh;
+		margin-top: calc(-1 * var(--header-height) );
+
 }
 .headerblock .headerblock-text-col{
 	flex: 60% 0 0;
@@ -12,6 +14,8 @@
 	color: var(--white);
 	box-sizing: border-box;
 	padding:7.58333333rem 9.7916667rem 3rem 7.20833333rem;
+/*		padding: var(--header-height) 0 0 0;*/
+
 }
 .headerblock .headerblock-image-col{
 	flex: 40% 0 0;
