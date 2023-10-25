@@ -104,7 +104,6 @@ header#masthead{
 	margin-right: -25%;
 	position: relative;
 	z-index: 1;
-	font-size: 0.875rem;
 }
 header#masthead .site-branding p{
 	width: 1px;
@@ -116,7 +115,7 @@ header#masthead .site-branding p{
 header#masthead .site-branding #logo{
 	position: absolute;
 	left: 2em;
-	top: 2em;
+	top: 1.25em;
 	width: 170px;
 }
 
@@ -125,25 +124,45 @@ header#masthead nav#site-navigation{
 	width: 100%;
 	display: flex;
 	height: var(--header-height);
+	border-bottom: 1px solid #ffffff;
 }
 header#masthead nav#site-navigation .menu-toggle{
 	display: none;
 }
+
 header#masthead nav#site-navigation .menu-main-navigation-container{
 	flex: 60% 0 0;
 	background: var(--dark-blue);
 	color: var(--white);
 }
+
 header#masthead nav#site-navigation .menu-secondary-menu-container{
 	flex: 40% 0 0;
+	color: var(--white);
 	text-align: right;
 }
+
 header#masthead nav#site-navigation aside{
 	position: absolute;
-	right: 2em;
-	top: 2em;
+	right: 1.416666667em;
+	top: 1.2916666667em;
 	text-align: right;
+	line-height: 1.04em;
 }
+header#masthead nav#site-navigation aside h3{
+	font-size: 0.85em;
+	margin: 0;
+	font-style: italic;
+	font-size: 100;
+	color: #ffffff;
+}
+header#masthead nav#site-navigation aside a{
+	font-size: 1em;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+
 header#masthead nav#site-navigation ul.menu{
 	list-style: none;
 	margin: 0;
@@ -155,25 +174,30 @@ header#masthead nav#site-navigation ul.menu{
 	flex-direction: row;
 	align-items: flex-end;
 }
+header#masthead nav#site-navigation ul li{
+	flex: auto 0 1;	
+}
+header#masthead  nav#site-navigation  ul.menu > li> a{
+	line-height: 4.5em;
+	font-size: 0.875em;
+}
 header#masthead nav#site-navigation .menu-main-navigation-container ul.menu{
 	padding: 0 2em 0 calc(2em + var(--header-height) + 2em );
 	justify-content: space-between;
 }
 header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu{
-	padding: 0 2em;
+	padding: 0 1.416666667em 0 2em;
 	gap: 2em;
+	background: linear-gradient(180deg, rgba(10,65,100,1) 0%, rgba(10,65,100,0) 100%);
 }
-header#masthead nav#site-navigation ul li{
-	flex: auto 0 1;
-}
+
+
 header#masthead nav#site-navigation .menu-main-navigation-container a:link,
-header#masthead nav#site-navigation .menu-main-navigation-container a:visited{
-	color: #fff;
-	text-decoration: none;
-}
+header#masthead nav#site-navigation .menu-main-navigation-container a:visited,
 header#masthead nav#site-navigation .menu-secondary-menu-container a:link,
 header#masthead nav#site-navigation .menu-secondary-menu-container a:visited{
-	color: var(--dark-blue);
+	
+	color: #fff;
 	text-decoration: none;
 }
 header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li:first-child{
@@ -182,6 +206,7 @@ header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li:fi
 }
 
 header#masthead nav#site-navigation .menu-main-navigation-container ul.menu li{
+
 }
 header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu{
 	position: absolute;
@@ -197,6 +222,7 @@ header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu{
 	transform: translate(0, 10px);
 	transition: transform 0.3s ease-out, opacity 0.3s ease-out, left 0s linear 0.3s;
 	opacity: 0;
+	font-size: 0.875rem;
 }
 header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu a:link,
 header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu a:visited{
@@ -271,6 +297,35 @@ header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu 
 	display: block;
 	width: 100%;
 }
+
+/*
+ * Translate switch
+ */
+header#masthead nav#site-navigation .menu-main-navigation-container ul.menu li.pll-parent-menu-item{
+	position: relative;
+}
+header#masthead nav#site-navigation .menu-main-navigation-container ul.menu li.pll-parent-menu-item ul.sub-menu {
+	right: 0;
+	left: unset;
+	width: 8rem;
+	height: auto;
+	padding: 0 0.5em;
+	line-height: 1.5em;
+}
+header#masthead nav#site-navigation .menu-main-navigation-container ul.menu li.pll-parent-menu-item ul.sub-menu li{
+	width: 100%;
+	box-sizing: border-box;
+	padding-left: 0;
+}
+header#masthead nav#site-navigation .menu-main-navigation-container ul.menu li.pll-parent-menu-item ul.sub-menu li a{
+	background: none;
+}
+header#masthead nav#site-navigation .menu-main-navigation-container ul.menu li.pll-parent-menu-item ul.sub-menu li:hover {
+	background: var(--dark-blue);
+}
+header#masthead nav#site-navigation .menu-main-navigation-container ul.menu li.pll-parent-menu-item ul.sub-menu li a span{
+}
+
 
 
 .single-post .site-main > *{
