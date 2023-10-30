@@ -102,7 +102,7 @@
 		flex: 100% 0 0;
 	}
 	.headerblock .headerblock-text-col{
-		padding-top: 2em;
+		padding: 2em 1em 1em 1em;
 		order: 2;
 		flex: 100% 0 0;
 	}
