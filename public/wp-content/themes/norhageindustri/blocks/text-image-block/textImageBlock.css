@@ -8,7 +8,7 @@
 	min-height: 34.4583333rem;
 }
 .text-image-block--title-col{
-  flex: 25% 1 1;
+  flex: 30% 0 1;
 	padding-top: 3.91666667rem;
 }
 .text-image-block--title-col h2{
@@ -40,18 +40,22 @@
 	position: absolute;
 }
 @media all and (max-width:1090px){
-		.text-image-block{
-			padding: 0 2em;
+	.text-image-block{
+			padding: 0 0 0 2em;
 		}
-		.text-image-block--image-col{
+	.text-image-block--image-col{
 		flex: 100% 0 0;
+	}
+	.text-image-block--text-col{
+		padding-right: 2em;
 	}
 }
 @media all and (max-width:768px){
 	.text-image-block{
 		border-bottom:1px solid #ccc ;
 		align-content: flex-start;
-		padding: 0 1em ;
+		padding: 0 0 0 1em;
+		background: red;
 	}
 	.text-image-block--title-col{
 		flex: 100% 0 0;
