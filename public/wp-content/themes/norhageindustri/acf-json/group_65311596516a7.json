@@ -21,6 +21,34 @@
             "placeholder": "",
             "prepend": "",
             "append": ""
+        },
+        {
+            "key": "field_653fce73c34e7",
+            "label": "Select which categories to show",
+            "name": "categories",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "product-type": "Product types",
+                "plastic-type": "Plastic types",
+                "constr-mat-type": "Material types",
+                "service-type": "Service types"
+            },
+            "default_value": "product-type",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
         }
     ],
     "location": [
@@ -41,5 +69,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1697715883
+    "modified": 1698680565
 }
