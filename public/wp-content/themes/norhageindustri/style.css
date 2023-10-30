@@ -43,7 +43,7 @@ h1{
 h2{
 	font-size: 2.41666667rem;
 	line-height: 2.91666667rem;
-	font-weight: 300;
+	font-weight: 200;
 	font-style: italic;
 }
 h2.alt{
@@ -80,6 +80,32 @@ a{
 	box-sizing: border-box;
 }
 
+@media all and (max-width:768px){
+	html{
+		font-size: 100%; /* word 16 */
+	}
+
+	h1{
+		font-size: 2rem; /* word 34, extrabold 38 line */
+		line-height: 2.4rem;
+	}
+
+	h2{
+		font-size: 1.5rem; /* word 24, 28 line */
+		line-height: 1.75rem;
+	}
+	h3{
+		font-size: 1.125rem;
+		line-height: 2rem;
+	}
+	p#breadcrumbs{
+/*		font-size: ????;*/
+	}
+	.cta-phone.button{
+		/*		font-size: ????;*/
+
+	}
+}
 
 ul{}
 
@@ -137,7 +163,11 @@ header#masthead nav#site-navigation{
 header#masthead nav#site-navigation .menu-toggle{
 	display: none;
 }
-
+@media all and (max-width:768px){
+	header#masthead nav#site-navigation .menu-toggle{
+		display: block;
+	}
+}
 header#masthead nav#site-navigation .menu-main-navigation-container{
 	flex: 60% 0 0;
 	background: var(--dark-blue);
@@ -156,6 +186,11 @@ header#masthead nav#site-navigation aside{
 	top: 1.2916666667em;
 	text-align: right;
 	line-height: 1.04em;
+}
+@media all and (max-width:768px){
+	header#masthead nav#site-navigation aside{
+		display: none;
+	}
 }
 header#masthead nav#site-navigation aside h3{
 	font-size: 0.85em;
