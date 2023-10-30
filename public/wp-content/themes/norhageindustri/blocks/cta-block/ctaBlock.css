@@ -11,9 +11,9 @@
 	background: var(--dark-blue);
 	color: var(--white);
 	padding-top: 7.9583333rem;
-	padding-left: 3.125rem;
+	padding-left: 2.5rem;
 	box-sizing: border-box;
-	padding-right: 3.75rem;
+	padding-right: 2.5rem;
 	padding-bottom: 2.9166667rem;
 }
 .cta-block .text-col h2{
@@ -42,4 +42,20 @@
 	height: 100%;
 	display: block;
 	position: absolute;
+}
+
+@media all and (max-width:1090px){
+	.cta-block .image-col{
+		flex: 100% 0 0;
+		min-height: 50vh;
+	}
+	.cta-block .text-col{
+		flex: 100% 0 0;
+		padding-top: 3em;
+	}
+}
+@media all and (max-width:768px){
+	.cta-block .text-col{
+		padding: 2em 1em 1em 1em;
+	}
 }

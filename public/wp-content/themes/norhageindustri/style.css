@@ -73,7 +73,7 @@ a{
 	font-size: 1.5rem;
 	line-height: 1.79166667rem;
 	font-weight: 700;
-	padding:  0.5em 2em; 
+	padding: 0.5em 1em 0.5em 2em; 
   border-radius: 125px;
   color: white;
   background: #1579B7 url(../norhageindustri/images/phone-icon.png) no-repeat 0.5em center;
@@ -100,10 +100,6 @@ a{
 	}
 	p#breadcrumbs{
 /*		font-size: ????;*/
-	}
-	.cta-phone.button{
-		/*		font-size: ????;*/
-
 	}
 }
 
