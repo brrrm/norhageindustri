@@ -42,7 +42,7 @@
 @media all and (max-width:1090px){
 	.text-image-block{
 			padding: 0 0 0 2em;
-		}
+	}
 	.text-image-block--image-col{
 		flex: 100% 0 0;
 	}
@@ -54,8 +54,7 @@
 	.text-image-block{
 		border-bottom:1px solid #ccc ;
 		align-content: flex-start;
-		padding: 0 0 0 1em;
-		background: red;
+		padding: 0 1em 0 1em;
 	}
 	.text-image-block--title-col{
 		flex: 100% 0 0;
