@@ -7,7 +7,7 @@
 
 // Load values and assign defaults.
 $title			= get_field( 'title' );
-$catName		= get_field( 'categories' )
+$catName		= get_field( 'categories' );
 $terms			= get_terms( ['taxonomy' => $catName, 'hide_empty' => false] );
 
 
