@@ -7,7 +7,8 @@
 
 // Load values and assign defaults.
 $title			= get_field( 'title' );
-$terms 			= get_terms( ['taxonomy' => 'product-type', 'hide_empty' => false] );
+$catName		= get_field( 'categories' )
+$terms			= get_terms( ['taxonomy' => $catName, 'hide_empty' => false] );
 
 
 // Support custom "anchor" values.
