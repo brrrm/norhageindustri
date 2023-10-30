@@ -4,19 +4,9 @@
 	flex-wrap: wrap;
 	width: 100%;
 	height: 100vh;
-		margin-top: calc(-1 * var(--header-height) );
-
+	margin-top: calc(-1 * var(--header-height) );
 }
-.headerblock .headerblock-text-col{
-	flex: 60% 0 0;
-	position: relative;
-	background: var(--dark-blue);
-	color: var(--white);
-	box-sizing: border-box;
-	padding:7.58333333rem 9.7916667rem 3rem 7.20833333rem;
-/*		padding: var(--header-height) 0 0 0;*/
 
-}
 .headerblock .headerblock-image-col{
 	flex: 40% 0 0;
 }
@@ -29,28 +19,48 @@
 	width: 100%;
 	height: 100%;
 }
+
+
+.headerblock .headerblock-text-col{
+	flex: 60% 0 0;
+	position: relative;
+	background: var(--dark-blue);
+	color: var(--white);
+	box-sizing: border-box;
+	padding: var(--header-height) 9.7916667rem 3rem 7.20833333rem;
+}
+@media screen and (max-width: 1400px){
+	.headerblock .headerblock-text-col{
+		padding-left: 2em; /*Zodat mobiele variant iets uitgesteld kan worden*/
+	}
+}
 .headerblock .headerblock-text-col ul.usps{
-	display: block;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	position: absolute;
-	right: -25px;
-	top: 50%;
-	transform: translate(0, -50%);
-	text-align: center;
+		display: block;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-align: center;
+}
+@media screen and (min-width: 1090px){
+	.headerblock .headerblock-text-col ul.usps{
+		position: absolute;
+		right: -10px;
+		top: 50%;
+		transform: translate(0, -50%);
+	}
 }
 .headerblock .headerblock-text-col ul.usps li{
 	display: block;
-	width: 170px;
+	width: 7.25rem;/*	width: 170px;*/
 	aspect-ratio: 1;
 	background: var(--white);
 	margin-bottom: 1em;
 	padding:1.375rem 0.79166667rem 0.625rem 0.79166667rem;
 	box-sizing: border-box;
 }
+
 .headerblock .headerblock-text-col ul.usps li strong{
-color: var(--dark-blue);
+	color: var(--dark-blue);
 	font-size: 0.83333333rem;
 	line-height: 0.83333333rem;
 	display: block;
@@ -58,14 +68,47 @@ color: var(--dark-blue);
 .headerblock .headerblock-text-col ul.usps li svg{
 	width: 2.2rem;
 }
-@media screen and (max-width: 1024px){
+
+/*Verkleinend */
+@media screen and (max-width: 1090px){
 	.headerblock .headerblock-text-col{
-		flex: 100% 0 0;
-		order: 2;
+		padding-right: 2em;
 	}
+	.headerblock .headerblock-text-col ul.usps{
+		margin-top: 2em;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 1em;
+	}
+	.headerblock .headerblock-text-col ul.usps li{
+		flex: 45% 1 0;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin: 0;
+    padding: 0.5em;
+    text-align: left;
+	}
+	.headerblock .headerblock-text-col ul.usps li svg{
+		width: 1.5em;
+	}
+}
+
+@media screen and (max-width: 768px){
 	.headerblock .headerblock-image-col{
-		flex: 100% 0 0;
-		height: 80vh;
 		order: 1;
+		flex: 100% 0 0;
 	}
+	.headerblock .headerblock-text-col{
+		padding-top: 2em;
+		order: 2;
+		flex: 100% 0 0;
+	}
+	.headerblock .headerblock-text-col ul.usps li strong{
+		font-size: 1em;
+		line-height: 1em;
+	}
+
 }

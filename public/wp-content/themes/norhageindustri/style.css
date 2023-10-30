@@ -82,16 +82,16 @@ a{
 
 @media all and (max-width:768px){
 	html{
-		font-size: 100%; /* word 16 */
+		font-size: 100%;
 	}
 
 	h1{
-		font-size: 2rem; /* word 34, extrabold 38 line */
+		font-size: 2rem;
 		line-height: 2.4rem;
 	}
 
 	h2{
-		font-size: 1.5rem; /* word 24, 28 line */
+		font-size: 1.5rem; 
 		line-height: 1.75rem;
 	}
 	h3{
