@@ -33,16 +33,15 @@ html{
 	font-size: 150%; /* 24px!! */
 	line-height: 1.5em;
 }
-
 h1{
 	font-size: 3rem;
-	line-height: 3rem;
+	line-height: 1em;
 	font-weight: 700;
 }
 
 h2{
-	font-size: 2.41666667rem;
-	line-height: 2.91666667rem;
+	font-size: 2.41667rem;
+	line-height: 1.2em;
 	font-weight: 200;
 	font-style: italic;
 }
@@ -52,16 +51,28 @@ h2.alt{
 }
 
 h3{
-	font-size: 1.33333333rem;
-	line-height: 1.70833333rem;
+	font-size: 1.333rem;
+	line-height: 1.28em;
 	font-weight: 300;
 }
+@media screen and (max-width: 1770px){
+	h1{
+		font-size: 2.5rem;
+	}
 
+	h2{
+		font-size: 2rem;
+	}
+
+	h3{
+		font-size: 1.33333333rem;
+	}
+}
 p{}
 p#breadcrumbs{
-	font-size: 0.75em;
-	
+	font-size: 0.75em;	
 }
+
 p#breadcrumbs a{
 	color: #66B73C;
 }
