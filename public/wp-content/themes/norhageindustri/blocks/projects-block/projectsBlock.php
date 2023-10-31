@@ -49,11 +49,11 @@ if($text_snippet){
         		$thumb = get_the_post_thumbnail($project->ID);
         	?>
 				<li>
-					<h3><a href="<?php echo esc_url( $permalink ); ?>"><?php echo esc_html( $title ); ?></a></h3>
 					<?php echo $thumb; ?>
+					<h3 ><a href="<?php echo esc_url( $permalink ); ?>"><?php echo esc_html( $title ); ?></a></h3>
 					<?php if($text_snippet): ?>
 						<p class="excerpt"><?php echo wp_strip_all_tags(get_the_excerpt()); ?></p>
-						<p><a href="<?php echo esc_url( $permalink ); ?>"><?php echo __( 'Read more' ); ?></a></p>
+						<p><a href="<?php echo esc_url( $permalink ); ?>"><?php echo __( 'Read more ->' ); ?></a></p>
 					<?php endif; ?>
 				</li>
 			<?php endforeach; ?>

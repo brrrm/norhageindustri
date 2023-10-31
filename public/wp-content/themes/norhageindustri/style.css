@@ -355,7 +355,7 @@ header#masthead nav#site-navigation .menu-main-navigation-container ul.menu li.p
 	position: relative;
 }
 header#masthead nav#site-navigation .menu-main-navigation-container ul.menu li.pll-parent-menu-item ul.sub-menu {
-	right: 0;
+	left: 0;
 	left: unset;
 	width: 8rem;
 	height: auto;
