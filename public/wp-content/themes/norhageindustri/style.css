@@ -59,11 +59,9 @@ h3{
 	h1{
 		font-size: 2.5rem;
 	}
-
 	h2{
 		font-size: 2rem;
 	}
-
 	h3{
 		font-size: 1.33333333rem;
 	}
@@ -89,24 +87,24 @@ a{
 .cta-phone.button,
 .cta-email.button{
 	font-size: 1.35rem;
-	line-height: 1.79166667em;
+	line-height: 1.791em;
 	font-weight: 700;
 	padding: 0.5em 1em 0.5em 2em; 
-  	border-radius: 125px;
+  	border-radius: 200px;
   	color: var(--dark-blue);
   	background: var(--white) url(../norhageindustri/images/svg/phone-icon.svg) no-repeat 0.5em center;
 	box-sizing: border-box;
-}
-.cta-email.button{
-    background: var(--white) url(../norhageindustri/images/svg/email-icon.svg) no-repeat 0.5em center;
-    background-size: 1.5em;
-    padding-left: 3em;
+	background-size: 1em;
 }
 .cta-within-text-block:not(.is-style-damagerepair) .cta-phone.button{
 	color: var(--white); 
-  	background: var(--dark-blue) url(../norhageindustri/images/svg/phone-icon-white.svg) no-repeat 0.5em center;
-background-size: 1.5em;
+	background-color: var(--dark-blue);
+  	background-image: url(../norhageindustri/images/svg/phone-icon-white.svg);
 }
+.cta-email.button{
+    background-image: url(../norhageindustri/images/svg/email-icon.svg);
+}
+
 
 
 
