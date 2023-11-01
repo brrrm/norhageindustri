@@ -68,6 +68,12 @@ h3{
 		font-size: 1.33333333rem;
 	}
 }
+@media all and (max-width:1024px){
+	html{
+		font-size: 100%;
+	}
+}
+
 p{}
 p#breadcrumbs{
 	font-size: 0.75em;	
@@ -80,39 +86,29 @@ a{
 	color: var(--bright-orange);
 	text-decoration: none;
 }
-.cta-phone.button{
-	font-size: 1.5rem;
-	line-height: 1.79166667rem;
+.cta-phone.button,
+.cta-email.button{
+	font-size: 1.35rem;
+	line-height: 1.79166667em;
 	font-weight: 700;
 	padding: 0.5em 1em 0.5em 2em; 
-  border-radius: 125px;
-  color: white;
-  background: #1579B7 url(../norhageindustri/images/phone-icon.png) no-repeat 0.5em center;
+  	border-radius: 125px;
+  	color: var(--dark-blue);
+  	background: var(--white) url(../norhageindustri/images/svg/phone-icon.svg) no-repeat 0.5em center;
 	box-sizing: border-box;
 }
-
-@media all and (max-width:768px){
-	html{
-		font-size: 100%;
-	}
-
-	h1{
-		font-size: 2rem;
-		line-height: 2.4rem;
-	}
-
-	h2{
-		font-size: 1.5rem; 
-		line-height: 1.75rem;
-	}
-	h3{
-		font-size: 1.125rem;
-		line-height: 2rem;
-	}
-	p#breadcrumbs{
-/*		font-size: ????;*/
-	}
+.cta-email.button{
+    background: var(--white) url(../norhageindustri/images/svg/email-icon.svg) no-repeat 0.5em center;
+    background-size: 1.5em;
+    padding-left: 3em;
 }
+.cta-within-text-block:not(.is-style-damagerepair) .cta-phone.button{
+	color: var(--white); 
+  	background: var(--dark-blue) url(../norhageindustri/images/svg/phone-icon-white.svg) no-repeat 0.5em center;
+background-size: 1.5em;
+}
+
+
 
 ul{}
 
@@ -383,15 +379,15 @@ header#masthead nav#site-navigation .menu-main-navigation-container ul.menu li.p
 */
 footer.site-footer{
 	font-size: 0.75em;
-	line-height: 1.16666667rem;	
+	line-height: 1.1666rem;	
 	margin-right: -25%;
 	background: linear-gradient(180deg, rgba(22,22,22,1) 0%, rgba(60,60,60,1) 100%);
 	color: #ffffff;
 	display: flex;
 	flex-wrap: wrap;
-	column-gap: 3.08333333em;
+	column-gap: 3.083em;
 	row-gap: 2em;
-	padding: 2.20833333rem 15.8rem;
+	padding: 2.208em 15.8em;
 }
 footer.site-footer h2{
 	font-size: 1.5rem;
@@ -412,13 +408,18 @@ footer.site-footer ul {
 
 
 
+
 footer.site-footer .company-info{
 	flex: 40% 0 0;
 	display: block;
 	border-right: 1px solid #ffffff;
-	padding-right: 1em;
 	box-sizing: border-box;
-	padding-right: 4.08333333rem;
+	padding-right: 3em;
+}
+footer.site-footer .company-info::before{
+	background: red url(../norhageindustri/images/svg/norhage-logo.svg);
+	display: block;
+	content: "";
 }
 footer.site-footer .company-info h3{}
 footer.site-footer .company-info p{}
@@ -429,7 +430,7 @@ footer.site-footer .company-info dl{
 footer.site-footer .company-info dt, 
 footer.site-footer .company-info dd{
 	margin: 0;
-	flex: 45% 0 0;
+	flex: 40% 0 0;
 } 
 footer.site-footer .company-info dt{
 	text-transform: uppercase;
@@ -440,9 +441,9 @@ footer.site-footer .company-info dd a[href^="tel:"]{
 }
 
 
-footer.site-footer nav.sitemap{
-	flex: auto 1 0;
 
+footer.site-footer nav.sitemap{
+	flex: 50% 1 1;
 }
 footer.site-footer nav.sitemap button.menu-toggle{
 	display: none;
@@ -465,7 +466,7 @@ footer.site-footer nav.sitemap .menu-footer-navigation-container ul.menu li.menu
 footer.site-footer nav#socials-navigation{
 	flex: 100% 0 0;
 	display: flex;
-	column-gap: 1rem;
+	column-gap: 1em;
 	align-items: center;
 	border-top: 1px solid white;
 }
@@ -474,7 +475,7 @@ footer.site-footer nav#socials-navigation h3{
 }
 footer.site-footer nav#socials-navigation ul{
 	display: flex;
-	column-gap: 0.5rem;
+	column-gap: 0.5em;
 }
 footer.site-footer nav#socials-navigation ul li{
 	margin: 0;
