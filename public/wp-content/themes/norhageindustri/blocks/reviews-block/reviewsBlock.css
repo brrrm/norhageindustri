@@ -23,7 +23,7 @@
 	grid-template-areas: "image header"
 						 "image text"
 						 "image footer";
-	grid-template-columns: 150px auto;
+	grid-template-columns: 6.25rem auto; /*150px*/
 	grid-column-gap: 2em;
 	grid-row-gap: 0;
 	margin: 2em 0;
@@ -63,16 +63,10 @@
 .reviews-block .reviews footer{
 	font-style: italic;
 }
-@media all and (max-width:1090px){
+@media screen and (max-width:768px){
 	.reviews-block h2,
 	.reviews-block .reviews{
 		max-width: 100%;
-		padding: 0 2.5em ;
-	}
-}
-@media all and (max-width:768px){
-	.reviews-block h2,
-	.reviews-block .reviews{
 		padding: 0 1em ;
 	}
 }
