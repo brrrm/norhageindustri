@@ -2,18 +2,17 @@
 	box-sizing: border-box;
 	display: flex;
 	flex-wrap: nowrap;
-	gap: 1em;
 	justify-content: center;
 	width: 100%;
-	padding: 1em;
-	color:#1579B7;
 }
+
 .cta-within-text-block h2{
 	font-size: 1.5em;
 }
 .cta-within-text-block p{
 	text-align: center;
 }
+
 .cta-within-text-block.is-style-damagerepair{
 	background: var(--bright-orange);
 	color: #fff;
@@ -34,8 +33,9 @@
 	margin: 1em 0;
 }
 .cta-within-text-block .image-col{
-	flex: 30% 0 0;
+	flex: 20% 0 0;
 }
 .cta-within-text-block .text-col{
-	flex: 35% 0 0;
+	flex: 40% 0 0;
 }
+
