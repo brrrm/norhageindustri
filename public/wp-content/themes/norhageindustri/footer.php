@@ -37,7 +37,7 @@
 				<dd><a href="https://norhage.no" target="_blank">norhage.no</a></dd>
 			</dl>
 		</div>
-
+		<img class="footer-logo" src="<?php echo get_template_directory_uri() . '/images/svg/norhage-logo.svg'; ?>" />
 		<nav id="footer-navigation" class="sitemap">
 			<h2><?php _e('Sitemap', 'norhageindustri'); ?></h2>
 			<button class="menu-toggle" aria-controls="sitemap" aria-expanded="false"><?php esc_html_e( 'Sitemap', 'norhageindustri' ); ?></button>
