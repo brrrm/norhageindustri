@@ -4,18 +4,7 @@
 	flex-wrap: wrap;
 	width: 100%;
 	height: 100vh;
-		margin-top: calc(-1 * var(--header-height) );
-
-}
-.headerblock .headerblock-text-col{
-	flex: 60% 0 0;
-	position: relative;
-	background: var(--dark-blue);
-	color: var(--white);
-	box-sizing: border-box;
-	padding:7.58333333rem 9.7916667rem 3rem 7.20833333rem;
-/*		padding: var(--header-height) 0 0 0;*/
-
+	margin-top: calc(-1 * var(--header-height) );
 }
 .headerblock .headerblock-image-col{
 	flex: 40% 0 0;
@@ -29,43 +18,86 @@
 	width: 100%;
 	height: 100%;
 }
+
+.headerblock .headerblock-text-col{
+	flex: 60% 0 0;
+	position: relative;
+	background: var(--dark-blue);
+	color: var(--white);
+	box-sizing: border-box;
+	padding: var(--header-height) 10% 0 7em;
+}
+
 .headerblock .headerblock-text-col ul.usps{
 	display: block;
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	position: absolute;
-	right: -25px;
-	top: 50%;
-	transform: translate(0, -50%);
 	text-align: center;
 }
 .headerblock .headerblock-text-col ul.usps li{
-	display: block;
-	width: 170px;
-	aspect-ratio: 1;
+	display: flex;
+	width: 100%;
 	background: var(--white);
-	margin-bottom: 1em;
-	padding:1.375rem 0.79166667rem 0.625rem 0.79166667rem;
 	box-sizing: border-box;
+	align-items: center;
 }
+
 .headerblock .headerblock-text-col ul.usps li strong{
-color: var(--dark-blue);
+	color: var(--dark-blue);
 	font-size: 0.83333333rem;
 	line-height: 0.83333333rem;
 	display: block;
 }
 .headerblock .headerblock-text-col ul.usps li svg{
-	width: 2.2rem;
+	width: 100%;
+	max-width: 2.2em;
 }
-@media screen and (max-width: 1024px){
-	.headerblock .headerblock-text-col{
-		flex: 100% 0 0;
-		order: 2;
+
+
+@media screen and (min-width: 728px){
+	.headerblock .headerblock-text-col ul.usps{
+		position: absolute;
+		width: 15%;	
+		right: -3.5%;
+		top: 50%;
+		transform: translate(0, -50%);
+		aspect-ratio: 1;
+	}
+	.headerblock .headerblock-text-col ul.usps li{
+		margin-bottom: 1em;
+		padding: 0.5em 1em;
+		flex-direction: column;
+		aspect-ratio: 1;
+		justify-content: center;
+	}
+}
+@media screen and (max-width:728px){
+	.headerblock{
+		display: block;
+		height: auto;
 	}
 	.headerblock .headerblock-image-col{
-		flex: 100% 0 0;
-		height: 80vh;
 		order: 1;
+	}
+	.headerblock .headerblock-text-col{
+		order: 2;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	.headerblock .headerblock-text-col ul.usps {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1em;
+		padding: 2em 0;
+
+	}
+	.headerblock .headerblock-text-col ul.usps li{
+		justify-content: flex-start;
+		flex: 45% 1 0;
+		padding: 0.5em;
+		gap: 1em; 
+		text-align: left;
+		box-sizing: border-box;
 	}
 }

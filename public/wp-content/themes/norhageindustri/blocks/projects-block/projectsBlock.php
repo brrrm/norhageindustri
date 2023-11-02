@@ -25,12 +25,19 @@ if ( ! empty( $block['className'] ) ) {
 if ( ! empty( $block['align'] ) ) {
     $class_name .= ' align' . $block['align'];
 }
+if($text_snippet){
+	$class_name .= ' with-text-snippets';
+}
 ?>
 
 
 <div <?php echo esc_attr( $anchor ); ?>class="<?php echo esc_attr( $class_name ); ?>" >
 	<div class="title-col">
 		<h2><?php echo esc_html( $title ); ?></h2>
+		<ul class="slider-nav">
+			<li><button class="left"><?php _e('Left', 'norhageindustri'); ?></button></li>
+			<li><button class="right"><?php _e('Right', 'norhageindustri'); ?></button></li>
+		</ul>
 	</div>
 	<div class="projects-col">
 		<?php if($projects): ?>
@@ -42,11 +49,11 @@ if ( ! empty( $block['align'] ) ) {
         		$thumb = get_the_post_thumbnail($project->ID);
         	?>
 				<li>
-					<h3><a href="<?php echo esc_url( $permalink ); ?>"><?php echo esc_html( $title ); ?></a></h3>
 					<?php echo $thumb; ?>
+					<h3 ><a href="<?php echo esc_url( $permalink ); ?>"><?php echo esc_html( $title ); ?></a></h3>
 					<?php if($text_snippet): ?>
 						<p class="excerpt"><?php echo wp_strip_all_tags(get_the_excerpt()); ?></p>
-						<p><a href="<?php echo esc_url( $permalink ); ?>"><?php echo __( 'Read more' ); ?></a></p>
+						<p><a href="<?php echo esc_url( $permalink ); ?>"><?php echo __( 'Read more ->' ); ?></a></p>
 					<?php endif; ?>
 				</li>
 			<?php endforeach; ?>
