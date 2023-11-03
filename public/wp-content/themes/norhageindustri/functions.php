@@ -139,17 +139,17 @@ function norhageindustri_create_posttypes() {
 			'machine-name'					=> 'product-type',
 			'content-type'					=> 'product',
 			'labels'						=> [
-				'name' => _x( 'Product type', 'taxonomy general name' ),
-				'singular_name' => _x( 'Product types', 'taxonomy singular name' ),
-				'search_items' =>  __( 'Search product types' ),
-				'all_items' => __( 'All product types' ),
-				'parent_item' => __( 'Parent product type' ),
-				'parent_item_colon' => __( 'Parent product type:' ),
-				'edit_item' => __( 'Edit product type' ),
-				'update_item' => __( 'Update product type' ),
-				'add_new_item' => __( 'Save product type' ),
-				'new_item_name' => __( 'New product type name' ),
-				'menu_name' => __( 'Product types' ),
+				'name' => _x( 'Greenhouse type', 'taxonomy general name' ),
+				'singular_name' => _x( 'Greenhouse types', 'taxonomy singular name' ),
+				'search_items' =>  __( 'Search greenhouse types' ),
+				'all_items' => __( 'All greenhouse types' ),
+				'parent_item' => __( 'Parent greenhouse type' ),
+				'parent_item_colon' => __( 'Parent greenhouse type:' ),
+				'edit_item' => __( 'Edit greenhouse type' ),
+				'update_item' => __( 'Update greenhouse type' ),
+				'add_new_item' => __( 'Save greenhouse type' ),
+				'new_item_name' => __( 'New greenhouse type name' ),
+				'menu_name' => __( 'Greenhouse types' ),
 			]
 		],
 		'plastic-type'		=> [
@@ -230,16 +230,16 @@ function norhageindustri_create_posttypes() {
  			'slug'		=> 'product',
  			'taxonomies'	=> ['product-type'],
  			'labels'	=> [
-				'name' 						=> __( 'Products', 'norhageindustri' ),
-				'singular_name' 			=> __( 'Product', 'norhageindustri' ),
-				'add_new' 					=> __( 'New product', 'norhageindustri' ),
-				'add_new_item' 				=> __( 'Add new product', 'norhageindustri' ),
-				'edit_item' 				=> __( 'Edit product', 'norhageindustri' ),
-				'new_item'					=> __( 'New product', 'norhageindustri' ),
-				'view_item' 				=> __( 'View product', 'norhageindustri' ),
-				'search_items'				=> __( 'Search products', 'norhageindustri' ),
-				'not_found' 				=>  __( 'No products found', 'norhageindustri' ),
-				'not_found_in_trash' 		=> __( 'No products found in trash', 'norhageindustri'),
+				'name' 						=> __( 'Greenhouses', 'norhageindustri' ),
+				'singular_name' 			=> __( 'Greenhouse', 'norhageindustri' ),
+				'add_new' 					=> __( 'New greenhouse', 'norhageindustri' ),
+				'add_new_item' 				=> __( 'Add new greenhouse', 'norhageindustri' ),
+				'edit_item' 				=> __( 'Edit greenhouse', 'norhageindustri' ),
+				'new_item'					=> __( 'New greenhouse', 'norhageindustri' ),
+				'view_item' 				=> __( 'View greenhouse', 'norhageindustri' ),
+				'search_items'				=> __( 'Search greenhouse', 'norhageindustri' ),
+				'not_found' 				=>  __( 'No greenhouses found', 'norhageindustri' ),
+				'not_found_in_trash' 		=> __( 'No greenhouses found in trash', 'norhageindustri'),
 			]
 		],
  		'plastic'	=> [
@@ -319,6 +319,53 @@ function norhageindustri_create_posttypes() {
 						'remove'	=> true
 					]
 				]
+			],
+			[
+				'core/heading',
+				[
+					'placeholder'	=> __('You should know that', 'norhageindustri'),
+					'lock'		=> [
+						'move'		=> true,
+						'remove'	=> true
+					]
+				]
+			],
+			[
+				'core/paragraph',
+				[
+					'placeholder'	=> 'Aenean ac nisi nisi. Praesent eget bibendum orci. Vivamus ac nisl aliquam, varius leo eu, dictum risus. Cras malesuada posuere enim, sit amet tincidunt dolor lobortis sit amet. Sed et urna consequat, tincidunt nibh nec, aliquet neque. Fusce imperdiet dictum odio sit amet iaculis. Curabitur tempus vestibulum urna, et varius nunc maximus at. Ut vulputate nulla erat, gravida consectetur sem dignissim et.',
+					'lock'		=> [
+						'move'		=> false,
+						'remove'	=> false
+					]
+				]
+			],
+			[
+				'norhageindustri/text-image-block',
+				[
+					'lock'		=> [
+						'move'		=> false,
+						'remove'	=> false
+					]
+				]
+			],
+			[
+				'norhageindustri/projects-block',
+				[
+					'lock'		=> [
+						'move'		=> false,
+						'remove'	=> false
+					]
+				]
+			],
+			[
+				'norhageindustri/cta-block',
+				[
+					'lock'		=> [
+						'move'		=> false,
+						'remove'	=> false
+					]
+				]
 			]
 		]
 	];
@@ -340,7 +387,7 @@ add_action( 'init', 'norhageindustri_create_posttypes' );
  * */
 function norhage_menu_add_category_posts( $output, $item, $depth, $args ) {
     // Check if the item is a Category or Custom Taxonomy
-    if( $item->type == 'taxonomy' ) {
+    if( $args->menu_id = 'primary-menu' && $item->type == 'taxonomy' ) {
         $object = get_term($item->object_id, $item->object);
         $posts = get_posts([
         	'post_type'		=> 'product',
