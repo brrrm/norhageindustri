@@ -387,7 +387,7 @@ add_action( 'init', 'norhageindustri_create_posttypes' );
  * */
 function norhage_menu_add_category_posts( $output, $item, $depth, $args ) {
     // Check if the item is a Category or Custom Taxonomy
-    if( $args->menu_id = 'primary-menu' && $item->type == 'taxonomy' ) {
+    if( $args->menu_id == 'primary-menu' && $item->type == 'taxonomy' ) {
         $object = get_term($item->object_id, $item->object);
         $posts = get_posts([
         	'post_type'		=> 'product',
