@@ -6,7 +6,6 @@
  */
 
 // Load values and assign defaults.
-$title			= get_field( 'title' );
 $catName		= get_field( 'categories' );
 $terms			= get_terms( ['taxonomy' => $catName, 'hide_empty' => false] );
 
@@ -29,7 +28,6 @@ if ( ! empty( $block['align'] ) ) {
 
 
 <div <?php echo esc_attr( $anchor ); ?>class="<?php echo esc_attr( $class_name ); ?>" >
-	<h2><?php echo esc_html( $title ); ?></h2>
 	<ul class="taxonomy-teasers">
 	<?php foreach($terms as $term): ?>
 		<?php $image = get_field('image', $term); ?>

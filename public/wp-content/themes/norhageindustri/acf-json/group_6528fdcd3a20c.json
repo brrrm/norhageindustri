@@ -3,26 +3,6 @@
     "title": "Block:product-header-block",
     "fields": [
         {
-            "key": "field_6528fdcdc1532",
-            "label": "Title",
-            "name": "title",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
             "key": "field_6528ff93c1533",
             "label": "Intro text",
             "name": "intro_text",
@@ -89,5 +69,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1697191894
+    "modified": 1698928451
 }

@@ -5,9 +5,22 @@
 	width: 100%;
 	height: 100vh;
 	margin-top: calc(-1 * var(--header-height) );
+	overflow: scroll;
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+	overscroll-behavior: auto;
+}
+.headerblock::-webkit-scrollbar{
+	display: none;
 }
 .headerblock .headerblock-image-col{
 	flex: 40% 0 0;
+	background: #ccc;
+	height: 100%;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 0;
 }
 .headerblock .headerblock-image-col figure{
 	width: 100%;
@@ -26,6 +39,11 @@
 	color: var(--white);
 	box-sizing: border-box;
 	padding: var(--header-height) 10% 0 7em;
+	height: 100%;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 1;
 }
 
 .headerblock .headerblock-text-col ul.usps{
@@ -52,6 +70,34 @@
 .headerblock .headerblock-text-col ul.usps li svg{
 	width: 100%;
 	max-width: 2.2em;
+}
+
+.headerblock .headerblock-usps{
+	position: relative;
+	z-index: 2;
+	color: var(--white);
+	overscroll-behavior: auto;
+	list-style: none;
+	margin: 0;
+	padding: 0 10% 5em 7em;
+	display: flex;
+	width: 60%;
+}
+.headerblock .headerblock-usps li{
+	flex: auto 1 1 ;
+	box-sizing: border-box;
+	padding: 0 0.5em;
+}
+.headerblock .headerblock-usps li:first-child{
+	padding-left: 0;
+}
+.headerblock .headerblock-usps li:not(:last-child){
+	border-right: 1px solid var(--white);
+}
+.headerblock .headerblock-usps li strong{
+	display: block;
+	font-size: 2em;
+	font-weight: 900;
 }
 
 

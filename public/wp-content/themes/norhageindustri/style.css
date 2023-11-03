@@ -139,7 +139,7 @@ header#masthead{
 	width: auto;
 	margin-right: -25%;
 	position: relative;
-	z-index: 1;
+	z-index: 100;
 }
 header#masthead .site-branding p{
 	width: 1px;

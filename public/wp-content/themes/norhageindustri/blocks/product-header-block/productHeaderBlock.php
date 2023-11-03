@@ -54,13 +54,17 @@ $allowedBlocks = ['core/post-title'];
 		</div>
 	</div>
 
-	<?php if ( $images ) : ?>
-		<div class="image-col">
-			<?php foreach( $images as $image ): ?>
+	<div class="image-col">
+		<?php if ( $images ) :
+			foreach( $images as $image ): ?>
 			<figure class="header-image">
-				<?php echo wp_get_attachment_image( $image['ID'], 'full', '', array( 'class' => 'header-image__img', 'alt' => $image['alt'] ) ); ?>
+				<?php 
+				if ( $image ) :
+					echo wp_get_attachment_image( $image['ID'], 'full', '', array( 'class' => 'header-image__img', 'alt' => $image['alt'] ) ); 
+				endif; 
+				?>
 			</figure>
-			<?php endforeach; ?>
-		</div>
-	<?php endif; ?>
+			<?php endforeach; 
+		endif; ?>
+	</div>
 </div>

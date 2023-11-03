@@ -22,5 +22,6 @@
             "default": "full"
         }
     },
-    "editorStyle": "file:./editor.css"
+    "editorStyle": "file:./editor.css",
+    "editorScript": "file:./editor.js"
 }

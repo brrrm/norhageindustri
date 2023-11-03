@@ -6,6 +6,7 @@
 	height: 100vh;
 	overflow: hidden;
 	margin-top: calc(-1 * var(--header-height) );
+	background: #fff;
 }
 .productHeaderBlock .text-col{
 	flex: 60% 0 0;
@@ -19,6 +20,7 @@
 	overflow: auto;
 	-ms-overflow-style: none;  /* IE and Edge */
 	scrollbar-width: none;  /* Firefox */
+	background: #ccc;
 }
 .productHeaderBlock .image-col::-webkit-scrollbar{
 	display: none;

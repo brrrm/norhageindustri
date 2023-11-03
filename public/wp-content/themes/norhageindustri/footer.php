@@ -62,7 +62,6 @@
 			</ul>
 		</nav>
 	</footer><!-- #colophon -->
-</div><!-- #page -->
 
 <?php wp_footer(); ?>
 
