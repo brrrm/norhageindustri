@@ -12,20 +12,11 @@ Version: 0.1
 	--light-blue: #E9F2F8;
 	--white: #fff;
 	--bright-orange: #FF7F00;
-	--header-height: 170px;
-	--header-nav-height: 170px;
+	--header-height: 8vw;
+	--header-nav-height: 8vw;
 }
 body.small-height-header{
-	--header-nav-height: 110px;
-}
-@media all and (max-width: 1280px){
-	:root{
-		--header-height: 100px;
-		--header-nav-height: 100px;
-	}
-	body.small-height-header{
-		--header-nav-height: 80px;
-	}
+	--header-nav-height: 5vw;
 }
 
 html, body{
@@ -80,8 +71,25 @@ h3{
 	}
 }
 @media all and (max-width:1280px){
+	:root{
+		--header-height: 6vw;
+		--header-nav-height: 6vw;
+	}
+	body.small-height-header{
+		--header-nav-height: 4vw;
+	}
 	html{
 		font-size: 100%;
+	}
+}
+@media all and (max-width:1100px){
+	html{
+		font-size: 90%;
+	}
+}
+@media all and (max-width:1024px){
+	html{
+		font-size: 75%;
 	}
 }
 
@@ -259,7 +267,8 @@ header#masthead nav#site-navigation ul.menu{
 	align-items: flex-end;
 }
 header#masthead nav#site-navigation ul li{
-	flex: auto 0 1;	
+	flex: auto 0 1;
+	line-height: var(--header-nav-height);
 }
 header#masthead  nav#site-navigation  ul.menu > li> a{
 	line-height: 4.5em;
