@@ -284,7 +284,7 @@ header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu 
 }
 header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu ul.products-sub-menu{
 	position: absolute;
-	left: -120%;
+	left: -100vw;
 	width: 80%;
 	top: 0;
 	bottom: 0;
@@ -359,12 +359,13 @@ header#masthead nav#site-navigation .menu-main-navigation-container ul.menu li.p
 	position: relative;
 }
 header#masthead nav#site-navigation .menu-main-navigation-container ul.menu li.pll-parent-menu-item ul.sub-menu {
-	left: 0;
-	left: unset;
 	width: 8rem;
 	height: auto;
 	padding: 0 0.5em;
 	line-height: 1.5em;
+}
+header#masthead nav#site-navigation .menu-main-navigation-container ul.menu li.pll-parent-menu-item:hover ul.sub-menu{
+	left: -1em;
 }
 header#masthead nav#site-navigation .menu-main-navigation-container ul.menu li.pll-parent-menu-item ul.sub-menu li{
 	width: 100%;
