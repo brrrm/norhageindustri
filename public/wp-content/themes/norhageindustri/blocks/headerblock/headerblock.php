@@ -40,6 +40,7 @@ $allowedBlocks = ['core/post-title'];
 ?>
 
 <div <?php echo esc_attr( $anchor ); ?>class="<?php echo esc_attr( $class_name ); ?>" >
+	<div class="hero-wrap">
 	<div class="headerblock-text-col">
 		<InnerBlocks 
 			allowedBlocks="<?php echo esc_attr( wp_json_encode( $allowedBlocks ) ); ?>" 
@@ -105,6 +106,7 @@ $allowedBlocks = ['core/post-title'];
 			?>
 		</figure>
 	</div>
+</div>
 
 	<?php if( have_rows('usps') ): ?>
 		<ul class="headerblock-usps">

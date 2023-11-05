@@ -14,22 +14,24 @@ $text_snippet	= get_field( 'show_text_snippet' );
 if(!$projects || empty($projects)){
 	global $post; 
 	$post_type = $context['postType'];
-	$post_taxonomies = get_object_taxonomies($post_type);
-	$terms = get_the_terms($post->ID, $post_taxonomies[2]);
-	$projects = get_posts([
-    	'post_type'		=> $post_type,
-    	'numberposts'	=> -1,
-    	'exclude'		=> $post->ID,
-    	/*
-    	'tax_query'		=> [
-    		[
-        		'taxonomy'		=> $post_taxonomies[2],
-        		'field'			=> 'term_id',
-        		'terms'			=> $terms[0]->term_id
-        	]
-    	]
-    	*/
-    ]);
+	if($post_type != 'page'){
+		$post_taxonomies = get_object_taxonomies($post_type);
+		$terms = get_the_terms($post->ID, $post_taxonomies[2]);
+		$projects = get_posts([
+	    	'post_type'		=> $post_type,
+	    	'numberposts'	=> -1,
+	    	'exclude'		=> $post->ID,
+	    	/*
+	    	'tax_query'		=> [
+	    		[
+	        		'taxonomy'		=> $post_taxonomies[2],
+	        		'field'			=> 'term_id',
+	        		'terms'			=> $terms[0]->term_id
+	        	]
+	    	]
+	    	*/
+	    ]);
+	}
 }
 
 // Support custom "anchor" values.

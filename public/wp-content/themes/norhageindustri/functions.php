@@ -421,6 +421,7 @@ add_action( 'walker_nav_menu_start_el', 'norhage_menu_add_category_posts', 10, 4
  */
 function norhageindustri_scripts() {
 	wp_enqueue_style( 'norhageindustri-style', get_stylesheet_uri(), array(), _G_VERSION );
+	wp_enqueue_script('reeleaf-misc', get_stylesheet_directory_uri() . '/js/frontend.js', ['jquery'], _G_VERSION);
 }
 add_action( 'wp_enqueue_scripts', 'norhageindustri_scripts' );
 
