@@ -18,6 +18,15 @@ Version: 0.1
 body.small-height-header{
 	--header-nav-height: 110px;
 }
+@media all and (max-width: 1280px){
+	:root{
+		--header-height: 100px;
+		--header-nav-height: 100px;
+	}
+	body.small-height-header{
+		--header-nav-height: 80px;
+	}
+}
 
 html, body{
 	margin: 0;
@@ -210,7 +219,7 @@ header#masthead nav#site-navigation.over-headerblock .menu-secondary-menu-contai
 header#masthead nav#site-navigation aside{
 	position: absolute;
 	right: 1.416666667em;
-	top: 1.2916666667em;
+	top: 0.4em;
 	text-align: right;
 	line-height: 1.04em;
 	transition: opacity 0.5s ease-out 0s, z-index 0s linear 0.7s;
@@ -225,7 +234,7 @@ header#masthead nav#site-navigation aside{
 	}
 }
 header#masthead nav#site-navigation aside h3{
-	font-size: 0.85em;
+	font-size: 0.65em;
 	margin: 0;
 	font-style: italic;
 	font-size: 100;
