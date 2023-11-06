@@ -71,9 +71,12 @@
 	margin: 0;
 	font-size: 1.5rem;
 	line-height: 1.195em;
+	position: relative;
 }
 .reviews-block .reviews article header h3::before{
 	content: " \201C"; /* left quote */
+	position: absolute;
+	left: -0.4em;
 }
 .reviews-block .reviews article header h3::after{
 	content: "\201D";/* right quote */
