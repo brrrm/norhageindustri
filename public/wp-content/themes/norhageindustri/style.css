@@ -92,7 +92,11 @@ h3{
 		font-size: 75%;
 	}
 }
-
+@media all and (max-width:768px){
+	html{
+		font-size: 100%;
+	}
+}
 p{}
 p#breadcrumbs{
 	font-size: 0.75em;	
