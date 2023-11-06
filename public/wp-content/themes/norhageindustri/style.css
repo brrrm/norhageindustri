@@ -110,20 +110,20 @@ a{
 	font-size: 1.35rem;
 	line-height: 1.791em;
 	font-weight: 700;
-	padding: 0.5em 1em 0.5em 2em; 
+	padding: 0.13em 1em 0.133em 2.5em; 
   	border-radius: 200px;
   	color: var(--dark-blue);
-  	background: var(--white) url(../norhageindustri/images/svg/phone-icon.svg) no-repeat 0.5em center;
+  	background: var(--white) url(images/svg/phone-icon.svg) no-repeat 1.2em center;
 	box-sizing: border-box;
 	background-size: 1em;
 }
 .cta-within-text-block:not(.is-style-damagerepair) .cta-phone.button{
 	color: var(--white); 
 	background-color: var(--dark-blue);
-  	background-image: url(../norhageindustri/images/svg/phone-icon-white.svg);
+  	background-image: url(images/svg/phone-icon-white.svg);
 }
 .cta-email.button{
-    background-image: url(../norhageindustri/images/svg/email-icon.svg);
+    background-image: url(images/svg/email-icon.svg);
 }
 
 
@@ -343,12 +343,12 @@ header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu 
 header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu > li a{
 	display: block;
 	padding-left: 0.5em;
-	background: transparent url(../norhageindustri/images/svg/arrow.svg) no-repeat right 0.5em center;
+	background: transparent url(images/svg/arrow.svg) no-repeat right 0.5em center;
 }
 header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu > li:hover > a{
 	background: ;
 	color: var(--white);
-	background: var(--dark-blue) url(../norhageindustri/images/svg/arrow-white.svg) no-repeat right 0.5em center;
+	background: var(--dark-blue) url(images/svg/arrow-white.svg) no-repeat right 0.5em center;
 	
    box-sizing: border-box;
 }
@@ -417,6 +417,20 @@ header#masthead nav#site-navigation .menu-main-navigation-container ul.menu li.p
 	background: var(--dark-blue);
 }
 header#masthead nav#site-navigation .menu-main-navigation-container ul.menu li.pll-parent-menu-item ul.sub-menu li a span{
+}
+
+
+
+
+/*
+ * BLOCK ZAKEN
+ */
+
+p + .norhage-block{
+	margin-top: 3em;
+}
+.norhage-block + p{
+	margin-top: 3em;
 }
 
 
@@ -529,7 +543,7 @@ footer.site-footer nav#socials-navigation ul li{
 	position: relative;
 }
 footer.site-footer nav#socials-navigation ul li a{
-	background-image: url(../norhageindustri/images/facebook-icon.svg);
+	background-image: url(images/facebook-icon.svg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	display: block;
@@ -539,13 +553,13 @@ footer.site-footer nav#socials-navigation ul li a{
 	text-indent: -9999em;
 }
 footer.site-footer nav#socials-navigation ul li.facebook a{
-	background-image: url(../norhageindustri/images/svg/facebook-icon.svg);
+	background-image: url(images/svg/facebook-icon.svg);
 }
 footer.site-footer nav#socials-navigation ul li.instagram a{
-	background-image: url(../norhageindustri/images/svg/instagram-icon.svg);
+	background-image: url(images/svg/instagram-icon.svg);
 }
 footer.site-footer nav#socials-navigation ul li.youtube a{
-	background-image: url(../norhageindustri/images/svg/youtube-icon.svg);
+	background-image: url(images/svg/youtube-icon.svg);
 }
 @media screen and (max-width:768px){
 	footer.site-footer{

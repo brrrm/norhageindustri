@@ -8,6 +8,8 @@
 	scrollbar-width: none;  /* Firefox */
 	padding: 3.875rem 0 4.666rem 2.625rem;
 	border-top: 1px solid var(--dark-blue);
+	border-bottom: 1px solid var(--dark-blue);
+	margin-top: -1px;
 }
 .projects-block::-webkit-scrollbar{
 	display: none;
