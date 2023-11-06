@@ -24,6 +24,16 @@
 			}, 100);
 		}
 
+		$('.expander').click(function(e){
+			e.preventDefault();
+			$(this).parent().toggleClass('expanded');
+		});
+
+		$('.menu-toggle').click(function(e){
+			e.preventDefault();
+			$('#site-navigation').toggleClass('expanded');
+		});
+
 
 
 		/*

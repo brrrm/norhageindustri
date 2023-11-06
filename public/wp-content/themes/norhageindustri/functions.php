@@ -410,7 +410,10 @@ function norhage_menu_add_category_posts( $output, $item, $depth, $args ) {
         	}
         	$output .= '</ul>';
         }
-    }    
+    }
+    if( $args->menu_id == 'primary-menu' && in_array('menu-item-has-children', $item->classes) ){
+	    $output .= '<button class="expander">' . __('expand', 'norhageindustri') . '</button>';
+	}
 
     return $output;
 }

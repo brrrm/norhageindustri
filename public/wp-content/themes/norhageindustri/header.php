@@ -106,19 +106,23 @@
 			</a>
 		</div><!-- .site-branding -->
 
+		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'norhageindustri' ); ?></button>
+		
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'norhageindustri' ); ?></button>
+			
+			<h2><?php _e('Navigation', 'norhageindustri'); ?></h2>
+
 			<?php
 			wp_nav_menu([
 				'theme_location' 	=> 'menu-1',
 				'menu_id'        	=> 'primary-menu',
-				'container_class'	=> 'menu-main-navigation-container'
+				'container_class'	=> 'menu-main-navigation-container menu-container'
 			]);
 			?>
 			<?php
 			wp_nav_menu([
 				'theme_location' 	=> 'menu-2',
-				'container_class'	=> 'menu-secondary-menu-container'
+				'container_class'	=> 'menu-secondary-menu-container menu-container'
 			]);
 			?>
 
