@@ -124,16 +124,23 @@
 	}
 }
 @media screen and (max-width:728px){
+	.headerblock .hero-wrap{
+		height: unset;
+	}
 	.headerblock .headerblock-image-col{
 		flex: 100% 0 0;
 		order: 1;
-		max-height: 70vh;
+		height: 70vh;
 	}
 	.headerblock .headerblock-text-col{
 		flex: 100% 0 0;
 		order: 2;
 		padding-left: 1em;
 		padding-right: 1em;
+	}
+	.headerblock .headerblock-text-col h1{
+		font-size: 2.125em;
+		line-height: 1.117em;
 	}
 	.headerblock .headerblock-text-col ul.usps {
 		display: flex;
