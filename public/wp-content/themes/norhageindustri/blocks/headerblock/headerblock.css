@@ -130,13 +130,12 @@
 	.headerblock .headerblock-image-col{
 		flex: 100% 0 0;
 		order: 1;
-		height: 70vh;
+		height: 60vh;
 	}
 	.headerblock .headerblock-text-col{
 		flex: 100% 0 0;
 		order: 2;
-		padding-left: 1em;
-		padding-right: 1em;
+		padding: 0 1em 3em;
 	}
 	.headerblock .headerblock-text-col h1{
 		font-size: 2.125em;
@@ -146,7 +145,11 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: 1em;
-		padding: 2em 0;
+		padding: 0;
+		position: absolute;
+		top: -9em;
+		left: 1em;
+		right: 1em;
 	}
 	.headerblock .headerblock-text-col ul.usps li{
 		justify-content: flex-start;
