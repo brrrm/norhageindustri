@@ -63,7 +63,8 @@
 }
 @media all and (max-width:768px){
 	.text-image-block{
-		padding: 0 0 0 0;
+		padding:2em 0 2em;
+		gap: 2em;
 	}
 	.text-image-block--title-col,
 	.text-image-block--text-col{
@@ -79,7 +80,6 @@
 		margin-bottom: 1em;
 	}
 	.text-image-block--image-col{
-		margin: 0 0 1em 0;
 		order: 2;
 	}
 }

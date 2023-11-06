@@ -97,6 +97,9 @@ h3{
 		--header-height: 10vh;
 		--header-nav-height: 10vh;
 	}
+	html{
+		font-size: 100%;
+	}
 }
 
 p{}
@@ -155,15 +158,37 @@ li{}
 	width: auto;
 	margin-right: -25%;
 }
-
+header#masthead,
+footer.site-footer{
+	width: auto;
+	margin-right: -25%;
+}
+@media screen and (max-width: 786px){
+	body{
+		--wp--style--global--content-size: 100%;
+		--wp--style--global--wide-size: 100%;
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+	.site-main .entry-content > *.alignfull{
+		margin-left: -2em;
+		margin-right: -2em;
+	}
+	header#masthead{
+		margin-left: -2em;
+		margin-right: -2em;
+	}
+	footer.site-footer{
+		margin-left: -2em;
+		margin-right: -2em;
+	}
+}
 
 /**
  * HEADER
  * including navigation and subnav
  */
 header#masthead{
-	width: auto;
-	margin-right: -25%;
 	height: var(--header-height);
 	position: sticky;
 	top: 0;
@@ -265,14 +290,14 @@ header#masthead nav#site-navigation ul.menu{
 }
 header#masthead nav#site-navigation ul li{
 	flex: auto 0 1;
-	line-height: var(--header-nav-height);
+	line-height: calc(var(--header-nav-height) - 3em);
 	display: block;
 }
 header#masthead nav#site-navigation ul li button.expander{
 	display: none;
 }
 header#masthead nav#site-navigation .menu-main-navigation-container ul.menu{
-	padding: 0 2em 0 calc(2em + var(--header-height) + 2em );
+	padding: 3em 2em 0 calc(2em + var(--header-height) + 2em );
 	justify-content: space-between;
 }
 header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu{
@@ -577,7 +602,6 @@ footer.site-footer{
 	font-size: 0.75em;
 	line-height: 1.1666rem;	
 	color: #ffffff;
-	margin-right: -25%;
 	padding: 2.208em 15.8em;
 	background: linear-gradient(180deg, rgba(22,22,22,1) 0%, rgba(60,60,60,1) 100%);
 	display: grid;
