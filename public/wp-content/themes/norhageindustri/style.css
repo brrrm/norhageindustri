@@ -164,7 +164,7 @@ footer.site-footer{
 	width: auto;
 	margin-right: -25%;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
 	body{
 		--wp--style--global--content-size: 100%;
 		--wp--style--global--wide-size: 100%;

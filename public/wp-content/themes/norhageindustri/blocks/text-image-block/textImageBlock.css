@@ -45,7 +45,7 @@
 }
 @media all and (max-width:1024px){
 	.text-image-block{
-		padding: 0 0 0 2.625em;
+		padding: 2em 0 2em 2.625em;
 		gap: 1em;
 	}
 	.text-image-block--title-col{

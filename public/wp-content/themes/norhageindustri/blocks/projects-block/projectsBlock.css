@@ -18,7 +18,7 @@
 	color: #000000;
 }
 .projects-block .title-col{
-	flex: 40% 1 0;
+	flex: calc(40% - (2 * 1em)) 1 0;
     position: sticky;
     left: 0;
 }
