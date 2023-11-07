@@ -1,7 +1,6 @@
 .cta-block{
 	box-sizing: border-box;
 	display: flex;
-	flex-wrap: wrap;
 	width: 100%;
 	min-height: 50vh;
 }
@@ -40,8 +39,11 @@
 	position: absolute;
 }
 @media all and (max-width:768px){
+	.cta-block{
+		display: block;
+	}
 	.cta-block .image-col{
-		min-height: 50vh;
+		height: 50vh;
 		order: 2;
 	}
 	.cta-block .text-col{
