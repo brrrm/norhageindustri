@@ -14,6 +14,7 @@ Version: 0.1
 	--bright-orange: #FF7F00;
 	--header-height: 8vw;
 	--header-nav-height: 8vw;
+	--img-gradient: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(9,44,66,0.5578606442577031) 100%);
 }
 body.small-height-header{
 	--header-nav-height: 5vw;
@@ -100,6 +101,9 @@ h3{
 	html{
 		font-size: 100%;
 	}
+	h2{
+		margin-top: 0;
+	}
 }
 
 p{}
@@ -163,7 +167,7 @@ footer.site-footer{
 	width: auto;
 	margin-right: -25%;
 }
-@media screen and (max-width: 786px){
+@media screen and (max-width: 768px){
 	body{
 		--wp--style--global--content-size: 100%;
 		--wp--style--global--wide-size: 100%;
@@ -386,12 +390,24 @@ header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu 
 	width: 100%;
 	height: 100%;
 	display: block;
+	color: white;
 }
 header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu ul.products-sub-menu li a img{
 	display: block;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	position: relative;
+}
+header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu ul.products-sub-menu li a::after{
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: var(--img-gradient);
 }
 header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu ul.products-sub-menu li a span{
 	position: absolute;
@@ -400,6 +416,7 @@ header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu 
 	text-align: center;
 	display: block;
 	width: 100%;
+	z-index: 1;
 }
 
 /*
@@ -723,7 +740,7 @@ footer.site-footer nav#socials-navigation ul li.youtube a{
 @media screen and (max-width:768px){
 	footer.site-footer{
 		display: block;
-		padding: 2em 1em;
+		padding: 2em;
 		font-size: 1em;
 		line-height: inherit;
 	}
