@@ -12,7 +12,8 @@
     },
     "supports": {
         "anchor": true,
-        "alignWide": false
+        "align": [ "full"],
+        "alignWide": true
     },
     "attributes": {
     },
