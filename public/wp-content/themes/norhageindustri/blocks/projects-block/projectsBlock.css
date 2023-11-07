@@ -114,7 +114,7 @@ ul.slider-nav li button.right{
 
 @media screen and (max-width:768px){
 	.projects-block{
-		padding: 2em;
+		padding: 0 2em 2em 2em;
 	}	
 	.projects-block .title-col{
 		flex: 100% 0 0;
