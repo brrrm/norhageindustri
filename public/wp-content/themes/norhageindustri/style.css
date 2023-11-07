@@ -538,6 +538,8 @@ header#masthead nav#site-navigation h2{
 		right: 0;
 		top: 0;
 		height: 2.5em;
+		padding: 0;
+		box-sizing: border-box;
 		aspect-ratio: 1;
 		border: none;
 		background: #CBDAE4 url(images/svg/arrow.svg) center no-repeat;
