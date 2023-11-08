@@ -345,14 +345,14 @@ header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu 
 header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu ul.products-sub-menu{
 	position: absolute;
 	left: -120%;
-	width: 80%;
+	width: 60%;
 	top: 0;
 	bottom: 0;
 	border-left: 1px solid var(--dark-blue);
-	padding: 3em 2em;
+	padding: 3em;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 2em;
+	gap: 1em;
 }
 header#masthead nav#site-navigation .menu-main-navigation-container ul.menu li:hover ul.sub-menu{
 	left: 0;
@@ -364,30 +364,33 @@ header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu 
 	display: block;
 	width: 20%;
 	line-height: 2.5em;
+	padding-left: 0.5em;
 }
 header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu > li > a{
 	display: block;
-	padding-left: 0.5em;
+	padding-left: 2em;
 	background: transparent url(images/svg/arrow.svg) no-repeat right 0.5em center;
 }
 header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu > li:hover > a{
-	background: ;
 	color: var(--white);
 	background: var(--dark-blue) url(images/svg/arrow-white.svg) no-repeat right 0.5em center;
-	
-   box-sizing: border-box;
 }
 header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu > li:hover ul.products-sub-menu,
 header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu:not(:hover) > li:first-child ul.products-sub-menu{
 	left: 20%;
 }
-header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu ul.products-sub-menu li{
-	display: block;
-	width: 15em;
-	height: 15em;
+header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu ul.products-sub-menu li.image-button{
+	width: 8em;
+	height: 8em;
+	line-height: initial;
 }
-header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu ul.products-sub-menu li a{
+header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu ul.products-sub-menu li.image-button a{
 	color: var(--white);
+}
+header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu ul.products-sub-menu li.image-button span{
+	top: 50%;
+	bottom: inherit;
+	transform: translate(0,-50%);
 }
 
 /*
@@ -658,7 +661,6 @@ footer.site-footer nav.sitemap .menu-footer-menu-container ul.menu > li.menu-ite
 	font-size: 1rem;
 	font-weight: 700;
 }
-
 
 footer.site-footer nav#socials-navigation{
 	display: flex;
