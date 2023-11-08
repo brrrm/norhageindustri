@@ -107,11 +107,16 @@ h3{
 	}
 }
 
-p{}
 p#breadcrumbs{
 	font-size: 0.75em;	
+	margin: 2em 0;
 }
-
+p#breadcrumbs span{
+	padding: 0 0.5em;
+}
+p#breadcrumbs span:first-child{
+	padding-left: 0;
+}
 p#breadcrumbs a{
 	color: #66B73C;
 }
@@ -139,7 +144,12 @@ a{
 .cta-email.button{
     background-image: url(images/svg/email-icon.svg);
 }
-
+.has-small-font-size,
+.has-medium-font-size,
+.has-large-font-size,
+.has-x-large-font-size{
+	line-height: initial;
+}
 
 
 
@@ -389,8 +399,10 @@ header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu 
 	height: 8em;
 	line-height: initial;
 }
-header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu ul.products-sub-menu li.image-button a{
+header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu ul.products-sub-menu li.image-button span a{
 	color: var(--white);
+    font-weight: 700;
+    text-shadow: 2px 2px 6px #000;
 }
 header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu ul.products-sub-menu li.image-button span{
 	top: 50%;
