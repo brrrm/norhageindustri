@@ -338,7 +338,8 @@ header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li:fi
 	}
 }
 
-header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu{
+header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu,
+header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.languages{
 	position: absolute;
 	z-index: 999;
 	top: var(--header-nav-height);
@@ -434,10 +435,12 @@ header#masthead nav#site-navigation .menu-main-navigation-container ul.menu > li
 	width: 100%;
 	box-sizing: border-box;
 	padding-left: 0;
+	text-align: left;
 }
 header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.languages ul.sub-menu li a,
 header#masthead nav#site-navigation .menu-main-navigation-container ul.menu > li.pll-parent-menu-item ul.sub-menu li a{
 	background: none;
+	color: var(--dark-blue);
 }
 header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.languages ul.sub-menu li:hover,
 header#masthead nav#site-navigation .menu-main-navigation-container ul.menu > li.pll-parent-menu-item ul.sub-menu li:hover{
