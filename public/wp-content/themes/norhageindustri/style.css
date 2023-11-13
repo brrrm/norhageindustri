@@ -419,6 +419,13 @@ header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.la
 header#masthead nav#site-navigation .menu-main-navigation-container ul.menu > li.pll-parent-menu-item{
 	position: relative;
 }
+@media all and (min-width:769px){
+	/* create a larger hover surface area */
+	header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.languages{
+		padding-left: 1em;
+		margin-left: -1em;
+	}
+}
 header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.languages > a{
 	background: transparent url(images/svg/globe.svg) left center no-repeat;
 	background-size: contain;
