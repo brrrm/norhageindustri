@@ -430,7 +430,8 @@ header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.la
 }
 header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.languages ul.sub-menu,
 header#masthead nav#site-navigation .menu-main-navigation-container ul.menu > li.pll-parent-menu-item ul.sub-menu{
-	width: 8rem;
+	min-width: max-content;
+	width: 6rem;
 	height: auto;
 	padding: 0;
 	line-height: 1.5em;
@@ -454,6 +455,7 @@ header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.la
 header#masthead nav#site-navigation .menu-main-navigation-container ul.menu > li.pll-parent-menu-item ul.sub-menu li a{
 	background: none;
 	color: var(--dark-blue);
+	white-space: nowrap;
 }
 header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.languages ul.sub-menu li:hover,
 header#masthead nav#site-navigation .menu-main-navigation-container ul.menu > li.pll-parent-menu-item ul.sub-menu li:hover{
