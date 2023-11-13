@@ -54,7 +54,7 @@
 }
 .headerblock .headerblock-text-col ul.usps li{
 	display: flex;
-	width: 100%;
+	width: auto;
 	background: var(--white);
 	box-sizing: border-box;
 	align-items: center;
@@ -110,6 +110,8 @@
 		right: -3.5%;
 		top: calc(var(--header-height) + (100vh - var(--header-height)) / 2);
 		transform: translate(0, -50%);
+		max-height: calc(100vh - var(--header-height));
+		overflow: hidden;
 	}
 	.headerblock .headerblock-text-col ul.usps li{
 		margin-bottom: 1em;
@@ -118,6 +120,7 @@
 		aspect-ratio: 1;
 		overflow: hidden;
 		justify-content: center;
+		max-height: calc((100vh - var(--header-height) - 3em) / 4);
 	}
 	.headerblock .headerblock-text-col ul.usps li:last-child{
 		margin-bottom: 0;
