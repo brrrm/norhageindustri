@@ -413,11 +413,11 @@ header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu 
 /*
  * Translate switch
  */
-header#masthead nav#site-navigation .menu-main-navigation-container ul.menu li.languages,
+header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.languages,
 header#masthead nav#site-navigation .menu-main-navigation-container ul.menu > li.pll-parent-menu-item{
 	position: relative;
 }
-header#masthead nav#site-navigation .menu-main-navigation-container ul.menu li.languages ul.sub-menu,
+header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.languages ul.sub-menu,
 header#masthead nav#site-navigation .menu-main-navigation-container ul.menu > li.pll-parent-menu-item ul.sub-menu{
 	width: 8rem;
 	height: auto;
@@ -425,21 +425,21 @@ header#masthead nav#site-navigation .menu-main-navigation-container ul.menu > li
 	line-height: 1.5em;
 	top: 100%;
 }
-header#masthead nav#site-navigation .menu-main-navigation-container ul.menu li.languages:hover ul.sub-menu,
+header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.languages:hover ul.sub-menu,
 header#masthead nav#site-navigation .menu-main-navigation-container ul.menu > li.pll-parent-menu-item:hover ul.sub-menu{
 	left: -1em;
 }
-header#masthead nav#site-navigation .menu-main-navigation-container ul.menu li.languages ul.sub-menu li,
+header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.languages ul.sub-menu li,
 header#masthead nav#site-navigation .menu-main-navigation-container ul.menu > li.pll-parent-menu-item ul.sub-menu li{
 	width: 100%;
 	box-sizing: border-box;
 	padding-left: 0;
 }
-header#masthead nav#site-navigation .menu-main-navigation-container ul.menu li.languages ul.sub-menu li a,
+header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.languages ul.sub-menu li a,
 header#masthead nav#site-navigation .menu-main-navigation-container ul.menu > li.pll-parent-menu-item ul.sub-menu li a{
 	background: none;
 }
-header#masthead nav#site-navigation .menu-main-navigation-container ul.menu li.languages ul.sub-menu li:hover,
+header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.languages ul.sub-menu li:hover,
 header#masthead nav#site-navigation .menu-main-navigation-container ul.menu > li.pll-parent-menu-item ul.sub-menu li:hover{
 	background: var(--dark-blue);
 }
