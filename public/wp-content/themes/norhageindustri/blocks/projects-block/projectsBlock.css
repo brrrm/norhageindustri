@@ -68,6 +68,7 @@
 	text-transform: lowercase;
 }
 
+
 ul.slider-nav  {
 	list-style: none;
 	padding: 0;
@@ -75,7 +76,7 @@ ul.slider-nav  {
 	gap: 1em;
 }
 ul.slider-nav li button{
-	background: transparent url(../../images/arrow-dark-blue.png) no-repeat left center;
+	background: transparent url(../../images/svg/arrow-left-dark-blue.svg) no-repeat left center;
 	display: block;
 	border:none;
 	display: block;
@@ -86,7 +87,7 @@ ul.slider-nav li button{
     text-indent: -999em;
 }
 ul.slider-nav li button.right{
-	transform: rotate(180deg);
+	background: transparent url(../../images/svg/arrow-right-dark-blue.svg) no-repeat left center;
 }
 
 @media screen and (max-width:768px){
