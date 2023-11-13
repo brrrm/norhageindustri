@@ -1,4 +1,20 @@
 .categories-block{
-
+	padding: 0 2em;
 }
-.categories-block 
+.categories-block ul.taxonomy-teasers{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+    list-style: none;
+    padding: 0;
+}
+.categories-block ul.taxonomy-teasers li.taxonomy-term{
+	position: relative;
+	flex: calc((100% - 5 * 1em) / 6) 0 0;
+}
+
+@media screen and (max-width:768px){
+	.categories-block ul.taxonomy-teasers li.taxonomy-term{
+		flex: calc((100% - 1 * 1em) / 2) 0 0;
+	}
+}

@@ -31,22 +31,19 @@ if ( ! empty( $block['align'] ) ) {
 	<ul class="taxonomy-teasers">
 	<?php foreach($terms as $term): ?>
 		<?php $image = get_field('image', $term); ?>
-		<li class="taxonomy-term teaser">
-			<div class="image">
+		<li class="taxonomy-term teaser image-button">
+			<a href="<?php echo get_term_link( $term ); ?>" title="<?php sprintf( __( 'View all post filed under %s', 'norhageindustri' ), $term->name ); ?>">
 				<?php 
 				if(isset($image)){
 					echo wp_get_attachment_image( $image['ID'], 'full', '', array( 'class' => 'header-image__img', 'alt' => $image['alt'] ) );
 				}
 				?>
-			</div>
-			<div class="text">
-				<h3>
-					<a href="<?php echo get_term_link( $term ); ?>" title="<?php sprintf( __( 'View all post filed under %s', 'norhageindustri' ), $term->name ); ?>">
-						<?php echo $term->name; ?>
-					</a>
-				</h3>
-				<div class="desc"><?php echo term_description($term); ?></div>
-			</div>
+			</a>
+			<h3 class="title">
+				<a href="<?php echo get_term_link( $term ); ?>" title="<?php sprintf( __( 'View all post filed under %s', 'norhageindustri' ), $term->name ); ?>">
+					<?php echo $term->name; ?>
+				</a>
+			</h3>
 			
 		</li>
 	<?php endforeach; ?>

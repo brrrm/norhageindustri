@@ -2,27 +2,35 @@
 	box-sizing: border-box;
 	display: flex;
 	flex-wrap: nowrap;
-	gap: 1em;
+	gap: 1.5em;
 	justify-content: center;
 	width: 100%;
 	margin: 3em 0;
+	padding: 3em 0;
 	border-top:1px solid var(--dark-blue);
 	border-bottom:1px solid var(--dark-blue);
-	padding: 3em 0;
+	color: var(--dark-blue);
 }
-
 .cta-within-text-block h2{
 	font-size: 1.5em;
-	margin-top: 0;
+	font-weight: 700;
+	font-style: normal;
+	margin: 0 0 0.35em 0;
 }
 .cta-within-text-block p{
 	text-align: center;
+	margin: 0.5em 0 0 0;
 }
+.cta-within-text-block .text-col{
+	flex: 40% 0 0;
+	margin-top: 1em;
+}
+
 .cta-within-text-block.is-style-damagerepair{
 	background: var(--bright-orange);
 	color: #000;
-	transform: rotate(2deg) scale(0.9);
-	padding: 2em 0 ;
+	transform: rotate(1deg) scale(1);
+	padding: 3em 0 ;
 	--dash-size: 55px;
 	--gap-size: 90px;
 	border-top: 24px solid;
@@ -44,21 +52,23 @@
     flex-direction: column;
     justify-content: center;
 }
-.cta-within-text-block .text-col{
-	flex: 40% 0 0;
+.is-style-damagerepair .image-col,
+.is-style-damagerepair .text-col{
+	transform: rotate(-1deg);
+}
+.is-style-damagerepair .text-col h2{
+
+	font-size: 1.75em;
 }
 @media screen and (max-width:768px){
-	.cta-within-text-block{
+	.cta-within-text-block,
+	.cta-within-text-block.is-style-damagerepair{
 		flex-wrap: wrap;
-		padding-left: 1em;
-		padding-right: 1em;
+		padding: 2em;
 	}
 	.cta-within-text-block.is-style-damagerepair,
 	.cta-within-text-block.is-style-damagerepair > *{
 		transform: rotate(0);
-	}
-	.cta-within-text-block.is-style-damagerepair{
-		padding: 2em 1em;
 	}
 	.cta-within-text-block .image-col{
 		flex: 100% 1 0;

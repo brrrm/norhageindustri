@@ -15,7 +15,7 @@
 			$title = get_the_title( );
 		    $thumb = get_the_post_thumbnail();
 	    ?>
-	    <h2><?php echo esc_html( $title ); ?></h2>
+	    <h2 class="title"><?php echo esc_html( $title ); ?></h2>
 		<?php echo $thumb; ?>
     </a>
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -29,7 +29,7 @@ get_header();
 				<?php
 				/* Start the Loop */
 				while ( have_posts() ) : ?>
-					<li class="product mini-teaser">
+					<li class="product mini-teaser image-button">
 					<?php the_post();
 
 					/*
