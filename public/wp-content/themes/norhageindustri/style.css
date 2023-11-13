@@ -339,7 +339,7 @@ header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li:fi
 }
 
 header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu,
-header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.languages{
+header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.languages ul.sub-menu{
 	position: absolute;
 	z-index: 999;
 	top: var(--header-nav-height);
