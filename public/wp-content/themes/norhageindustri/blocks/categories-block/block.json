@@ -4,7 +4,7 @@
     "description": "Block with a list of product categories",
     "style": [ "file:./categoriesBlock.css" ],
     "category": "norhage",
-    "icon": "layout",
+    "icon": "tag",
     "keywords": ["cta", "phone"],
     "acf": {
         "mode": "auto",
