@@ -562,7 +562,7 @@ add_action('init', function () {
 
 
 
-
+/*
 // CORS HOT FIX BY NB:
 add_filter( 'script_loader_src', 'wpse47206_src' );
 add_filter( 'style_loader_src', 'wpse47206_src' );
@@ -624,4 +624,4 @@ function ElementorLinksFix($actions, $post)
 
 add_filter('post_row_actions', 'ElementorLinksFix', 12, 2);
 add_filter('page_row_actions', 'ElementorLinksFix', 12, 2);
-
+*/
