@@ -789,3 +789,27 @@ footer.site-footer nav#socials-navigation ul li.youtube a{
     box-sizing: border-box;
     color: var(--white);
 }
+
+
+
+/*Product-teser block*/
+ul.product-teasers{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+	width: 100%;
+	list-style: none;
+	padding: 0;
+}
+ul.product-teasers li.product{
+	position: relative;
+	flex: 30% 0 0;
+}
+ul.product-teasers li.product a{
+	color: white;
+}
+ul.product-teasers li.product a h2{
+	font-size: 1em;
+	font-style: normal;
+	bottom: 0.5em;
+}
