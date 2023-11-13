@@ -12,7 +12,7 @@
 	margin-top: -1px;
 }
 .projects-block::-webkit-scrollbar{
-/*	display: none;*/
+	display: none;
 }
 .projects-block a{
 	color: #000000;
