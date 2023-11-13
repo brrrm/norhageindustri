@@ -565,10 +565,6 @@ add_action('init', function () {
  * FIX voor CORS issues met polylang
  */
 add_filter( 'plugins_url', function ( $url ) {
-	if ( false === strpos( $url, 'elementor' ) ) {
-		return $url;
-	}
-
 	$pll_options = get_option( 'polylang' );
 	if ( ! isset( $pll_options['domains'] ) ) {
 	// Not a multidomain configuration.
