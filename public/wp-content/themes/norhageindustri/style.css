@@ -612,7 +612,7 @@ footer.site-footer{
 	font-size: 0.75em;
 	line-height: 1.1666rem;	
 	color: #ffffff;
-	padding: 2.208em 15.8em;
+	padding: 2.208em 25%;
 	background: linear-gradient(180deg, rgba(22,22,22,1) 0%, rgba(60,60,60,1) 100%);
 	display: grid;
 	grid-template-areas: "info sitemap"
