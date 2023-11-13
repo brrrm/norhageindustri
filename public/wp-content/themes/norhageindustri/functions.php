@@ -570,7 +570,7 @@ function wpse47206_src( $url )
 {
     if(!isset($_SERVER['SERVER_NAME'])) return $url;
     if (strpos($_SERVER['SERVER_NAME'],'norhageindustri.no') !== false) {
-        return str_replace('norhageindustri.no', 'norhageindustri.com', $url);
+        return str_replace('norhageindustri.com', 'norhageindustri.no', $url);
     }
     return $url;
 }
@@ -578,7 +578,7 @@ function wpse47206_src( $url )
 function check_for_src($attr, $attachment){
     if(!isset($_SERVER['SERVER_NAME'])) return $attr;
     if (strpos($_SERVER['SERVER_NAME'],'norhageindustri.no') !== false) {
-        $find_and_replace = str_replace("norhageindustri.com","norhageindustri.no",$attr["src"]);
+        $find_and_replace = str_replace("norhageindustri.com","norhageindustri.no", $attr["src"]);
         $attr["src"] = $find_and_replace;
         $attr["srcset"] = $find_and_replace;
         return $attr;
