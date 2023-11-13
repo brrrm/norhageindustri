@@ -4,7 +4,8 @@
 	"settings": {
 		"useRootPaddingAwareAlignments": false,
 		"layout": {
-			"contentSize": "50%"
+			"contentSize": "50%",
+			"wideSize": "100%"
 		}
 	},
 	"styles": {
@@ -17,6 +18,6 @@
 				"left": "0px"
 			}
 		},
-		"css": "*.alignfull{margin-right: -25%;}"
+		"css": "*.alignfull{margin-right: -25%;}.block-editor-block-list__layout.is-root-container > *.alignwide:where(:not(.alignleft):not(.alignright):not(.alignfull)){margin-right: -25% !important;}"
 	}
 }
