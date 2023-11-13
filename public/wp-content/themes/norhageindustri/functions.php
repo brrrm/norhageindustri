@@ -400,7 +400,7 @@ function norhageindustri_create_posttypes() {
 		'show_in_menu'			=> true,
 		'show_in_nav_menus'		=> true,
 		'menu_position'			=> 4,
-		'menu_icon'				=> 'dashicons-carrot',
+		'menu_icon'				=> 'dashicons-images-alt2',
 		'supports'				=> [
 			'title',
 			'editor',
