@@ -419,11 +419,18 @@ header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.la
 header#masthead nav#site-navigation .menu-main-navigation-container ul.menu > li.pll-parent-menu-item{
 	position: relative;
 }
+header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.languages > a{
+	background: transparent url(images/svg/globe.svg) left center no-repeat;
+	background-size: auto 100%;
+	width: 2em;
+	text-indent: -99999em;
+	overflow: hidden;
+}
 header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.languages ul.sub-menu,
 header#masthead nav#site-navigation .menu-main-navigation-container ul.menu > li.pll-parent-menu-item ul.sub-menu{
 	width: 8rem;
 	height: auto;
-	padding: 0 0.5em;
+	padding: 0;
 	line-height: 1.5em;
 	top: 100%;
 }
@@ -435,7 +442,8 @@ header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.la
 header#masthead nav#site-navigation .menu-main-navigation-container ul.menu > li.pll-parent-menu-item ul.sub-menu li{
 	width: 100%;
 	box-sizing: border-box;
-	padding-left: 0;
+	padding: 0 0.5em;
+	margin: 0.5em 0;
 	text-align: left;
 	line-height: 1.5em;
 }
