@@ -1,4 +1,7 @@
 .categories-block{
+	font-family: "kiro", sans-serif;
+}
+.categories-block.alignfull{
 	padding: 0 2em;
 }
 .categories-block ul.taxonomy-teasers{
