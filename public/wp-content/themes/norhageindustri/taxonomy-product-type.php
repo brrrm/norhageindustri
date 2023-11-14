@@ -24,6 +24,17 @@ get_header();
 				?>
 			</header><!-- .page-header -->
 
+			<?php
+				/*
+				wp_nav_menu([
+					'theme_location' 	=> 'menu-1',
+					'menu_id'        	=> 'primary-menu',
+					'show_submenu'		=> true,
+					'container_class'	=> 'menu-main-navigation-container menu-container'
+				]);
+				*/
+			?>
+
 			<div class="entry-content">
 				<ul class="product-teasers">
 				<?php

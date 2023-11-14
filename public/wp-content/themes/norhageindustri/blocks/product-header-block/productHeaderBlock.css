@@ -11,13 +11,22 @@
 }
 .productHeaderBlock .text-col{
 	flex: 60% 0 0;
-	padding: var(--header-height) 0 0 20%;
+	padding: var(--header-height) 3em 0 20%;
 	box-sizing: border-box;
 	position: relative;
-	padding-right: 3em;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    font-size: min(2vw, 1.8rem);
+    line-height: 1.5em;
+}
+.productHeaderBlock .text-col p#breadcrumbs{
+	position: absolute;
+	top: var(--header-height);
 }
 .productHeaderBlock .text-col h1{
-	margin-top: 0;
+	margin: 0 0 0.4em;
+	font-size: 2.5em;
 }
 .productHeaderBlock .image-col{
 	flex: 40% 0 0;
@@ -59,7 +68,7 @@
 	background: var(--white);
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 768px){
 	.productHeaderBlock .text-col{
 		flex: 100% 0 0;
 		order: 2;

@@ -11,6 +11,7 @@
 	border-bottom: 1px solid var(--dark-blue);
 	margin-top: -1px;
 	font-family: "kiro", sans-serif;
+	scroll-behavior: smooth;
 }
 .projects-block::-webkit-scrollbar{
 	display: none;
@@ -24,6 +25,7 @@
     left: 0;
     box-sizing: border-box;
     padding: 0 2em 0 0;
+    z-index: 10;
 }
 
 .projects-block .projects-col{
@@ -77,18 +79,21 @@ ul.slider-nav  {
 	gap: 1em;
 }
 ul.slider-nav li button{
-	background: transparent url(../../images/svg/arrow-left-dark-blue.svg) no-repeat left center;
+	background: #fff url(../../images/svg/arrow-left-dark-blue.svg) no-repeat center;
+	background-size: 70%;
 	display: block;
-	border:none;
-	display: block;
-    height: auto;
-    width: 2em;
-    border: none;
-    background-size: 2em auto;
+    height: 3em;
+    width: 3em;
     text-indent: -999em;
+    cursor: pointer;
+	border: 2px solid transparent;
+	border-radius: 50%;
 }
 ul.slider-nav li button.right{
-	background: transparent url(../../images/svg/arrow-right-dark-blue.svg) no-repeat left center;
+	background-image: url(../../images/svg/arrow-right-dark-blue.svg);
+}
+ul.slider-nav li button:hover{
+	border-color: var(--dark-blue);
 }
 
 @media screen and (max-width:768px){

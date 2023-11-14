@@ -34,7 +34,16 @@
 			$('#site-navigation').toggleClass('expanded');
 		});
 
-
+		$('.projects-block .slider-nav button').click(function(e){
+			e.preventDefault();
+			let s = $(this).parents('.projects-block').scrollLeft();
+			if($(this).hasClass('left')){
+				s += $(window).width() / 3;
+			}else{
+				s -= $(window).width() / 3;
+			}
+			$(this).parents('.projects-block').scrollLeft(s);
+		});
 
 		/*
 		function gtag() { dataLayer.push(arguments); }

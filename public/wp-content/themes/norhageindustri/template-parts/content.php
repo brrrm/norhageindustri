@@ -16,6 +16,17 @@
 	</header><!-- .entry-header -->
 	<?php } ?>
 
+	<?php
+		/*
+		wp_nav_menu([
+			'theme_location' 	=> 'menu-1',
+			'menu_id'        	=> 'primary-menu',
+			'show_submenu'		=> true,
+			'container_class'	=> 'menu-main-navigation-container menu-container'
+		]);
+		*/
+	?>
+
 	<div class="entry-content">
 		<?php
 		the_content(

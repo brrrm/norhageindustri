@@ -47,11 +47,21 @@
 	display: flex;
 	flex-direction: column;
     justify-content: center;
-    font-size: 2vw;
+    font-size: min(2vw, 1.8rem);
     line-height: 1.5em;
+}
+.headerblock .headerblock-text-col p#breadcrumbs{
+	position: absolute;
+	top: var(--header-height);
 }
 .headerblock .headerblock-text-col .text{
 	padding: 0 0 5em;
+}
+.headerblock .headerblock-text-col .text > *:first-child{
+	margin-top: 0;
+}
+.headerblock .headerblock-text-col .text > *:last-child{
+	margin-bottom: 0;
 }
 .headerblock .headerblock-text-col h1{
 	margin: 0 0 0.4em;
