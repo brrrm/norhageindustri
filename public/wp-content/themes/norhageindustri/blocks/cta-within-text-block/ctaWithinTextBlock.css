@@ -9,6 +9,7 @@
 	border-top:1px solid var(--dark-blue);
 	border-bottom:1px solid var(--dark-blue);
 	color: var(--dark-blue);
+	font-family: "kiro", sans-serif;
 }
 .cta-within-text-block h2{
 	font-size: 1.5em;

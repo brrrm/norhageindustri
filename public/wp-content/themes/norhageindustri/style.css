@@ -13,6 +13,7 @@ Version: 0.1
 	--white: #fff;
 	--black:#000;
 	--bright-orange: #FF7F00;
+	--bright-green: #0DFF86;
 	--header-height: 8vw;
 	--header-nav-height: 8vw;
 	--img-gradient: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(91, 127, 151, .67) 30%, rgba(10,65,100,1) 100%);
@@ -306,11 +307,17 @@ header#masthead nav#site-navigation ul.menu{
 	align-items: flex-end;
 	font-size: 0.875em;
 }
+@media screen and (max-width: 1280px){
+	header#masthead nav#site-navigation ul.menu{
+		font-size: 1em;
+	}
+}
 header#masthead nav#site-navigation ul li{
 	flex: auto 0 1;
 	line-height: calc(var(--header-nav-height) - 3.2vw);
 	display: block;
 	margin-right: 2em;
+	font-weight: bold;
 }
 header#masthead nav#site-navigation ul li:last-child{
 	margin-right: 0;

@@ -12,10 +12,14 @@
     },
     "supports": {
         "anchor": true,
-        "align": [ "full"],
+        "align": [ "wide"],
         "alignWide": true
     },
     "attributes": {
+        "align": {
+            "type": "string",
+            "default": "wide"
+        }
     },
     "editorStyle": "file:./editor.css"
 }

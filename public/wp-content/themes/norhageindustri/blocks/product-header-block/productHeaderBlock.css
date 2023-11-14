@@ -7,6 +7,7 @@
 	overflow: hidden;
 	margin-top: calc(-1 * var(--header-height) );
 	background: #fff;
+	font-family: "kiro", sans-serif;
 }
 .productHeaderBlock .text-col{
 	flex: 60% 0 0;

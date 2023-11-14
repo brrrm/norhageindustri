@@ -10,6 +10,7 @@
 	border-top: 1px solid var(--dark-blue);
 	border-bottom: 1px solid var(--dark-blue);
 	margin-top: -1px;
+	font-family: "kiro", sans-serif;
 }
 .projects-block::-webkit-scrollbar{
 	display: none;
