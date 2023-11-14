@@ -488,11 +488,9 @@ function norhage_wp_nav_menu_objects_start_in( $sorted_menu_items, $args ) {
 
             if( in_array($item->menu_item_parent, $menu_item_parents) || in_array($item->ID, $menu_item_parents) ) {
                 // part of sub-tree: keep!
-                error_log('KEEP');
                 $menu_item_parents[] = $item->ID;
             } else {
                 // not part of sub-tree: away with it!
-                error_log('REMOVE');
                 unset($sorted_menu_items[$key]);
             }
         }
