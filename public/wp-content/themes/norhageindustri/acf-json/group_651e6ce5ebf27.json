@@ -27,7 +27,7 @@
             "label": "Text paragraph",
             "name": "text_paragraph",
             "aria-label": "",
-            "type": "textarea",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -36,11 +36,11 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Quisque consectetur non nibh ac aliquam. Nam dignissim eu magna vel ultrices. Fusce semper nisl ante, vitae condimentum metus lobortis a. Sed nec elit orci. Cras volutpat, tortor et faucibus finibus, velit magna malesuada lorem, in feugiat nisi dui nec diam. Vivamus in finibus tortor, at pulvinar neque. Nunc efficitur nisl vel gravida mattis. Sed lacinia blandit diam, ac mollis quam pulvinar et. Sed accumsan libero id turpis facilisis aliquam. Maecenas feugiat justo sit amet posuere rhoncus.",
-            "maxlength": "",
-            "rows": "",
-            "placeholder": "",
-            "new_lines": ""
+            "default_value": "<p>Quisque consectetur non nibh ac aliquam. Nam dignissim eu magna vel ultrices. Fusce semper nisl ante, vitae condimentum metus lobortis a. Sed nec elit orci. Cras volutpat, tortor et faucibus finibus, velit magna malesuada lorem, in feugiat nisi dui nec diam. Vivamus in finibus tortor, at pulvinar neque. Nunc efficitur nisl vel gravida mattis. Sed lacinia blandit diam, ac mollis quam pulvinar et. Sed accumsan libero id turpis facilisis aliquam. Maecenas feugiat justo sit amet posuere rhoncus.<\/p>",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         },
         {
             "key": "field_651e6e0180c31",
@@ -86,5 +86,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1696497322
+    "modified": 1699979281
 }

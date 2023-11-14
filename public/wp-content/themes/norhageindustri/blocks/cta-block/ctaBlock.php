@@ -43,7 +43,7 @@ if ( ! empty( $block['align'] ) ) {
 	</div>
 	<div class="text-col">
 		<h2><?php echo esc_html( $title ); ?></h2>
-		<div class="text"><?php echo esc_html( $text ); ?></div>
+		<div class="text"><?php echo $text; ?></div>
 		<?php if($phone):?>
 			<p><a href="tel:<?php echo trim(esc_html($phone)); ?>" class="cta-phone button"><?php echo esc_html($phone); ?></a></p>
 		<?php endif; ?>

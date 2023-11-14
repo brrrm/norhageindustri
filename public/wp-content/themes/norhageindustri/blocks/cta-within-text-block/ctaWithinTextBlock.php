@@ -49,6 +49,6 @@ if ( ! empty( $block['align'] ) ) {
 	</div>
 	<div class="text-col">
 		<h2><?php echo esc_html( $title ); ?></h2>
-		<div class="text"><?php echo esc_html( $text ); ?></div>
+		<div class="text"><?php echo $text; ?></div>
 	</div>
 </figure>
