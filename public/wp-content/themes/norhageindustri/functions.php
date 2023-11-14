@@ -378,6 +378,56 @@ function norhageindustri_create_posttypes() {
 		]);
 		register_post_type($type['slug'], $settings);
 	}
+
+	$projects = [
+		'labels'	=> [
+			'name' 						=> __( 'Projects', 'norhageindustri' ),
+			'singular_name' 			=> __( 'Project', 'norhageindustri' ),
+			'add_new' 					=> __( 'New project', 'norhageindustri' ),
+			'add_new_item' 				=> __( 'Add new project', 'norhageindustri' ),
+			'edit_item' 				=> __( 'Edit project', 'norhageindustri' ),
+			'new_item'					=> __( 'New project', 'norhageindustri' ),
+			'view_item' 				=> __( 'View project', 'norhageindustri' ),
+			'search_items'				=> __( 'Search project', 'norhageindustri' ),
+			'not_found' 				=>  __( 'No projects found', 'norhageindustri' ),
+			'not_found_in_trash' 		=> __( 'No projects found in trash', 'norhageindustri'),
+		],
+		'public' 				=> true,
+		'exclude_from_search'	=> false,
+		'has_archive' 			=> false,
+		'rewrite' 				=> array('slug' => 'project'),
+		'show_in_rest' 			=> true,
+		'show_in_menu'			=> true,
+		'show_in_nav_menus'		=> true,
+		'menu_position'			=> 4,
+		'menu_icon'				=> 'dashicons-images-alt2',
+		'supports'				=> [
+			'title',
+			'editor',
+			'revisions',
+			'thumbnail',
+		],
+		'template'				=> [
+			[
+				'core/paragraph',
+				[
+					'placeholder'	=> 'Aenean ac nisi nisi. Praesent eget bibendum orci. Vivamus ac nisl aliquam, varius leo eu, dictum risus. Cras malesuada posuere enim, sit amet tincidunt dolor lobortis sit amet. Sed et urna consequat, tincidunt nibh nec, aliquet neque. Fusce imperdiet dictum odio sit amet iaculis. Curabitur tempus vestibulum urna, et varius nunc maximus at. Ut vulputate nulla erat, gravida consectetur sem dignissim et.',
+					'lock'		=> [
+						'move'		=> false,
+						'remove'	=> false
+					]
+				]
+			],
+			[
+				'core/gallery',
+				[
+					'align'		=> 'wide',
+
+				]
+			]
+		]
+	];
+	register_post_type('project', $projects);
 }
 add_action( 'init', 'norhageindustri_create_posttypes' );
 
@@ -427,6 +477,7 @@ function norhageindustri_scripts() {
 	wp_enqueue_script('reeleaf-misc', get_stylesheet_directory_uri() . '/js/frontend.js', ['jquery'], _G_VERSION);
 }
 add_action( 'wp_enqueue_scripts', 'norhageindustri_scripts' );
+
 
 /**
  * Implement the Custom Header feature.
@@ -562,4 +613,86 @@ add_action('init', function () {
 
 
 
+/**
+ * if there's no post-thumbnail, get the first image from the content.
+ * better then nothing
+ */
+add_filter( 'post_thumbnail_id', function($thumbnail_id, $post ){
+	if(!$thumbnail_id){
+		$content = get_post_field('post_content', $post->ID);
+		preg_match('/(wp:image {"id":|"images":\[")(\d+)/', $content, $matches);
+		if(isset($matches[2]) && is_numeric($matches[2]) ){
+			error_log('$matches[2]$matches[2]$matches[2]$matches[2] ' . $post->post_title . ' ' . $matches[2]);
+			return $matches[2];
+		}
+	}else{
+		return $thumbnail_id;
+	}
+}, 10, 2);
 
+
+
+
+/*
+// CORS HOT FIX BY NB:
+add_filter( 'script_loader_src', 'wpse47206_src' );
+add_filter( 'style_loader_src', 'wpse47206_src' );
+function wpse47206_src( $url )
+{
+    if(!isset($_SERVER['SERVER_NAME'])) return $url;
+    if (strpos($_SERVER['SERVER_NAME'],'norhageindustri.no') !== false) {
+        return str_replace('norhageindustri.com', 'norhageindustri.no', $url);
+    }
+    return $url;
+}
+
+function check_for_src($attr, $attachment){
+    if(!isset($_SERVER['SERVER_NAME'])) return $attr;
+    if (strpos($_SERVER['SERVER_NAME'],'norhageindustri.no') !== false) {
+        $find_and_replace = str_replace("norhageindustri.com","norhageindustri.no", $attr["src"]);
+        $attr["src"] = $find_and_replace;
+        $attr["srcset"] = $find_and_replace;
+        return $attr;
+    }
+    return $attr;
+}
+add_filter("wp_get_attachment_image_attributes","check_for_src",10,2);
+
+
+function modify_adminy_url_for_ajax( $url, $path, $blog_id ) {
+    if(!isset($_SERVER['SERVER_NAME'])) return $url;
+    if ( "admin-ajax.php" == $path ) {
+        if (strpos($_SERVER['SERVER_NAME'],'norhageindustri.no') !== false) {
+            return "https://norhageindustri.no/wp-admin/admin-ajax.php";
+        }
+        return $url;
+    }
+    return $url;
+}
+add_filter("admin_url", "modify_adminy_url_for_ajax", 10, 3 );
+
+add_filter('allowed_http_origins', 'add_allowed_origins');
+function add_allowed_origins($origins) {
+    $origins[] = 'https://norhageindustri.no';
+    $origins[] = 'https://norhageindustri.com';
+    return $origins;
+}
+
+// change the edit and elementor-edit links in post table
+function ElementorLinksFix($actions, $post)
+{
+    if(empty($actions['edit_with_elementor'])) return $actions;
+    if(!function_exists("pll_get_post_language")) return $actions;
+
+    if ( pll_get_post_language($post->ID) === 'de'){
+        $actions['edit'] = str_replace(array('norhageindustri.com'), array('norhageindustri.no'), $actions['edit']);
+        $actions['edit_with_elementor'] = str_replace('norhageindustri.com/', 'norhageindustri.no/', $actions['edit_with_elementor']);
+    }
+
+
+    return $actions;
+}
+
+add_filter('post_row_actions', 'ElementorLinksFix', 12, 2);
+add_filter('page_row_actions', 'ElementorLinksFix', 12, 2);
+*/

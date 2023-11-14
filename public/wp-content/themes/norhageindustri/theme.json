@@ -4,8 +4,18 @@
 	"settings": {
 		"useRootPaddingAwareAlignments": false,
 		"layout": {
-			"contentSize": "50%"
-		}
+			"contentSize": "50%",
+			"wideSize": "100%"
+		},
+		"typography": {
+            "fontFamilies": [
+                {
+                    "fontFamily": "\"kiro\",sans-serif",
+                    "slug": "kiro",
+                    "name": "kiro"
+                }
+            ]
+        }
 	},
 	"styles": {
 		"spacing": {
@@ -17,6 +27,6 @@
 				"left": "0px"
 			}
 		},
-		"css": "*.alignfull{margin-right: -25%;}"
+		"css": "@import url(https://use.typekit.net/aus7nxi.css); html{font-family: kiro, sans-serif; font-weight:300;}*.alignfull{margin-right: -25%;}.block-editor-block-list__layout.is-root-container > *.alignwide:where(:not(.alignleft):not(.alignright):not(.alignfull)){margin-right: -25% !important;}"
 	}
 }

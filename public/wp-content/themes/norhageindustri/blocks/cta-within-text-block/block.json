@@ -4,7 +4,7 @@
     "description": "Block with a cta, designed to be used inbetween paragraphs",
     "style": [ "file:./ctaWithinTextBlock.css" ],
     "category": "norhage",
-    "icon": "layout",
+    "icon": "phone",
     "keywords": ["cta", "phone"],
     "acf": {
         "mode": "auto",

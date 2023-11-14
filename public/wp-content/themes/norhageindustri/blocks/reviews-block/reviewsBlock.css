@@ -5,6 +5,7 @@
 	background: var(--dark-blue);
 	color: var(--white);
 	padding: 3em 0;
+	font-family: "kiro", sans-serif;
 }
 .reviews-block + .norhage-block{
 	margin-top: -1px;

@@ -12,26 +12,18 @@ $text_snippet	= get_field( 'show_text_snippet' );
 
 // If no posts have been selected, load all the posts from this project's post-type.
 if(!$projects || empty($projects)){
-	global $post; 
-	$post_type = $context['postType'];
-	if($post_type != 'page'){
-		$post_taxonomies = get_object_taxonomies($post_type);
-		$terms = get_the_terms($post->ID, $post_taxonomies[2]);
-		$projects = get_posts([
-	    	'post_type'		=> $post_type,
-	    	'numberposts'	=> -1,
-	    	'exclude'		=> $post->ID,
-	    	/*
-	    	'tax_query'		=> [
-	    		[
-	        		'taxonomy'		=> $post_taxonomies[2],
-	        		'field'			=> 'term_id',
-	        		'terms'			=> $terms[0]->term_id
-	        	]
-	    	]
-	    	*/
-	    ]);
-	}
+	global $post;
+
+	$projects = get_posts([
+		'post_type' => 'project',
+		'meta_query' => [
+			[
+				'key' => 'product_project_relation', // name of custom field
+				'value' => '"' . $post->ID . '"', // matches exactly "123", not just 123. This prevents a match for "1234"
+				'compare' => 'LIKE'
+			],
+		]
+	]);
 }
 
 // Support custom "anchor" values.

@@ -3,6 +3,7 @@
 	display: flex;
 	width: 100%;
 	min-height: 80vh;
+	font-family: "kiro", sans-serif;
 }
 .cta-block .text-col{
 	flex: 40% 1 1;

@@ -4,7 +4,7 @@
     "description": "Block with a list of product categories",
     "style": [ "file:./categoriesBlock.css" ],
     "category": "norhage",
-    "icon": "layout",
+    "icon": "tag",
     "keywords": ["cta", "phone"],
     "acf": {
         "mode": "auto",
@@ -12,10 +12,14 @@
     },
     "supports": {
         "anchor": true,
-        "align": [ "full"],
+        "align": [ "wide"],
         "alignWide": true
     },
     "attributes": {
+        "align": {
+            "type": "string",
+            "default": "wide"
+        }
     },
     "editorStyle": "file:./editor.css"
 }
