@@ -332,6 +332,11 @@ header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li:fi
 	text-align: left;
 	flex: auto 1 1;
 }
+header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li:first-child a{
+	background:  transparent url(images/svg/chart.svg) no-repeat left center;
+	padding-left: 1.5em;
+	background-size: auto 1em ;
+}
 @media all and (min-width:768px){
 	header#masthead nav#site-navigation .menu-main-navigation-container > ul > li:hover > a  {
 		color:#0DFF86;
@@ -443,6 +448,7 @@ header#masthead nav#site-navigation .menu-main-navigation-container ul.menu li.l
 header#masthead nav#site-navigation .menu-main-navigation-container ul.menu > li.pll-parent-menu-item ul.sub-menu li:hover{
 	background: var(--dark-blue);
 }
+
 
 /*
  * MOBILE MEU
