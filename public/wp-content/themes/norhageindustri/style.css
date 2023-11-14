@@ -887,3 +887,23 @@ ul.product-teasers li.product a h2{
 	font-style: normal;
 	bottom: 0.5em;
 }
+
+
+/*404*/
+.error-404{
+    max-width: none;
+    width: auto;
+    margin-right: -25%;
+    background: var(--dark-blue);
+    color: var(--white);
+    text-align: center;
+    height: 30vh;
+}
+.error-404 .page-content{
+	position: relative;
+	top: 50%;
+    transform: translateY(-50%);
+}
+.error-404 .page-content h1{
+	margin: 0;
+}
