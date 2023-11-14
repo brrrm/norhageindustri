@@ -342,6 +342,11 @@ header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li:fi
 		color:#0DFF86;
 	}
 }
+@media all and (max-width:768px){
+	header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li:first-child a{
+		background-image: url(images/svg/chart-blue.svg);
+	}
+}
 
 header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu{
 	position: absolute;
