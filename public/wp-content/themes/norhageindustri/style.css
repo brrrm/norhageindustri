@@ -54,6 +54,7 @@ h2{
 	line-height: 1.2em;
 	font-weight: 200;
 	font-style: italic;
+	margin:1em 0 0.5em;
 }
 h2.alt{
 	font-weight: 700;

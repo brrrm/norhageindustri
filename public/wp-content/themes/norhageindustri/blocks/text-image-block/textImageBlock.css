@@ -12,9 +12,8 @@
 }
 .text-image-block--title-col{
 	flex: 40% 0 0;
-	padding-left: 3.875rem;
     box-sizing: border-box;
-    padding: 3em 0 3em 2.625rem;
+    padding: 2rem 0 2rem 2rem ;
 }
 .text-image-block--title-col h2{
 	margin: 0;
@@ -22,7 +21,13 @@
 .text-image-block--text-col{
 	flex: 20% 1 0;
 	box-sizing: border-box;
-	padding: 3em 2em 3em 0;
+	padding: 2rem 2rem 2rem 0;
+}
+.text-image-block--text-col > *:first-child{
+	margin-top: 0;
+}
+.text-image-block--text-col > *:last-child{
+	margin-bottom: 0;
 }
 
 .text-image-block--image-col{
