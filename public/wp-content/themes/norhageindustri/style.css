@@ -54,7 +54,7 @@ h2{
 	line-height: 1.2em;
 	font-weight: 200;
 	font-style: italic;
-	margin:1em 0 0.5em;
+	margin:0 0 0.5em;
 }
 h2.alt{
 	font-weight: 700;
@@ -65,6 +65,7 @@ h3{
 	font-size: 1.333rem;
 	line-height: 1.28em;
 	font-weight: 300;
+	margin: 0;
 }
 @media screen and (max-width: 1770px){
 	h1{
@@ -683,6 +684,9 @@ header#masthead nav#site-navigation h2{
 p + .norhage-block{
 	margin-top: 3em;
 }
+ .norhage-block + h2{
+	margin-top: 3rem;
+}
 .norhage-block + p{
 	margin-top: 3em;
 }
@@ -707,7 +711,6 @@ footer.site-footer{
 }
 footer.site-footer h2{
 	font-size: 1.5rem;
-	margin: 0;
 	font-style: normal;
 	font-weight: 700;
 }
