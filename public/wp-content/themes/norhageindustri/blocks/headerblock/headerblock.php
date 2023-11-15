@@ -48,7 +48,7 @@ $allowedBlocks = ['core/post-title'];
 			templateLock="all" />
 
 		<div class="text">
-			<?php echo esc_html( $text ); ?>
+			<?php echo $text; ?>
 		</div>
 		<ul class="usps">
 			<li>

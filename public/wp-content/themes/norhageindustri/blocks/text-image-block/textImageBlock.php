@@ -33,7 +33,7 @@ if ( ! empty( $block['align'] ) ) {
 		<h2><?php echo esc_html( $title ); ?></h2>
 	</div>
 	<div class="text-image-block--text-col">
-		<?php echo esc_html( $text ); ?>
+		<?php echo $text; ?>
 	</div>
 	<div class="text-image-block--image-col">
 		<?php if ( $image ) : ?>

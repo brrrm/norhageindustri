@@ -50,13 +50,13 @@ $allowedBlocks = ['core/post-title'];
 			templateLock="all" />
 		
 		<div class="text">
-			<?php echo esc_html( $text ); ?>
+			<?php echo $text; ?>
 		</div>
 	</div>
 
-	<div class="image-col">
-		<?php if ( $images ) :
-			foreach( $images as $image ): ?>
+	<?php if ( $images ) : ?>
+		<div class="image-col">
+			<?php foreach( $images as $image ): ?>
 			<figure class="header-image">
 				<?php 
 				if ( $image ) :
@@ -64,7 +64,10 @@ $allowedBlocks = ['core/post-title'];
 				endif; 
 				?>
 			</figure>
-			<?php endforeach; 
-		endif; ?>
-	</div>
+			<?php endforeach; ?>
+		</div>
+	<?php else: ?>
+		<div class="image-col empty">
+		</div>
+	<?php endif; ?>
 </div>

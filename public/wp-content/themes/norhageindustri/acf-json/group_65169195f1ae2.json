@@ -7,7 +7,7 @@
             "label": "Intro text",
             "name": "intro_text",
             "aria-label": "",
-            "type": "textarea",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,11 +16,11 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget lorem tempor nunc suscipit suscipit eu vel dui. Aliquam gravida ut lectus nec consequat. Nullam tempor euismod ligula. Proin at ultricies risus. Suspendisse mi turpis, pellentesque vel suscipit at, blandit sit amet massa. Proin neque odio, dictum ut felis a, dignissim interdum urna. Proin vitae turpis sem.",
-            "maxlength": "",
-            "rows": "",
-            "placeholder": "",
-            "new_lines": ""
+            "default_value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget lorem tempor nunc suscipit suscipit eu vel dui. Aliquam gravida ut lectus nec consequat. Nullam tempor euismod ligula. Proin at ultricies risus. Suspendisse mi turpis, pellentesque vel suscipit at, blandit sit amet massa. Proin neque odio, dictum ut felis a, dignissim interdum urna. Proin vitae turpis sem.<\/p>",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         },
         {
             "key": "field_65169972c72ba",
@@ -132,5 +132,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1699184847
+    "modified": 1699967061
 }

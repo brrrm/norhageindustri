@@ -469,6 +469,39 @@ function norhage_menu_add_category_posts( $output, $item, $depth, $args ) {
 }
 add_action( 'walker_nav_menu_start_el', 'norhage_menu_add_category_posts', 10, 4 );
 
+# filter_hook function to react on start_in argument
+function norhage_wp_nav_menu_objects_start_in( $sorted_menu_items, $args ) {
+    if(isset($args->show_submenu) && $args->show_submenu) {
+    	error_log('YOYOYOYOYOYOOY' . $args->start_in . '-----' . print_r($sorted_menu_items, true));
+        $root_id = 0;
+        foreach( $sorted_menu_items as $key => $item ) {
+        	if($item->current){
+        		$root_id = $item->menu_item_parent?? $item->ID;
+        		break;
+        	}
+        }
+
+        $menu_item_parents = array();
+        foreach( $sorted_menu_items as $key => $item ) {
+            // init menu_item_parents
+            if( $item->ID == (int)$root_id ) $menu_item_parents[] = $item->ID;
+
+            if( in_array($item->menu_item_parent, $menu_item_parents) || in_array($item->ID, $menu_item_parents) ) {
+                // part of sub-tree: keep!
+                $menu_item_parents[] = $item->ID;
+            } else {
+                // not part of sub-tree: away with it!
+                unset($sorted_menu_items[$key]);
+            }
+        }
+        return $sorted_menu_items;
+    } else {
+        return $sorted_menu_items;
+    }
+}
+add_filter("wp_nav_menu_objects",'norhage_wp_nav_menu_objects_start_in',10,2);
+
+
 /**
  * Enqueue scripts and styles.
  */
@@ -622,7 +655,6 @@ add_filter( 'post_thumbnail_id', function($thumbnail_id, $post ){
 		$content = get_post_field('post_content', $post->ID);
 		preg_match('/(wp:image {"id":|"images":\[")(\d+)/', $content, $matches);
 		if(isset($matches[2]) && is_numeric($matches[2]) ){
-			error_log('$matches[2]$matches[2]$matches[2]$matches[2] ' . $post->post_title . ' ' . $matches[2]);
 			return $matches[2];
 		}
 	}else{

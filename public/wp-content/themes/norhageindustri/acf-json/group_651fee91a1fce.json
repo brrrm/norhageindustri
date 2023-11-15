@@ -27,7 +27,7 @@
             "label": "Text",
             "name": "text",
             "aria-label": "",
-            "type": "textarea",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -36,11 +36,11 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu odio at leo rutrum aliquet. Maecenas consequat ligula ac arcu bibendum, in venenatis diam elementum. Etiam mi lorem, sollicitudin et nisl non, laoreet molestie libero. Integer rhoncus auctor sapien, id aliquam augue finibus ut. Etiam sed finibus urna. Nulla ac enim ligula. Aliquam erat volutpat. Mauris a nisi est. Nulla quis ultricies mi, at maximus dolor. Cras tempor, purus eu tincidunt efficitur, lacus sapien molestie turpis, et viverra odio est a sem. Morbi varius lacinia neque ut iaculis.",
-            "maxlength": "",
-            "rows": "",
-            "placeholder": "",
-            "new_lines": ""
+            "default_value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu odio at leo rutrum aliquet. Maecenas consequat ligula ac arcu bibendum, in venenatis diam elementum. Etiam mi lorem, sollicitudin et nisl non, laoreet molestie libero. Integer rhoncus auctor sapien, id aliquam augue finibus ut. Etiam sed finibus urna. Nulla ac enim ligula. Aliquam erat volutpat. Mauris a nisi est. Nulla quis ultricies mi, at maximus dolor. Cras tempor, purus eu tincidunt efficitur, lacus sapien molestie turpis, et viverra odio est a sem. Morbi varius lacinia neque ut iaculis.<\/p>",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         },
         {
             "key": "field_651feee054118",
@@ -106,5 +106,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1696596068
+    "modified": 1699979360
 }

@@ -27,7 +27,7 @@
             "label": "Text",
             "name": "text",
             "aria-label": "",
-            "type": "textarea",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -36,11 +36,11 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Our experts are ready to assist you with selecting the best match for your growing operations.\r\n\r\nCall us today and we’ll jumpstart your project!",
-            "maxlength": "",
-            "rows": "",
-            "placeholder": "",
-            "new_lines": ""
+            "default_value": "<p>Our experts are ready to assist you with selecting the best match for your growing operations.<\/p>\r\n\r\n<p>Call us today and we’ll jumpstart your project!<\/p>",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         },
         {
             "key": "field_651fc371425ae",
@@ -125,5 +125,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1696583666
+    "modified": 1699979404
 }
