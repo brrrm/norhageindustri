@@ -103,6 +103,7 @@ ul.slider-nav li button:hover{
 	}	
 	.projects-block .title-col{
 		flex: 100% 0 0;
+		padding: 0;
 	}
 	.projects-block .projects-col ul li{
 		flex: 70% 0 0;

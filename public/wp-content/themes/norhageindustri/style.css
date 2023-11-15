@@ -200,6 +200,10 @@ footer.site-footer{
 		margin-left: -2em;
 		margin-right: -2em;
 	}
+	.site-main .entry-content > *.alignwide{
+		margin-left: 0;
+		margin-right: 0;
+	}
 	header#masthead{
 		margin-left: -2em;
 		margin-right: -2em;
