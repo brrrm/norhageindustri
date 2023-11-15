@@ -43,10 +43,17 @@
 	border-image-width: 24px 0;
 	border-image-outset: 1px;
 }
+.cta-within-text-block:not(.is-style-damagerepair) .cta-phone.button{
+	color: var(--white); 
+	background-color: var(--dark-blue) ;
+	background-image: url(../../images/svg/phone-icon-white.svg);
+}
 .is-style-damagerepair .cta-phone.button{
 	color: #000;
 	background-image: url(../../images/svg/phone-icon-black.svg);
 }
+
+
 .cta-within-text-block .image-col{
 	flex: 20% 0 0;
 	box-sizing: border-box;
