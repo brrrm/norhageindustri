@@ -690,7 +690,17 @@ p + .norhage-block{
 .norhage-block + p{
 	margin-top: 3em;
 }
-
+@media all and (max-width:768px){
+	p + .norhage-block{
+		margin-top: 2em;
+	}
+	 .norhage-block + h2{
+		margin-top: 2rem;
+	}
+	.norhage-block + p{
+		margin-top: 2em;
+	}	
+}
 
 
 /* 
@@ -909,6 +919,7 @@ ul.product-teasers li.product a h2{
     margin-right: -25%;
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
     gap: 3em;
 }
 .error-404 .page-content{
@@ -939,4 +950,17 @@ ul.product-teasers li.product a h2{
 	position: absolute;
 	top: 1em;
 	left: 1em;
+}
+@media all and (max-width:768px){
+	.error-404{
+		padding-bottom: 1em;
+		margin-right: 0;
+	}
+	.error-404 .gif,
+	.error-404 .page-content{
+		flex: 100% 0 0;
+	}
+	.error-404 .gif iframe{
+
+	}
 }
