@@ -36,7 +36,6 @@
 				<dt><?php _e('B2C webshop', 'norhageindustri'); ?></dt>
 				<dd><a href="https://norhage.no" target="_blank">norhage.no</a></dd>
 			</dl>
-						<img class="footer-logo" src="<?php echo get_template_directory_uri() . '/images/svg/logo-norhage-industri-boompje.svg'; ?>" />
 		</div>
 		<nav id="footer-navigation" class="sitemap">
 			<h2><?php _e('Sitemap', 'norhageindustri'); ?></h2>

@@ -718,6 +718,18 @@ footer.site-footer{
 						 "socials socials";
 	grid-auto-columns: 1fr 2fr;
 	gap: 2em;
+	position: relative;
+	overflow: hidden;
+}
+footer.site-footer:after{
+	content: " ";
+	background:  transparent url(../norhageindustri/images/svg/logo-norhage-industri-boompje-klein.svg) no-repeat right bottom;
+	opacity: 0.1;
+	position: absolute;
+    height: 100%;
+    aspect-ratio: 1;
+    right: 10%;
+    bottom: -5em;
 }
 footer.site-footer h2{
 	font-size: 1.5rem;
@@ -731,7 +743,12 @@ footer.site-footer ul {
 	list-style: none;
 	padding-left: 0;
 }
-
+@media all and (max-width: 768px){
+	footer.site-footer:after{
+		right: -7em;
+    	height: 50%;
+	}
+}
 
 
 footer.site-footer .company-info{
