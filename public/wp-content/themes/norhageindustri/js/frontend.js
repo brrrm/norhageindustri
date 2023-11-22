@@ -45,6 +45,43 @@
 			$(this).parents('.projects-block').scrollLeft(s);
 		});
 
+
+
+
+		$('.productHeaderBlock .image-col').click(function(e){
+			e.preventDefault();
+			if(!$('.popup-overlay').length){
+				createOverlay();
+			}
+			if(!$('.image-popup').length){
+				createImagePopup();
+			}
+			$('body').addClass('showOverlay');
+		});
+
+		function createOverlay(){
+			let overlay = $('<div />')
+					.addClass('popup-overlay')
+					.appendTo($('body'));
+		}
+
+		function createImagePopup(){
+			let popup = $('<div />')
+				.addClass('image-popup')
+				.appendTo($('body'));
+			let closeBtn = $('<button />').text('Close').addClass('close-button').click(function(e){
+				e.preventDefault();
+				$('body').removeClass('showOverlay');
+			}).appendTo(popup);
+			$('h1.wp-block-post-title').clone().appendTo(popup);
+			$('.productHeaderBlock .image-col').clone().appendTo(popup);
+
+			popup.find('img').click(function(e){
+				$(this).toggleClass('contain');
+			});
+		}
+
+
 		/*
 		function gtag() { dataLayer.push(arguments); }
 		$('#cn-accept-cookie').click(function(e){

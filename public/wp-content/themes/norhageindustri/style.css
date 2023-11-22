@@ -981,3 +981,101 @@ ul.product-teasers li.product a h2{
 
 	}
 }
+
+
+
+body.showOverlay{
+	overflow: hidden;
+}
+
+.popup-overlay{
+	display: none;
+}
+body.showOverlay .image-popup  {
+	background: white;
+	z-index: 100;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+body.showOverlay .image-popup h1,
+body.showOverlay .image-popup .close-button{
+	position: absolute;
+    top: 1em;
+    height: 100%;
+}
+body.showOverlay .image-popup h1{
+/*	flex: 30.5% 0 0;*/
+    padding-right: 1em;
+    margin: 0;
+}
+body.showOverlay .image-popup .image-col{
+/*	flex: 43.5% 0 0;*/
+	display: block;
+	scroll-snap-type: y mandatory;
+    scroll-snap-align: start;
+    overflow: scroll;
+    height: 100vh;
+}
+body.showOverlay .image-popup .image-col .header-image{
+	margin: 0;   
+	scroll-snap-align: center;
+    scroll-behavior: smooth;
+}
+body.showOverlay .image-popup .image-col .header-image img{
+	display: block;
+	height: 100vh;
+	width: 100vw;
+	object-fit: cover;
+}
+body.showOverlay .image-popup .image-col .header-image img.contain{
+	height: 100%;
+	width: auto;
+	aspect-ratio: 1;
+	object-fit: contain;
+}
+body.showOverlay .image-popup .close-button{
+	cursor: pointer;
+	flex: auto 1 1;
+    text-align: right;
+}
+/*
+body.showOverlay  .overlay.showOverlay .popup{
+	display: flex;
+	margin: auto 1em;
+	position: relative;
+}
+
+body.showOverlay .overlay.showOverlay .popup h1,
+body.showOverlay  .overlay .popup .close{
+
+}
+
+body.showOverlay  .overlay.showOverlay .popup h1{
+
+}
+body.showOverlay  .overlay .popup .close{
+	cursor: pointer;
+	flex: auto 1 1;
+    text-align: right;
+}
+body.showOverlay  .overlay.showOverlay .image-col-overlay{
+	flex: 43.5% 0 0;
+	display: block;
+}
+body.showOverlay  .overlay.showOverlay .image-col-overlay figure{
+	margin: 0;
+}
+body.showOverlay  .overlay.showOverlay .image-col-overlay figure img{
+	display: block;
+}
+
+body.showOverlay  .overlay .popup .image-col .header-image{
+	height: unset;
+	aspect-ratio: unset;
+}
+
+
+*/
