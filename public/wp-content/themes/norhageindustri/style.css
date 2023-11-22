@@ -987,11 +987,12 @@ ul.product-teasers li.product a h2{
 body.showOverlay{
 	overflow: hidden;
 }
-.popup-overlay{
+.image-popup{
 	display: none;
 }
 
 body.showOverlay .image-popup  {
+	display: block;
 	background: white;
 	z-index: 100;
 	position: fixed;
