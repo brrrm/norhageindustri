@@ -63,7 +63,7 @@
 			let overlay = $('<div />')
 					.addClass('popup-overlay')
 					.appendTo($('body'));
-		}
+			}
 
 		function createImagePopup(){
 			let popup = $('<div />')
@@ -71,17 +71,13 @@
 				.appendTo($('body'));
 			$('h1.wp-block-post-title').clone().appendTo(popup);
 			$('.productHeaderBlock .image-col').clone().appendTo(popup);
-			$('.productHeaderBlock .image-col slider-nav').appendTo(popup);
 			let closeBtn = $('<button />').text('Close').addClass('close-button').click(function(e){
 				e.preventDefault();
 				$('body').removeClass('showOverlay');
 			}).appendTo(popup);
-	
-
 			popup.find('.image-col').click(function(e){
 				$(this).toggleClass('contain');
 			});
-
 
 		}
 
