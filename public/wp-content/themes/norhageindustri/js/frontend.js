@@ -57,6 +57,15 @@
 				createImagePopup();
 			}
 			$('body').addClass('showOverlay');
+
+			let imageIndex = $(e.target).parent().index() + 1;
+			let scrollpos = $('.image-popup .image-col figure:nth-child(' + imageIndex + ')').offset()['top'];
+
+			$('.image-popup .image-col').scrollTop(scrollpos);
+
+			console.log(e.target);
+			console.log(scrollpos);
+			console.log($('.image-popup .image-col').scrollTop());
 		});
 
 		function createOverlay(){
@@ -78,7 +87,6 @@
 			popup.find('.image-col').click(function(e){
 				$(this).toggleClass('contain');
 			});
-
 		}
 
 
