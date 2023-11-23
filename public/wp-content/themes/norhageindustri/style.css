@@ -382,7 +382,7 @@ header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li:fi
 	flex: auto 1 1;
 }
 header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li:first-child a{
-	background:  transparent url(images/svg/chart.svg) no-repeat left center;
+	background:  transparent url(images/svg/cart.svg) no-repeat left center;
 	padding-left: 1.5em;
 	background-size: auto 1em ;
 }
@@ -393,7 +393,7 @@ header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li:fi
 }
 @media all and (max-width:768px){
 	header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li:first-child a{
-		background-image: url(images/svg/chart-blue.svg);
+		background-image: url(images/svg/cart-blue.svg);
 	}
 }
 
