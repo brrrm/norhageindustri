@@ -995,12 +995,9 @@ ul.product-teasers li.product a h2{
 body.showOverlay{
 	overflow: hidden;
 }
-.image-popup{
-	display: none;
-}
 
-body.showOverlay .image-popup  {
-	display: block;
+body .image-popup  {
+	display: none;
 	background: white;
 	z-index: 100;
 	position: fixed;
@@ -1009,17 +1006,20 @@ body.showOverlay .image-popup  {
 	width: 100%;
 	height: 100%;
 }
-body.showOverlay .image-popup h1{
+body.showOverlay .image-popup  {
+	display: block;
+}
+body .image-popup h1{
 	margin: 0;
 	position: absolute;
 	top: 0.5em;
 	left: 0.5em;
 	z-index: 3;
 }
-body.showOverlay .image-popup .image-col::-webkit-scrollbar{
+body .image-popup .image-col::-webkit-scrollbar{
 	display: none;
 }
-body.showOverlay .image-popup .image-col{
+body .image-popup .image-col{
 	scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100%;
@@ -1028,12 +1028,36 @@ body.showOverlay .image-popup .image-col{
 	z-index: 1;
     scroll-behavior: smooth;
 }
+body .image-popup .image-col .header-image:after{
+	content: " ";
+	display: block;
+	position: absolute;
+	bottom: 2em;
+	left: 50%;
+	transform: translate(-50%, 0) rotate(90deg);
+	width: 2em;
+	height: 2em;
+	background: #fff url(images/svg/arrow.svg) center no-repeat;
+	background-size: 1.3em;
+	animation: 1s infinite alternate scroller;
+	border-radius: 50%;
+}
+@keyframes scroller {
+	from {
+		bottom: 2em;
+	}
+
+	to {
+		bottom: 1.5em;
+	}
+}
 body.showOverlay .image-popup .image-col .header-image{
 	scroll-snap-align: start;
     margin: 0;
     width: 100%;
     height: 100%;
-    padding: 5em 0 0;
+    padding: 5em 1em 1em;
+    position: relative;
 }
 body.showOverlay .image-popup .image-col .header-image img{
 	height: 100%;
