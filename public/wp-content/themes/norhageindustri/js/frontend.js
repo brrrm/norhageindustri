@@ -38,9 +38,9 @@
 			e.preventDefault();
 			let s = $(this).parents('.projects-block').scrollLeft();
 			if($(this).hasClass('left')){
-				s += $(window).width() / 3;
-			}else{
 				s -= $(window).width() / 3;
+			}else{
+				s += $(window).width() / 3;
 			}
 			$(this).parents('.projects-block').scrollLeft(s);
 		});

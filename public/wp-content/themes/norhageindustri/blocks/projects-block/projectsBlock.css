@@ -99,7 +99,7 @@ ul.slider-nav li button:hover{
 
 @media screen and (max-width:768px){
 	.projects-block{
-		padding: 0 2em 2em 2em;
+		padding: 2em ;
 	}	
 	.projects-block .title-col{
 		flex: 100% 0 0;

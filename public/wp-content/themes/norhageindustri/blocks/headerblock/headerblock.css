@@ -110,11 +110,12 @@
 	line-height: 1.5em;
 	font-style: italic;
 	font-weight: 600;
+	display: flex;
 }
 .headerblock .headerblock-usps li{
 	flex: auto 1 1 ;
 	box-sizing: border-box;
-	padding: 0 0 0 0;
+	padding: 0 0 0 0.5em;
 	margin: 0;
 	break-inside: avoid-column;
     max-height: 3em;
@@ -168,39 +169,46 @@
 	.headerblock .headerblock-image-col{
 		flex: 100% 0 0;
 		order: 1;
-		height: 60vh;
+		height: 75vh;
 	}
 	.headerblock .headerblock-text-col{
 		flex: 100% 0 0;
 		order: 2;
-		padding: 0 2em 3em;
+		padding: 4em 2em 3em 2em;
 		font-size: 1em;
+	}
+	.headerblock .headerblock-text-col .text {
+		padding: 0 0 3.5em;
 	}
 	.headerblock .headerblock-text-col h1{
 		font-size: 2.125em;
 		line-height: 1.117em;
-		margin-top: 0.4em;
 	}
 	.headerblock .headerblock-text-col ul.usps {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 1em;
+		gap: 0.5em;
 		padding: 0;
 		position: absolute;
-		top: -9em;
-		left: 2em;
-		right: 2em;
+		top: -5em;
+		left: 1em;
+		right: 1em;
 	}
 	.headerblock .headerblock-text-col ul.usps li{
 		justify-content: flex-start;
 		flex: 45% 1 0;
 		padding: 0.5em;
-		gap: 1em; 
+		gap: 0.5em; 
 		text-align: left;
 		box-sizing: border-box;
 	}
+	.headerblock .headerblock-text-col ul.usps li strong{
+		font-size: 0.75em;
+		line-height: 1;
+	}
 	.headerblock .headerblock-text-col ul.usps li svg{
 		width: 2.2em;
+		margin: 0;
 	}
 	.headerblock .headerblock-usps{
 		width: 100%;
