@@ -15,6 +15,22 @@
                     "name": "kiro"
                 }
             ]
+        },
+        "blocks": {
+        	"core/heading": {
+        		"typography": {
+        			"textTransform": false,
+        			"fontSizes": [],
+        			"customFontSize": false,
+        			"fontWeight": false,
+        			"fontStyle": false,
+        			"textTransform": false,
+        			"letterSpacing": false,
+        			"fontFamilies": [],
+        			"textDecoration": false,
+        			"size": false
+        		}
+        	}
         }
 	},
 	"styles": {
