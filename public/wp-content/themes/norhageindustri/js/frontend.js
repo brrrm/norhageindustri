@@ -13,7 +13,7 @@
 				$('body.small-height-header').removeClass('small-height-header');
 			}
 		}, 100);
-		if($('.headerblock').length){
+		if($('.headerblock').length || $('.productHeaderBlock').length){
 			window.headerBlockScrollInterval = window.setInterval(function(){
 				if(window.scrollY <  window.innerHeight){
 					$('.main-navigation:not(.over-headerblock)').addClass('over-headerblock');
