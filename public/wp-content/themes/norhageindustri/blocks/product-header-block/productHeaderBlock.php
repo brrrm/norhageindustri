@@ -36,7 +36,11 @@ $innerBlocksTemplate = [
 $allowedBlocks = ['core/post-title'];
 ?>
 
+
+
 <div <?php echo esc_attr( $anchor ); ?>class="<?php echo esc_attr( $class_name ); ?>" >
+	
+
 	<div class="text-col">
 		<?php
 			if ( function_exists('yoast_breadcrumb') && !$is_preview ) {
@@ -70,4 +74,11 @@ $allowedBlocks = ['core/post-title'];
 		<div class="image-col empty">
 		</div>
 	<?php endif; ?>
+
+	
+
+
+
+
+
 </div>

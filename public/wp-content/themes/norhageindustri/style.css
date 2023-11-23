@@ -989,3 +989,78 @@ ul.product-teasers li.product a h2{
 
 	}
 }
+
+
+
+body.showOverlay{
+	overflow: hidden;
+}
+.image-popup{
+	display: none;
+}
+
+body.showOverlay .image-popup  {
+	display: block;
+	background: white;
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+body.showOverlay .image-popup h1{
+	width: 30.5%;
+	float: left;
+	margin: 0.5em 0 0 0.5em;
+}
+body.showOverlay .image-popup .image-col::-webkit-scrollbar{
+	display: none;
+}
+body.showOverlay .image-popup .image-col{
+	scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+	/* zorgt voor fulscreen  */
+    width: 100vw ;
+    position: absolute;
+	z-index: -1;
+}
+body.showOverlay .image-popup .image-col .header-image{
+	scroll-snap-align: start;
+    scroll-behavior: smooth;
+    margin: 0;
+    width: 100%;
+}
+body.showOverlay .image-popup .image-col .header-image img{
+	height: 100vh;
+	width: 100vw;
+	object-fit: cover;
+	display: block;
+}
+
+body.showOverlay .image-popup .image-col.contain{
+	width: 43.5%;
+	position: relative;
+}
+body.showOverlay .image-popup .image-col.contain .header-image{
+	width: auto;
+}
+
+body.showOverlay .image-popup .image-col.contain .header-image img{
+	height: auto;
+	width: 100%;
+	object-fit: contain;
+}
+
+body.showOverlay .image-popup .close-button{
+	width: 2em;
+	height: 2em;
+	float: left;
+	position: absolute;
+	right: 3em;
+	top: 3em;
+	background: transparent url(../norhageindustri/images/svg/close.svg) no-repeat center;
+	background-size: 2em  ;
+	border: none;
+	text-indent: -999em;
+}

@@ -45,6 +45,51 @@
 			$(this).parents('.projects-block').scrollLeft(s);
 		});
 
+
+
+
+		$('.productHeaderBlock .image-col').click(function(e){
+			e.preventDefault();
+			if(!$('.popup-overlay').length){
+				createOverlay();
+			}
+			if(!$('.image-popup').length){
+				createImagePopup();
+			}
+			$('body').addClass('showOverlay');
+
+			let imageIndex = $(e.target).parent().index() + 1;
+			let scrollpos = $('.image-popup .image-col figure:nth-child(' + imageIndex + ')').offset()['top'];
+
+			$('.image-popup .image-col').scrollTop(scrollpos);
+
+			console.log(e.target);
+			console.log(scrollpos);
+			console.log($('.image-popup .image-col').scrollTop());
+		});
+
+		function createOverlay(){
+			let overlay = $('<div />')
+					.addClass('popup-overlay')
+					.appendTo($('body'));
+			}
+
+		function createImagePopup(){
+			let popup = $('<div />')
+				.addClass('image-popup')
+				.appendTo($('body'));
+			$('h1.wp-block-post-title').clone().appendTo(popup);
+			$('.productHeaderBlock .image-col').clone().appendTo(popup);
+			let closeBtn = $('<button />').text('Close').addClass('close-button').click(function(e){
+				e.preventDefault();
+				$('body').removeClass('showOverlay');
+			}).appendTo(popup);
+			popup.find('.image-col').click(function(e){
+				$(this).toggleClass('contain');
+			});
+		}
+
+
 		/*
 		function gtag() { dataLayer.push(arguments); }
 		$('#cn-accept-cookie').click(function(e){
