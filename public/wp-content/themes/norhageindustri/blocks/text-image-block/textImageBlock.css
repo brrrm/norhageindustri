@@ -2,6 +2,7 @@
 	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	width: 100%;
 	border-top:1px solid var(--dark-blue);
 	border-bottom:1px solid var(--dark-blue);
@@ -11,17 +12,22 @@
 }
 .text-image-block--title-col{
 	flex: 40% 0 0;
-	padding-left: 3.875rem;
     box-sizing: border-box;
-    padding: 3em 0 3em 2.625rem;
+    padding: 2rem 0 2rem 2rem ;
 }
 .text-image-block--title-col h2{
 	margin: 0;
 }
 .text-image-block--text-col{
-	flex: 20% 0 0;
+	flex: 20% 1 0;
 	box-sizing: border-box;
-	padding: 3em 2em 3em 0;
+	padding: 2rem 2rem 2rem 0;
+}
+.text-image-block--text-col > *:first-child{
+	margin-top: 0;
+}
+.text-image-block--text-col > *:last-child{
+	margin-bottom: 0;
 }
 
 .text-image-block--image-col{
@@ -46,32 +52,27 @@
 }
 @media all and (max-width:1024px){
 	.text-image-block{
-		padding: 2em 0 2em 2.625em;
+		padding: 2em 0 2em 0;
 		gap: 1em;
 	}
 	.text-image-block--title-col{
 		flex: 100% 0 0;
-		padding: 0;
 	}
+	.text-image-block--title-col,
 	.text-image-block--text-col{
-		flex: 50% 0 0;
-		padding: 0;
+		padding: 0 0 0 2.625rem;
 	}
 	.text-image-block--image-col{
-		flex: 40% 1 0;
 		min-height: 30vh;
 	}
 }
 @media all and (max-width:768px){
 	.text-image-block{
-		padding:2em 0 2em;
 		gap: 2em;
 	}
 	.text-image-block--title-col,
 	.text-image-block--text-col{
-		flex: 100% 0 0;
 		padding: 0 2em;
-		box-sizing: border-box;
 	}
 	.text-image-block--title-col{
 		order: 1;
@@ -81,5 +82,6 @@
 	}
 	.text-image-block--image-col{
 		order: 2;
+		flex: 100% 0 0;
 	}
 }

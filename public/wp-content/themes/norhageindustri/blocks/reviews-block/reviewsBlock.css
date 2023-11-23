@@ -29,7 +29,6 @@
 .reviews-block h2{
 	font-style: normal;
 	font-weight: 700;
-	margin-top: 0;
 }
 .reviews-block .reviews article{
 	display: grid;
@@ -69,7 +68,6 @@
 }
 
 .reviews-block .reviews article header h3{
-	margin: 0;
 	font-size: 1.5rem;
 	line-height: 1.195em;
 	position: relative;

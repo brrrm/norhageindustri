@@ -54,6 +54,7 @@ h2{
 	line-height: 1.2em;
 	font-weight: 200;
 	font-style: italic;
+	margin:0 0 0.5em;
 }
 h2.alt{
 	font-weight: 700;
@@ -72,6 +73,7 @@ h3{
 	font-size: 1.333rem;
 	line-height: 1.28em;
 	font-weight: 300;
+	margin: 0;
 }
 @media screen and (max-width: 1770px){
 	h1{
@@ -133,26 +135,31 @@ a{
 	color: var(--bright-orange);
 	text-decoration: none;
 }
-.cta-phone.button,
-.cta-email.button{
+.button{
 	font-size: 1.35rem;
 	line-height: 1.791em;
-	font-weight: 700;
-	padding: 0.13em 1em 0.133em 2.5em; 
+	padding: 0.13em 1em 0.133em 1em; 
   	border-radius: 200px;
+  	background-color: var(--white);
   	color: var(--dark-blue);
-  	background: var(--white) url(images/svg/phone-icon.svg) no-repeat 1.2em center;
-	box-sizing: border-box;
-	background-size: 1em;
 }
-.cta-within-text-block:not(.is-style-damagerepair) .cta-phone.button{
-	color: var(--white); 
-	background-color: var(--dark-blue);
-  	background-image: url(images/svg/phone-icon-white.svg);
+.button.blue-button{
+  	color: var(--white);
+  	background-color: var(--dark-blue);
+}
+.cta-phone.button,
+.cta-email.button{
+  	background-image: url(images/svg/phone-icon.svg) ;
+  	background-repeat: no-repeat;
+  	background-position: 1.2em center;
+  	background-size: 1em;	
+  	padding-left:2.5em;
+  	font-weight: 700;
 }
 .cta-email.button{
     background-image: url(images/svg/email-icon.svg);
 }
+
 .has-small-font-size,
 .has-medium-font-size,
 .has-large-font-size,
@@ -201,6 +208,10 @@ footer.site-footer{
 	.site-main .entry-content > *.alignfull{
 		margin-left: -2em;
 		margin-right: -2em;
+	}
+	.site-main .entry-content > *.alignwide{
+		margin-left: 0;
+		margin-right: 0;
 	}
 	header#masthead{
 		margin-left: -2em;
@@ -370,9 +381,19 @@ header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li:fi
 	text-align: left;
 	flex: auto 1 1;
 }
+header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li:first-child a{
+	background:  transparent url(images/svg/chart.svg) no-repeat left center;
+	padding-left: 1.5em;
+	background-size: auto 1em ;
+}
 @media all and (min-width:768px){
 	header#masthead nav#site-navigation .menu-main-navigation-container > ul > li:hover > a  {
 		color:#0DFF86;
+	}
+}
+@media all and (max-width:768px){
+	header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li:first-child a{
+		background-image: url(images/svg/chart-blue.svg);
 	}
 }
 
@@ -514,6 +535,7 @@ header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.la
 	color: var(--white);
 	background: var(--dark-blue);
 }
+
 
 /*
  * MOBILE MEU
@@ -670,6 +692,9 @@ header#masthead nav#site-navigation h2{
 p + .norhage-block{
 	margin-top: 3em;
 }
+ .norhage-block + h2{
+	margin-top: 3rem;
+}
 .norhage-block + p{
 	margin-top: 3em;
 }
@@ -694,7 +719,6 @@ footer.site-footer{
 }
 footer.site-footer h2{
 	font-size: 1.5rem;
-	margin: 0;
 	font-style: normal;
 	font-weight: 700;
 }
@@ -883,4 +907,44 @@ ul.product-teasers li.product a h2{
 	font-size: 1em;
 	font-style: normal;
 	bottom: 0.5em;
+}
+
+
+/*404*/
+.error-404{
+	max-width: none;
+    width: auto;
+    margin-right: -25%;
+	display: flex;
+	align-items: center;
+    gap: 3em;
+}
+.error-404 .page-content{
+	flex: 55% 0 1;
+    order: 2;
+}
+.error-404 .page-content .page-header h1{
+	margin: 0;
+    font-size: 5em;
+}
+.error-404 .page-content p{
+	font-size: 2em;
+    line-height: 1.3;
+    margin-top: 0;
+}
+.error-404 .gif{
+    flex: 30% 1 0;
+    order: 1;
+    position: relative;
+}
+.error-404 .gif iframe{
+	display: block;
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+.error-404 .gif p{
+	position: absolute;
+	top: 1em;
+	left: 1em;
 }
