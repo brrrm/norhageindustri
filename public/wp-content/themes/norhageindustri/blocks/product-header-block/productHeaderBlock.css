@@ -12,7 +12,7 @@
 .productHeaderBlock .text-col{
 	flex: 60% 0 0;
 	height: 100vh;
-	padding: var(--header-height) 3em 0 20%;
+	padding: calc(var(--header-height) + 3em) 3em 0 20%;
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
@@ -29,7 +29,7 @@
 	top: var(--header-height);
 }
 .productHeaderBlock .text-col h1{
-	margin: 0 0 0.4em;
+	margin: 0;
 	font-size: 2.5em;
 }
 .productHeaderBlock .image-col{
@@ -92,7 +92,15 @@
 	aspect-ratio: 1;
 	background: var(--white);
 }
-
+@media screen and (min-width: 768px) and (orientation: portrait){
+	.productHeaderBlock .image-col figure:first-child{
+		height: auto;
+	}
+	.productHeaderBlock .text-col,
+	.productHeaderBlock .image-col{
+		height: 50vh;
+	}
+}
 @media screen and (max-width: 768px){
 	.productHeaderBlock .text-col{
 		flex: 100% 0 0;

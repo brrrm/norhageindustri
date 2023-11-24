@@ -1020,9 +1020,6 @@ body .image-popup h1{
 	left: 0.5em;
 	z-index: 3;
 }
-body .image-popup .image-col::-webkit-scrollbar{
-	display: none;
-}
 body .image-popup .image-col{
 	scroll-snap-type: y mandatory;
     overflow-y: scroll;
