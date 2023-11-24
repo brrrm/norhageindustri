@@ -1,7 +1,5 @@
 .cta-within-text-block{
 	width: 100%;
-	margin-top: 3em;
-	margin-bottom: 3em;
 	border-top:1px solid var(--dark-blue);
 	border-bottom:1px solid var(--dark-blue);
 	color: var(--dark-blue);
@@ -39,7 +37,6 @@
 
 .cta-within-text-block.is-style-damagerepair{
 	border: none;
-	margin-top: 0;
 	overflow: hidden;
 }
 .cta-within-text-block.is-style-damagerepair .wrapper{

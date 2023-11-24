@@ -17,6 +17,7 @@ Version: 0.1
 	--header-height: 8vw;
 	--header-nav-height: 8vw;
 	--img-gradient: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(91, 127, 151, .67) 30%, rgba(10,65,100,1) 100%);
+	--header-gradient: linear-gradient(180deg, rgba(10,65,100,0.85) 0%, rgba(10,65,100,0) 122%);
 }
 body.small-height-header{
 	--header-nav-height: 5vw;
@@ -279,8 +280,8 @@ header#masthead nav#site-navigation .menu-secondary-menu-container{
 	transition: background 0.5s ease-out;
 	box-sizing: border-box;
 }
-header#masthead nav#site-navigation.over-headerblock .menu-secondary-menu-container{
-	background: linear-gradient(180deg, rgba(10,65,100,0.85) 0%, rgba(10,65,100,0) 122%);
+header#masthead.over-headerblock nav#site-navigation .menu-secondary-menu-container{
+	background: var(--header-gradient);
 }
 
 header#masthead nav#site-navigation aside{
@@ -548,8 +549,12 @@ header#masthead nav#site-navigation h2{
 }
 @media all and (max-width:768px){
 	header#masthead{
-		background-color: var(--dark-blue);
+		background: var(--dark-blue);
 		text-align: right;
+		border-bottom: 1px solid var(--white);
+	}
+	header#masthead.over-headerblock{
+		background: var(--header-gradient);
 	}
 	header#masthead .menu-toggle{
 		display: block;
@@ -567,7 +572,6 @@ header#masthead nav#site-navigation h2{
 	header#masthead .site-branding{
 		height: var(--header-height);
 		width: 100%;
-		background: var(--dark-blue);
 		position: relative;
 
 	}
@@ -606,7 +610,7 @@ header#masthead nav#site-navigation h2{
 		font-weight: 400;
 	}
 	header#masthead nav#site-navigation .menu-container,
-	header#masthead nav#site-navigation.over-headerblock .menu-container{
+	header#masthead.over-headerblock nav#site-navigation .menu-container{
 		background: var(--light-blue);
 		border-bottom: 0;
 		border-right: 0;

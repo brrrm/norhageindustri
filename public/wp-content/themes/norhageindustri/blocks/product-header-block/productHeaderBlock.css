@@ -14,7 +14,6 @@
 	height: 100vh;
 	padding: var(--header-height) 3em 0 20%;
 	box-sizing: border-box;
-	position: relative;
 	display: flex;
 	flex-direction: column;
     justify-content: center;
@@ -35,7 +34,6 @@
 }
 .productHeaderBlock .image-col{
 	flex: 40% 0 0;
-	height: 100%;
 	overflow: auto;
 	-ms-overflow-style: none;  /* IE and Edge */
 	scrollbar-width: none;  /* Firefox */
@@ -101,8 +99,14 @@
 		order: 2;
 		font-size: 1em;
 	    padding: 1em 2em ;
-	    justify-content: flex-start;
-	    height: 100%;
+	    display: block;
+	    height: auto;
+	    min-height: 50vh;
+	    position: sticky;
+	    top: auto;
+	    bottom: 0;
+	    z-index: 10;
+	    background: #fff;
 	}
 	.productHeaderBlock .text-col p#breadcrumbs{
 		position: relative;
@@ -111,7 +115,10 @@
 	}
 	.productHeaderBlock .image-col{
 		flex: 100% 0 0;
-		height: 80vh;
+		height: auto;
 		order: 1;
+	}
+	.productHeaderBlock .image-col figure:first-child{
+		height: 50vh;
 	}
 }
