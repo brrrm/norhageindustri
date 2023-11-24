@@ -339,6 +339,9 @@ header#masthead nav#site-navigation ul li{
 	margin-right: 2em;
 	font-weight: bold;
 }
+body.small-height-header header#masthead nav#site-navigation ul li{
+	line-height: calc(var(--header-nav-height) - 1.9vw);
+}
 header#masthead nav#site-navigation ul li:last-child{
 	margin-right: 0;
 }
