@@ -50,29 +50,23 @@
 
 		$('.productHeaderBlock .image-col').click(function(e){
 			e.preventDefault();
-			if(!$('.popup-overlay').length){
-				createOverlay();
-			}
 			if(!$('.image-popup').length){
 				createImagePopup();
 			}
 			$('body').addClass('showOverlay');
 
-			let imageIndex = $(e.target).parent().index() + 1;
-			let scrollpos = $('.image-popup .image-col figure:nth-child(' + imageIndex + ')').offset()['top'];
+			let imageIndex = $(e.target).parent().index();
+			let imageHeight = $('.image-popup .image-col figure:first-child').outerHeight();
+			let scrollPos = imageIndex * imageHeight;
 
-			$('.image-popup .image-col').scrollTop(scrollpos);
-
-			console.log(e.target);
-			console.log(scrollpos);
-			console.log($('.image-popup .image-col').scrollTop());
+			$('.image-popup .image-col').scrollTop(scrollPos);
 		});
 
-		function createOverlay(){
-			let overlay = $('<div />')
-					.addClass('popup-overlay')
-					.appendTo($('body'));
+		$(document).on('keyup', function(e){
+			if($('body').hasClass('showOverlay') && e.key === 'Escape'){
+				$('body').removeClass('showOverlay');
 			}
+		});
 
 		function createImagePopup(){
 			let popup = $('<div />')
@@ -80,10 +74,19 @@
 				.appendTo($('body'));
 			$('h1.wp-block-post-title').clone().appendTo(popup);
 			$('.productHeaderBlock .image-col').clone().appendTo(popup);
+			
 			let closeBtn = $('<button />').text('Close').addClass('close-button').click(function(e){
 				e.preventDefault();
 				$('body').removeClass('showOverlay');
 			}).appendTo(popup);
+
+			let scrollBtn = $('<button />').text('Click to scroll').addClass('scroll-button').click(function(e){
+				e.preventDefault();
+				let currScroll = popup.find('.image-col').scrollTop();
+				let imageHeight = popup.find('.image-col figure:first-child').outerHeight();
+				popup.find('.image-col').scrollTop(currScroll + imageHeight);
+			}).appendTo(popup);
+
 			popup.find('.image-col').click(function(e){
 				$(this).toggleClass('contain');
 			});

@@ -1028,10 +1028,12 @@ body .image-popup .image-col{
 	z-index: 1;
     scroll-behavior: smooth;
 }
-body .image-popup .image-col .header-image:after{
+body .image-popup .scroll-button{
 	content: " ";
 	display: block;
+	font-size: 1em;
 	position: absolute;
+	z-index: 10;
 	bottom: 2em;
 	left: 50%;
 	transform: translate(-50%, 0) rotate(90deg);
@@ -1040,7 +1042,11 @@ body .image-popup .image-col .header-image:after{
 	background: #fff url(images/svg/arrow.svg) center no-repeat;
 	background-size: 1.3em;
 	animation: 1s infinite alternate scroller;
+	border: none;
 	border-radius: 50%;
+	overflow: hidden;
+	text-indent: -9999em;
+	cursor: pointer;
 }
 @keyframes scroller {
 	from {
@@ -1051,7 +1057,7 @@ body .image-popup .image-col .header-image:after{
 		bottom: 1.5em;
 	}
 }
-body.showOverlay .image-popup .image-col .header-image{
+body .image-popup .image-col .header-image{
 	scroll-snap-align: start;
     margin: 0;
     width: 100%;
@@ -1059,26 +1065,33 @@ body.showOverlay .image-popup .image-col .header-image{
     padding: 5em 1em 1em;
     position: relative;
 }
-body.showOverlay .image-popup .image-col .header-image img{
+body .image-popup .image-col .header-image img{
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
 	display: block;
 }
 
-body.showOverlay .image-popup .image-col.contain .header-image img{
+body .image-popup .image-col.contain .header-image img{
 	object-fit: contain;
 }
 
-body.showOverlay .image-popup .close-button{
-	width: 2em;
-	height: 2em;
+body .image-popup .close-button{
+	width: 3em;
+	height: 3em;
+	border-radius: 50%;
+	display: block;
 	position: absolute;
 	right: 3em;
 	top: 3em;
 	z-index: 3;
 	background: transparent url(../norhageindustri/images/svg/close.svg) no-repeat center;
-	background-size: 2em  ;
+	background-size: 1.5em;
 	border: none;
 	text-indent: -999em;
+	cursor: pointer;
+}
+body .image-popup .close-button:hover,
+body .image-popup .scroll-button:hover{
+	background-color: #eee;
 }
