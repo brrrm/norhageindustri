@@ -25,7 +25,7 @@ get_header();
 			</header><!-- .page-header -->
 
 			<div class="entry-content">
-				<ul class="product-teasers">
+				<ul class="product-teasers alignwide">
 				<?php
 				/* Start the Loop */
 				while ( have_posts() ) : ?>
