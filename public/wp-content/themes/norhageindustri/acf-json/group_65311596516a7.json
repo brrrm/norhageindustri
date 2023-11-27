@@ -37,7 +37,7 @@
                 "id": ""
             },
             "choices": {
-                "product-type": "Product types",
+                "product-type": "Greenhouse types",
                 "plastic-type": "Plastic types",
                 "constr-mat-type": "Material types",
                 "service-type": "Service types"
@@ -69,5 +69,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698680565
+    "modified": 1701076923
 }
