@@ -144,6 +144,11 @@ a{
   	background-color: var(--white);
   	color: var(--dark-blue);
 }
+@media all and (max-width:768px){
+	.button{
+		font-size: 1em;
+	}
+}
 .button.blue-button{
   	color: var(--white);
   	background-color: var(--dark-blue);

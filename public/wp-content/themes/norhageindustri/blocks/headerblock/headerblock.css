@@ -86,7 +86,7 @@
 
 .headerblock .headerblock-text-col ul.usps li strong{
 	color: var(--dark-blue);
-	font-size: 0.7em;
+	font-size: 0.6em;
 	line-height: 0.83333333em;
 	display: block;
 }
@@ -201,7 +201,6 @@
 		box-sizing: border-box;
 	}
 	.headerblock .headerblock-text-col ul.usps li strong{
-		font-size: 0.75em;
 		line-height: 1;
 	}
 	.headerblock .headerblock-text-col ul.usps li svg{
