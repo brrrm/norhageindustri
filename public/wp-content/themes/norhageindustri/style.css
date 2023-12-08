@@ -325,12 +325,16 @@ header#masthead nav#site-navigation ul.menu{
 	margin: 0;
 	height: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	flex-wrap: nowrap;
 	box-sizing: border-box;
 	flex-direction: row;
 	align-items: flex-end;
 	font-size: 0.875em;
+	gap: 2em;
+}
+header#masthead nav#site-navigation ul#menu-secondary-menu{
+	gap: 1em;
 }
 @media screen and (max-width: 1280px){
 	header#masthead nav#site-navigation ul.menu{
@@ -341,8 +345,10 @@ header#masthead nav#site-navigation ul li{
 	flex: auto 0 1;
 	line-height: calc(var(--header-nav-height) - 3.2vw);
 	display: block;
-	margin-right: 2em;
 	font-weight: bold;
+}
+header#masthead nav#site-navigation ul#menu-secondary-menu li{
+	font-weight: 300;
 }
 body.small-height-header header#masthead nav#site-navigation ul li{
 	line-height: calc(var(--header-nav-height) - 1.9vw);
@@ -369,9 +375,6 @@ header#masthead nav#site-navigation .menu-main-navigation-container ul.menu{
 header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu{
 	padding: 0 1em;
 }
-header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li:not(:last-child){
-	margin-right: 1em;
-}
 header#masthead nav#site-navigation .menu-main-navigation-container ul.menu > li > a,
 header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu > li > a{
 	display: inline-block;
@@ -389,6 +392,9 @@ header#masthead nav#site-navigation .menu-secondary-menu-container a:visited{
 header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li:first-child{
 	text-align: left;
 	flex: auto 1 1;
+}
+header#masthead nav#site-navigation ul#menu-secondary-menu li a{
+	white-space: nowrap;
 }
 header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu > li:first-child > a{
 	background:  transparent url(images/svg/cart.svg) no-repeat left center;
@@ -486,13 +492,6 @@ header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu 
 header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.languages,
 header#masthead nav#site-navigation .menu-main-navigation-container ul.menu > li.pll-parent-menu-item{
 	position: relative;
-}
-@media all and (min-width:769px){
-	/* create a larger hover surface area */
-	header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.languages{
-		padding-left: 1em;
-		margin-left: -1em;
-	}
 }
 header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.languages > a{
 	background: transparent url(images/svg/globe.svg) left center no-repeat;
