@@ -219,3 +219,8 @@
 		font-size: 1.3em;
 	}
 }
+@media screen and (max-width:300px){
+	.headerblock .headerblock-text-col ul.usps li strong{
+		font-size: 0.75em;
+	}
+}
