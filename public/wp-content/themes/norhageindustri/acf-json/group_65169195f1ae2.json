@@ -18,8 +18,8 @@
             },
             "default_value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget lorem tempor nunc suscipit suscipit eu vel dui. Aliquam gravida ut lectus nec consequat. Nullam tempor euismod ligula. Proin at ultricies risus. Suspendisse mi turpis, pellentesque vel suscipit at, blandit sit amet massa. Proin neque odio, dictum ut felis a, dignissim interdum urna. Proin vitae turpis sem.<\/p>",
             "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
+            "toolbar": "basic",
+            "media_upload": 0,
             "delay": 0
         },
         {
@@ -132,5 +132,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1699967061
+    "modified": 1702035384
 }
