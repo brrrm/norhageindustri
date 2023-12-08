@@ -333,7 +333,7 @@ header#masthead nav#site-navigation ul.menu{
 	font-size: 0.875em;
 	gap: 2em;
 }
-header#masthead nav#site-navigation ul#menu-secondary-menu{
+header#masthead nav#site-navigation .menu-secondary-menu-container ul{
 	gap: 1em;
 }
 @media screen and (max-width: 1280px){
@@ -347,7 +347,7 @@ header#masthead nav#site-navigation ul li{
 	display: block;
 	font-weight: bold;
 }
-header#masthead nav#site-navigation ul#menu-secondary-menu li{
+header#masthead nav#site-navigation .menu-secondary-menu-container ul li{
 	font-weight: 300;
 }
 body.small-height-header header#masthead nav#site-navigation ul li{
@@ -393,7 +393,7 @@ header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li:fi
 	text-align: left;
 	flex: auto 1 1;
 }
-header#masthead nav#site-navigation ul#menu-secondary-menu li a{
+header#masthead nav#site-navigation .menu-secondary-menu-container ul li a{
 	white-space: nowrap;
 }
 header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu > li:first-child > a{
