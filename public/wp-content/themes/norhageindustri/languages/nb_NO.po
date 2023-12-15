@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: norhage Industri\n"
 "POT-Creation-Date: 2023-12-08 13:27+0100\n"
-"PO-Revision-Date: 2023-12-08 13:31+0100\n"
+"PO-Revision-Date: 2023-12-15 14:48+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nb_NO\n"
@@ -37,11 +37,11 @@ msgstr "Se alle innlegg arkivert under %s"
 
 #: blocks/headerblock/headerblock.php:65
 msgid "Industrial greenhouse projects"
-msgstr "Industrielle drivhusprosjekter"
+msgstr "Industrielle drivhus&#8203;prosjekter"
 
 #: blocks/headerblock/headerblock.php:79
 msgid "Installation services"
-msgstr "Installasjonstjenester"
+msgstr "Installasjons&#8203;tjenester"
 
 #: blocks/headerblock/headerblock.php:86
 msgid "Maintenance & restoration"
