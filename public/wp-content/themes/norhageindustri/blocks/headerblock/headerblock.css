@@ -110,8 +110,7 @@
 	list-style: none;
 	margin: 0;
 	padding: 0 10% 3em 5rem;
-	display: block;
-	columns: 3;
+	display: flex;
 	width: 60%;
 	font-size: 1.7vw;
 	line-height: 1.5em;
@@ -119,11 +118,10 @@
 	font-weight: 600;
 }
 .headerblock .headerblock-usps li{
+	flex: auto 1 1;
 	box-sizing: border-box;
-	padding: 0;
+	padding: 0 0.5em;
 	margin: 0;
-	break-inside: avoid-column;
-    max-height: 3em;
     overflow: visible;
 }
 .headerblock .headerblock-usps li:first-child{
@@ -170,6 +168,7 @@
 @media screen and (max-width:768px){
 	.headerblock .hero-wrap{
 		height: unset;
+		position: relative;
 	}
 	.headerblock .headerblock-image-col{
 		flex: 100% 0 0;
@@ -179,11 +178,11 @@
 	.headerblock .headerblock-text-col{
 		flex: 100% 0 0;
 		order: 2;
-		padding: 4em 2em 3em 2em;
+		padding: 4em 2em 1em 2em;
 		font-size: 1em;
 	}
 	.headerblock .headerblock-text-col .text {
-		padding: 0 0 3.5em;
+		padding: 0 0 0;
 	}
 	.headerblock .headerblock-text-col h1{
 		font-size: 2.125em;
@@ -219,9 +218,13 @@
 		width: 100%;
 		padding: 0 2em 2em;
 		font-size: 1em;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		background: var(--dark-blue);
+		gap: 0.5em;
 	}
 	.headerblock .headerblock-usps li{
-		padding: 0 0.3em;
+		padding: 0;
 	}
 	.headerblock .headerblock-usps li strong{
 		font-size: 1.3em;
