@@ -1,7 +1,7 @@
 .projects-block{
 	box-sizing: border-box;
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	width: 100%;
 	overflow: auto;
 	-ms-overflow-style: none;  /* IE and Edge */
@@ -100,6 +100,7 @@ ul.slider-nav li button:hover{
 @media screen and (max-width:768px){
 	.projects-block{
 		padding: 2em ;
+		flex-wrap: wrap;
 	}	
 	.projects-block .title-col{
 		flex: 100% 0 0;
