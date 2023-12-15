@@ -83,7 +83,14 @@
 	padding: 0;
 	margin: 0;
 }
-
+.headerblock .headerblock-text-col ul.usps li a:link,
+.headerblock .headerblock-text-col ul.usps li a:visited{
+	text-decoration: none;
+	color: inherit;
+}
+.headerblock .headerblock-text-col ul.usps li a:hover{
+	color: var(--bright-orange);
+}
 .headerblock .headerblock-text-col ul.usps li strong{
 	color: var(--dark-blue);
 	font-size: 0.6em;

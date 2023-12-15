@@ -34,7 +34,7 @@ if ( ! empty( $block['align'] ) ) {
 		<li class="taxonomy-term teaser image-button">
 			<a href="<?php echo get_term_link( $term ); ?>" title="<?php sprintf( __( 'View all post filed under %s', 'norhageindustri' ), $term->name ); ?>">
 				<?php 
-				if(isset($image)){
+				if($image){
 					echo wp_get_attachment_image( $image['ID'], 'full', '', array( 'class' => 'header-image__img', 'alt' => $image['alt'] ) );
 				}
 				?>
