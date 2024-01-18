@@ -454,13 +454,13 @@ header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.la
 }
 header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu > li{
 	display: block;
-	width: 20%;
+	width: 25%;
 	line-height: 2.5em;
 	padding-left: 0.5em;
 }
 header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu > li > a{
 	display: block;
-	padding-left: 2em;
+	padding: 0 2em;
 	background: transparent url(images/svg/arrow.svg) no-repeat right 0.5em center;
 }
 header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu > li:hover > a{
