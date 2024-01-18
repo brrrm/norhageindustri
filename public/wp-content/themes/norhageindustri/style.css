@@ -440,7 +440,7 @@ header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu 
 header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu ul.products-sub-menu{
 	position: absolute;
 	left: -120%;
-	width: 60%;
+	width: 75%;
 	top: 0;
 	bottom: 0;
 	padding: 3em;
