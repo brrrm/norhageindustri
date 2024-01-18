@@ -443,6 +443,7 @@ header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu 
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1em;
+	align-content: flex-start;
 }
 header#masthead nav#site-navigation .menu-main-navigation-container ul.menu li:hover ul.sub-menu,
 header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.languages:hover ul.sub-menu{
