@@ -474,6 +474,13 @@ function norhage_menu_add_category_posts( $output, $item, $depth, $args ) {
         	$output .= '</ul>';
         }
     }
+
+    if( $args->menu_id == 'primary-menu' && $item->type == 'post_type' && $item->object == 'service') {
+    	$thumb = get_the_post_thumbnail($item->object_id);
+        $output = '<div class="image-button"><a href="' . esc_url( $item->url ) . '">' . $thumb . '</a><span class="title"><a href="' . esc_url( $item->url ) . '">' . $item->title . '</span></a></div>' ;
+    	error_log(print_r($item, true));
+    	error_log($output);
+    }
     if( $args->menu_id == 'primary-menu' && in_array('menu-item-has-children', $item->classes) ){
 	    $output .= '<button class="expander">' . __('expand', 'norhageindustri') . '</button>';
 	}
