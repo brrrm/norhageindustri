@@ -11,7 +11,8 @@
 		"wpengine/advanced-custom-fields-pro": "6.2.1.1",
 		"wpackagist-plugin/polylang": "^3.5",
 		"wpackagist-plugin/wordpress-seo": "^21.4",
-		"wpackagist-plugin/post-types-order": "^2.1"
+		"wpackagist-plugin/post-types-order": "^2.1",
+		"wpackagist-plugin/acf-content-analysis-for-yoast-seo": "^3.1"
 	},
 	"repositories": [
 		{
