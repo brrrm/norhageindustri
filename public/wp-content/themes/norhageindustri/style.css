@@ -743,6 +743,9 @@ p + .norhage-block{
 }
 
 
+
+
+
 /* 
 * Footer
 */
@@ -751,7 +754,9 @@ footer.site-footer{
 	line-height: 1.1666rem;	
 	color: #ffffff;
 	padding: 2.208em 25%;
-	background: linear-gradient(180deg, rgba(22,22,22,1) 0%, rgba(60,60,60,1) 100%);
+	background: url(images/svg/footer-bg.svg) no-repeat 110% 60%, linear-gradient(180deg, rgba(21,21,21,1) 0%, rgba(60,60,60,1) 100%);
+	background-size: 132% auto;
+	background-blend-mode: pa;
 	display: grid;
 	grid-template-areas: "info sitemap"
 						 "logo sitemap"
@@ -761,16 +766,6 @@ footer.site-footer{
 	position: relative;
 	overflow: hidden;
 }
-footer.site-footer:after{
-	content: " ";
-	background:  transparent url(../norhageindustri/images/svg/logo-norhage-industri-boompje-klein.svg) no-repeat right bottom;
-	opacity: 0.1;
-	position: absolute;
-    height: 100%;
-    aspect-ratio: 1;
-    right: 10%;
-    bottom: -5em;
-}
 footer.site-footer h2{
 	font-size: 1.5rem;
 	font-style: normal;
@@ -779,14 +774,25 @@ footer.site-footer h2{
 footer.site-footer a{
 	color: #ffffff;
 }
-footer.site-footer ul {
+footer.site-footer ul.menu {
 	list-style: none;
 	padding-left: 0;
+	display: block;
+	columns: 2 auto;
+	gap: 2em;
+}
+footer.site-footer ul.sub-menu{
+	list-style: none;
+	padding-left: 0;
+	display: block;
+}
+footer.site-footer ul.menu > li{
+	break-inside: avoid;
 }
 @media all and (max-width: 768px){
 	footer.site-footer:after{
 		right: -7em;
-    	height: 50%;
+		height: 50%;
 	}
 }
 
@@ -846,6 +852,7 @@ footer.site-footer nav#socials-navigation h3{
 footer.site-footer nav#socials-navigation ul{
 	display: flex;
 	column-gap: 0.5em;
+	list-style: none;
 }
 footer.site-footer nav#socials-navigation ul li a{
 	background-image: url(images/facebook-icon.svg);
@@ -870,7 +877,7 @@ footer.site-footer nav#socials-navigation ul li.youtube a{
 @media screen and (max-width:768px){
 	footer.site-footer{
 		display: block;
-		padding: 2em;
+		padding: 2em 1em;
 		font-size: 1em;
 		line-height: inherit;
 		position: relative;
