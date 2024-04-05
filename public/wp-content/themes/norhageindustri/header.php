@@ -138,7 +138,7 @@
 
 			<aside>
 				<h3><?php _e('Contact us today', 'norhageindustri'); ?></h3>
-				<a href="mailto:sales@norhageindustri.no">sales@norhageindustri.no</a>
+				<a href="mailto:<?php _e('sales@norhageindustri.com', 'norhageindustri'); ?>"><?php _e('sales@norhageindustri.com', 'norhageindustri'); ?></a>
 			</aside>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: norhage Industri\n"
-"POT-Creation-Date: 2023-12-08 13:27+0100\n"
-"PO-Revision-Date: 2023-12-15 14:48+0100\n"
+"POT-Creation-Date: 2024-04-05 15:29+0200\n"
+"PO-Revision-Date: 2024-04-05 15:30+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nb_NO\n"
@@ -25,29 +25,28 @@ msgid "404"
 msgstr "404"
 
 #: 404.php:20
-#, fuzzy
 msgid "oh dear, we had to short on material.."
 msgstr "Å kjære, vi måtte kort på materiale .."
 
-#: blocks/categories-block/categoriesBlock.php:35
-#: blocks/categories-block/categoriesBlock.php:43
-#, fuzzy, php-format
+#: blocks/categories-block/categoriesBlock.php:69
+#: blocks/categories-block/categoriesBlock.php:79
+#, php-format
 msgid "View all post filed under %s"
 msgstr "Se alle innlegg arkivert under %s"
 
-#: blocks/headerblock/headerblock.php:65
+#: blocks/headerblock/headerblock.php:74
 msgid "Industrial greenhouse projects"
 msgstr "Industrielle drivhus&#8203;prosjekter"
 
-#: blocks/headerblock/headerblock.php:79
+#: blocks/headerblock/headerblock.php:88
 msgid "Installation services"
 msgstr "Installasjons&#8203;tjenester"
 
-#: blocks/headerblock/headerblock.php:86
+#: blocks/headerblock/headerblock.php:95
 msgid "Maintenance & restoration"
 msgstr "Vedlikehold og restaurering"
 
-#: blocks/headerblock/headerblock.php:95
+#: blocks/headerblock/headerblock.php:104
 msgid "Roofing & facade, PVC curtains"
 msgstr "Tak og fasade, PVC gardiner"
 
@@ -60,12 +59,10 @@ msgid "Right"
 msgstr "Høyre"
 
 #: blocks/projects-block/projectsBlock.php:71
-#, fuzzy
 msgid "Read more ->"
 msgstr "Les mer ->"
 
 #: footer.php:16
-#, fuzzy
 msgid "Norhage Industri"
 msgstr "Norhage Industri"
 
@@ -82,7 +79,6 @@ msgid "Phone"
 msgstr "Telefon"
 
 #: footer.php:36
-#, fuzzy
 msgid "B2C webshop"
 msgstr "B2C nettbutikk"
 
@@ -91,7 +87,6 @@ msgid "Sitemap"
 msgstr "Sidekart"
 
 #: footer.php:51
-#, fuzzy
 msgid "Norhage can also be found on:"
 msgstr "Norhage finnes også på:"
 
@@ -104,178 +99,144 @@ msgid "Secondary navigation"
 msgstr "Sekundær navigasjon"
 
 #: functions.php:54
-#, fuzzy
 msgid "Footer navigation"
 msgstr "Navigasjon i bunntekst"
 
 #: functions.php:142
-#, fuzzy
 msgctxt "taxonomy general name"
 msgid "Greenhouse type"
 msgstr "Drivhus type"
 
 #: functions.php:143
-#, fuzzy
 msgctxt "taxonomy singular name"
 msgid "Greenhouse types"
 msgstr "Drivhus typer"
 
 #: functions.php:144
-#, fuzzy
 msgid "Search greenhouse types"
 msgstr "Søk etter drivhustyper"
 
 #: functions.php:145
-#, fuzzy
 msgid "All greenhouse types"
 msgstr "Alle drivhustyper"
 
 #: functions.php:146
-#, fuzzy
 msgid "Parent greenhouse type"
 msgstr "Overordnet drivhustype"
 
 #: functions.php:147
-#, fuzzy
 msgid "Parent greenhouse type:"
 msgstr "Overordnet drivhustype:"
 
 #: functions.php:148
-#, fuzzy
 msgid "Edit greenhouse type"
 msgstr "Rediger drivhustype"
 
 #: functions.php:149
-#, fuzzy
 msgid "Update greenhouse type"
 msgstr "Oppdater drivhustype"
 
 #: functions.php:150
-#, fuzzy
 msgid "Save greenhouse type"
 msgstr "Lagre drivhustype"
 
 #: functions.php:151
-#, fuzzy
 msgid "New greenhouse type name"
 msgstr "Nytt navn på drivhustype"
 
 #: functions.php:152
-#, fuzzy
 msgid "Greenhouse types"
 msgstr "Drivhus typer"
 
 #: functions.php:159
-#, fuzzy
 msgctxt "taxonomy general name"
 msgid "Plastic type"
 msgstr "Plast type"
 
 #: functions.php:160
-#, fuzzy
 msgctxt "taxonomy singular name"
 msgid "Plastic types"
 msgstr "Plasttyper"
 
 #: functions.php:161
-#, fuzzy
 msgid "Search plastic types"
 msgstr "Søk i plasttyper"
 
 #: functions.php:162
-#, fuzzy
 msgid "All plastic types"
 msgstr "Alle plasttyper"
 
 #: functions.php:163
-#, fuzzy
 msgid "Parent plastic type"
 msgstr "Overordnet plasttype"
 
 #: functions.php:164
-#, fuzzy
 msgid "Parent plastic type:"
 msgstr "Foreldreplasttype:"
 
 #: functions.php:165
-#, fuzzy
 msgid "Edit plastic type"
 msgstr "Rediger plasttype"
 
 #: functions.php:166
-#, fuzzy
 msgid "Update plastic type"
 msgstr "Oppdater plasttype"
 
 #: functions.php:167
-#, fuzzy
 msgid "Save plastic type"
 msgstr "Lagre plasttype"
 
 #: functions.php:168
-#, fuzzy
 msgid "New plastic type name"
 msgstr "Nytt navn på plasttype"
 
 #: functions.php:169
-#, fuzzy
 msgid "Plastic types"
 msgstr "Plasttyper"
 
 #: functions.php:176
-#, fuzzy
 msgctxt "taxonomy general name"
 msgid "Material type"
 msgstr "Type materiale"
 
 #: functions.php:177
-#, fuzzy
 msgctxt "taxonomy singular name"
 msgid "Material types"
 msgstr "Materialtyper"
 
 #: functions.php:178
-#, fuzzy
 msgid "Search material types"
 msgstr "Søk etter materielltyper"
 
 #: functions.php:179
-#, fuzzy
 msgid "All Material types"
 msgstr "Alle materialtyper"
 
 #: functions.php:180
-#, fuzzy
 msgid "Parent Material type"
 msgstr "Type overordnet materiale"
 
 #: functions.php:181
-#, fuzzy
 msgid "Parent Material type:"
 msgstr "Overordnet materialtype:"
 
 #: functions.php:182
-#, fuzzy
 msgid "Edit Material type"
 msgstr "Rediger materialtype"
 
 #: functions.php:183
-#, fuzzy
 msgid "Update Material type"
 msgstr "Oppdater materialtype"
 
 #: functions.php:184
-#, fuzzy
 msgid "Save Material type"
 msgstr "Type Lagre materiale"
 
 #: functions.php:185
-#, fuzzy
 msgid "New Material type name"
 msgstr "Nytt navn på materialtype"
 
 #: functions.php:186
-#, fuzzy
 msgid "Material types"
 msgstr "Materialtyper"
 
@@ -285,143 +246,115 @@ msgid "Service type"
 msgstr "Tjenestetype"
 
 #: functions.php:194
-#, fuzzy
 msgctxt "taxonomy singular name"
 msgid "Service types"
 msgstr "Tjenestetyper"
 
 #: functions.php:195
-#, fuzzy
 msgid "Search service types"
 msgstr "Typer søketjenester"
 
 #: functions.php:196
-#, fuzzy
 msgid "All Service types"
 msgstr "Alle tjenestetyper"
 
 #: functions.php:197
-#, fuzzy
 msgid "Parent Service type"
 msgstr "Type overordnet tjeneste"
 
 #: functions.php:198
-#, fuzzy
 msgid "Parent Service type:"
 msgstr "Type overordnet tjeneste:"
 
 #: functions.php:199
-#, fuzzy
 msgid "Edit Service type"
 msgstr "Endre tjenestetype"
 
 #: functions.php:200
-#, fuzzy
 msgid "Update Service type"
 msgstr "Type oppdateringstjeneste"
 
 #: functions.php:201
-#, fuzzy
 msgid "Save Service type"
 msgstr "Type Lagre tjeneste"
 
 #: functions.php:202
-#, fuzzy
 msgid "New Service type name"
 msgstr "Nytt navn på tjenestetype"
 
 #: functions.php:203
-#, fuzzy
 msgid "Service types"
 msgstr "Tjenestetyper"
 
 #: functions.php:233
-#, fuzzy
 msgid "Greenhouses"
 msgstr "Drivhusene"
 
 #: functions.php:234
-#, fuzzy
 msgid "Greenhouse"
 msgstr "Drivhus"
 
 #: functions.php:235 functions.php:238
-#, fuzzy
 msgid "New greenhouse"
 msgstr "Nytt drivhus"
 
 #: functions.php:236
-#, fuzzy
 msgid "Add new greenhouse"
 msgstr "Legg til nytt drivhus"
 
 #: functions.php:237
-#, fuzzy
 msgid "Edit greenhouse"
 msgstr "Rediger drivhus"
 
 #: functions.php:239
-#, fuzzy
 msgid "View greenhouse"
 msgstr "Se drivhus"
 
 #: functions.php:240
-#, fuzzy
 msgid "Search greenhouse"
 msgstr "Søk drivhus"
 
 #: functions.php:241
-#, fuzzy
 msgid "No greenhouses found"
 msgstr "Fant ingen drivhus"
 
 #: functions.php:242
-#, fuzzy
 msgid "No greenhouses found in trash"
 msgstr "Ingen drivhus funnet i søppel"
 
 #: functions.php:249
-#, fuzzy
 msgid "Plastics"
 msgstr "Plast"
 
 #: functions.php:250
-#, fuzzy
 msgid "Plastic"
 msgstr "Plast"
 
 #: functions.php:251 functions.php:254
-#, fuzzy
 msgid "New plastic"
 msgstr "Ny plast"
 
 #: functions.php:252
-#, fuzzy
 msgid "Add new plastic"
 msgstr "Legg til ny plast"
 
 #: functions.php:253
-#, fuzzy
 msgid "Edit plastic"
 msgstr "Rediger plast"
 
 #: functions.php:255
-#, fuzzy
 msgid "View plastics"
 msgstr "Se plast"
 
 #: functions.php:256
-#, fuzzy
 msgid "Search plastics"
 msgstr "Søk plast"
 
 #: functions.php:257
-#, fuzzy
 msgid "No plastics found"
 msgstr "Fant ingen plast"
 
 #: functions.php:258
-#, fuzzy
 msgid "No plastics found in trash"
 msgstr "Fant ingen plast i søppel"
 
@@ -438,7 +371,6 @@ msgid "New service"
 msgstr "Legg tjeneste"
 
 #: functions.php:268
-#, fuzzy
 msgid "Add new service"
 msgstr "Legg til ny tjeneste"
 
@@ -455,62 +387,50 @@ msgid "Search services"
 msgstr "Søk i tjenester"
 
 #: functions.php:273
-#, fuzzy
 msgid "No services found"
 msgstr "Fant ingen tjenester"
 
 #: functions.php:274
-#, fuzzy
 msgid "No services found in trash"
 msgstr "Ingen tjenester funnet i søppel"
 
 #: functions.php:281
-#, fuzzy
 msgid "Construction materials"
 msgstr "Byggematerialer"
 
 #: functions.php:282
-#, fuzzy
 msgid "Construction material"
 msgstr "Byggemateriale"
 
 #: functions.php:283 functions.php:286
-#, fuzzy
 msgid "New construction material"
 msgstr "Nytt byggemateriale"
 
 #: functions.php:284
-#, fuzzy
 msgid "Add new construction material"
 msgstr "Legg til nytt byggemateriale"
 
 #: functions.php:285
-#, fuzzy
 msgid "Edit construction material"
 msgstr "Rediger byggemateriale"
 
 #: functions.php:287
-#, fuzzy
 msgid "View construction material"
 msgstr "Se byggemateriale"
 
 #: functions.php:288
-#, fuzzy
 msgid "Search construction materials"
 msgstr "Søk i byggematerialer"
 
 #: functions.php:289
-#, fuzzy
 msgid "No construction materials found"
 msgstr "Fant ingen byggematerialer"
 
 #: functions.php:290
-#, fuzzy
 msgid "No construction materials found in trash"
 msgstr "Fant ingen byggematerialer i søppel"
 
 #: functions.php:326
-#, fuzzy
 msgid "You should know that"
 msgstr "Du bør vite det"
 
@@ -535,12 +455,10 @@ msgid "Edit project"
 msgstr "Rediger prosjekt"
 
 #: functions.php:390
-#, fuzzy
 msgid "View project"
 msgstr "Vis prosjekt"
 
 #: functions.php:391
-#, fuzzy
 msgid "Search project"
 msgstr "Søk prosjekt"
 
@@ -552,27 +470,29 @@ msgstr "Ingen prosjekter funnet"
 msgid "No projects found in trash"
 msgstr "Ingen prosjekter funnet i papirkurven"
 
-#: functions.php:465
-#, fuzzy
+#: functions.php:485
 msgid "expand"
 msgstr "utvide"
 
-#: header.php:25
+#: header.php:35
 msgid "Skip to content"
 msgstr "Gå til innhold"
 
-#: header.php:109
+#: header.php:119
 msgid "Primary Menu"
 msgstr "Hovedmeny"
 
-#: header.php:113
+#: header.php:123
 msgid "Navigation"
 msgstr "Navigasjon"
 
-#: header.php:130
-#, fuzzy
+#: header.php:140
 msgid "Contact us today"
 msgstr "Kontakt oss i dag"
+
+#: header.php:141
+msgid "sales@norhageindustri.com"
+msgstr "sales@norhageindustri.no"
 
 #. translators: %s: post date.
 #: inc/template-tags.php:30
@@ -640,16 +560,15 @@ msgstr "Ingenting funnet"
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
-"Klar for å publisere din første artikkel? <a href=“%1$s”>Kom i gang her</"
-"a>."
+"Klar for å publisere din første artikkel? <a href=“%1$s”>Kom i gang her</a>."
 
 #: template-parts/content-none.php:37
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
-"Beklager, men ingenting samsvarer med søkeordene dine. Vennligst prøv "
-"igjen med noen andre søkeord."
+"Beklager, men ingenting samsvarer med søkeordene dine. Vennligst prøv igjen "
+"med noen andre søkeord."
 
 #: template-parts/content-none.php:44
 msgid ""
@@ -664,16 +583,13 @@ msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "Fortsett å lese<span class=\"screen-reader-text\"> “%s”</span>"
 
 #. Theme Name of the plugin/theme
-#, fuzzy
 msgid "norhage Industri"
 msgstr "Norhage Industri"
 
 #. Author of the plugin/theme
-#, fuzzy
 msgid "Garbo"
 msgstr "Garbo"
 
 #. Author URI of the plugin/theme
-#, fuzzy
 msgid "https://garbo.nl"
 msgstr "https://garbo.nl"
