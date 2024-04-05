@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: norhage Industri\n"
-"POT-Creation-Date: 2024-04-05 15:29+0200\n"
+"POT-Creation-Date: 2024-04-05 16:12+0200\n"
 "PO-Revision-Date: 2023-12-08 13:34+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -63,31 +63,49 @@ msgstr ""
 msgid "Read more ->"
 msgstr ""
 
-#: footer.php:16
+#: footer.php:18
 msgid "Norhage Industri"
 msgstr ""
 
 #: footer.php:19
+msgid ""
+"Our experts are available to assist and advise you on your industrial "
+"project. Don't hesitate to contact us"
+msgstr ""
+
+#: footer.php:21
 msgid "Address"
 msgstr ""
 
-#: footer.php:27
+#: footer.php:29
 msgid "Email"
 msgstr ""
 
-#: footer.php:30
+#: footer.php:30 header.php:141
+msgid "sales@norhageindustri.com"
+msgstr ""
+
+#: footer.php:32
 msgid "Phone"
 msgstr ""
 
-#: footer.php:36
+#: footer.php:34
+msgid "+47 967 59 359"
+msgstr ""
+
+#: footer.php:35
+msgid "+47 983 67 181"
+msgstr ""
+
+#: footer.php:38
 msgid "B2C webshop"
 msgstr ""
 
-#: footer.php:41 footer.php:42
+#: footer.php:43 footer.php:44
 msgid "Sitemap"
 msgstr ""
 
-#: footer.php:51
+#: footer.php:53
 msgid "Norhage can also be found on:"
 msgstr ""
 
@@ -489,10 +507,6 @@ msgstr ""
 
 #: header.php:140
 msgid "Contact us today"
-msgstr ""
-
-#: header.php:141
-msgid "sales@norhageindustri.com"
 msgstr ""
 
 #. translators: %s: post date.

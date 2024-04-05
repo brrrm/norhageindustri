@@ -10,11 +10,13 @@
  */
 
 ?>
-
+	<?php
+	$tld = pathinfo($_SERVER['SERVER_NAME'], PATHINFO_EXTENSION);
+	?>
 	<footer id="colophon" class="site-footer">
 		<div class="company-info">
 			<h2><?php _e('Norhage Industri', 'norhageindustri'); ?></h2>
-			<p>Quisque sed vestibulum dui, ut ullamcorper felis. Phasellus convallis congue dolor, vitae auctor nulla sodales nec. Vestibulum mollis sapien eget congue luctus.</p>
+			<p><?php _e('Our experts are available to assist and advise you on your industrial project. Don\'t hesitate to contact us', 'norhageindustri'); ?></p>
 			<dl>
 				<dt><?php _e('Address', 'norhageindustri'); ?></dt>
 				<dd>
@@ -25,21 +27,21 @@
 				</dd>
 				
 				<dt><?php _e('Email', 'norhageindustri'); ?></dt>
-				<dd><a href="mailto:info@norhageindustri.no">info@norhageindustri.no</a></dd>
+				<dd><a href="mailto:<?php _e('sales@norhageindustri.com', 'norhageindustri'); ?>"><?php _e('sales@norhageindustri.com', 'norhageindustri'); ?></a></dd>
 				
 				<dt><?php _e('Phone', 'norhageindustri'); ?></dt>
 				<dd>
-					<a href="tel:+4796759359">+47 967 59 359</a> <br />
-					<a href="tel:+4798367181">+47 983 67 181</a>
+					<a href="tel:<?php str_replace(' ', '', _e('+47 967 59 359')); ?>"><?php _e('+47 967 59 359'); ?></a> <br />
+					<a href="tel:<?php str_replace(' ', '', _e('+47 983 67 181')); ?>"><?php _e('+47 983 67 181'); ?></a>
 				</dd>
 
 				<dt><?php _e('B2C webshop', 'norhageindustri'); ?></dt>
-				<dd><a href="https://norhage.no" target="_blank">norhage.no</a></dd>
+				<dd><a href="<?php printf('https://norhage.%s', $tld); ?>" target="_blank"><?php printf('norhage.%s', $tld); ?></a></dd>
 			</dl>
 		</div>
 		<nav id="footer-navigation" class="sitemap">
 			<h2><?php _e('Sitemap', 'norhageindustri'); ?></h2>
-			<button class="menu-toggle" aria-controls="sitemap" aria-expanded="false"><?php esc_html_e( 'Sitemap', 'norhageindustri' ); ?></button>
+			<button class="menu-toggle" aria-controls="sitemap" aria-expanded="false"><?php _e( 'Sitemap', 'norhageindustri' ); ?></button>
 			<?php wp_nav_menu([
 				'theme_location' => 'menu-3',
 				'container_class'	=> 'menu-footer-menu-container'

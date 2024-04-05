@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: norhage Industri\n"
-"POT-Creation-Date: 2024-04-05 15:29+0200\n"
-"PO-Revision-Date: 2024-04-05 15:39+0200\n"
+"POT-Creation-Date: 2024-04-05 16:12+0200\n"
+"PO-Revision-Date: 2024-04-05 16:14+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sv_SE\n"
@@ -62,31 +62,51 @@ msgstr "Höger"
 msgid "Read more ->"
 msgstr "Läs mer ->"
 
-#: footer.php:16
+#: footer.php:18
 msgid "Norhage Industri"
 msgstr "Norhage Industri"
 
 #: footer.php:19
+msgid ""
+"Our experts are available to assist and advise you on your industrial "
+"project. Don't hesitate to contact us"
+msgstr ""
+"Våra experter finns tillgängliga för att hjälpa och ge dig råd om ditt "
+"industriprojekt. Tveka inte att kontakta oss"
+
+#: footer.php:21
 msgid "Address"
 msgstr "Adress"
 
-#: footer.php:27
+#: footer.php:29
 msgid "Email"
 msgstr "E-post"
 
-#: footer.php:30
+#: footer.php:30 header.php:141
+msgid "sales@norhageindustri.com"
+msgstr "sales@norhageindustri.se"
+
+#: footer.php:32
 msgid "Phone"
 msgstr "Telefon"
 
-#: footer.php:36
+#: footer.php:34
+msgid "+47 967 59 359"
+msgstr "+47 967 59 359"
+
+#: footer.php:35
+msgid "+47 983 67 181"
+msgstr "+47 983 67 181"
+
+#: footer.php:38
 msgid "B2C webshop"
 msgstr "B2C webbshop"
 
-#: footer.php:41 footer.php:42
+#: footer.php:43 footer.php:44
 msgid "Sitemap"
 msgstr "Webbplatskarta"
 
-#: footer.php:51
+#: footer.php:53
 msgid "Norhage can also be found on:"
 msgstr "Norhage finns också på:"
 
@@ -489,10 +509,6 @@ msgstr "Navigering"
 #: header.php:140
 msgid "Contact us today"
 msgstr "Kontakta oss idag"
-
-#: header.php:141
-msgid "sales@norhageindustri.com"
-msgstr "sales@norhageindustri.se"
 
 #. translators: %s: post date.
 #: inc/template-tags.php:30
