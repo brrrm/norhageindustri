@@ -20,20 +20,8 @@ get_header();
 				</h1>
 				<?php
 				//the_archive_title( '<h1 class="page-title">' . single_cat_title( '', false ), '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-
-			<?php
-				/*
-				wp_nav_menu([
-					'theme_location' 	=> 'menu-1',
-					'menu_id'        	=> 'primary-menu',
-					'show_submenu'		=> true,
-					'container_class'	=> 'menu-main-navigation-container menu-container'
-				]);
-				*/
-			?>
 
 			<div class="entry-content">
 				<ul class="product-teasers alignwide">
@@ -52,11 +40,15 @@ get_header();
 					</li>
 				<?php endwhile; ?>
 				 </ul>
+				 <?php 
+				 	the_posts_navigation();
+					the_archive_description( '<div class="archive-description">', '</div>' );
+				?>
 			</div>
 
-			<?php the_posts_navigation();
+			
 
-		else :
+		<?php else :
 
 			get_template_part( 'template-parts/content', 'none' );
 
