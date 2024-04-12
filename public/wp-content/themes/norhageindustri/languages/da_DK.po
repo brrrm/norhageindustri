@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: norhage Industri\n"
 "POT-Creation-Date: 2024-04-05 16:12+0200\n"
-"PO-Revision-Date: 2024-04-05 16:13+0200\n"
+"PO-Revision-Date: 2024-04-08 15:11+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: da_DK\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.1\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
@@ -26,7 +26,7 @@ msgstr "404"
 
 #: 404.php:20
 msgid "oh dear, we had to short on material.."
-msgstr "Åh kære, vi var nødt til at kortlægge materiale. . ."
+msgstr "åh kære, vi var nødt til at kortlægge materiale. . ."
 
 #: blocks/categories-block/categoriesBlock.php:69
 #: blocks/categories-block/categoriesBlock.php:79
@@ -40,7 +40,7 @@ msgstr "Industrielle drivhusprojekter"
 
 #: blocks/headerblock/headerblock.php:88
 msgid "Installation services"
-msgstr "Installation"
+msgstr "Installationstjenester"
 
 #: blocks/headerblock/headerblock.php:95
 msgid "Maintenance & restoration"
@@ -71,8 +71,8 @@ msgid ""
 "Our experts are available to assist and advise you on your industrial "
 "project. Don't hesitate to contact us"
 msgstr ""
-"Vores eksperter står til rådighed for at hjælpe og rådgive dig om dit "
-"industrielle projekt. Tøv ikke med at kontakte os"
+"Vores eksperter står klar til at hjælpe og rådgive dig om dit industrielle "
+"projekt. Tøv ikke med at kontakte os"
 
 #: footer.php:21
 msgid "Address"
@@ -84,7 +84,7 @@ msgstr "E-mail"
 
 #: footer.php:30 header.php:141
 msgid "sales@norhageindustri.com"
-msgstr "sales@norhageindustri.com"
+msgstr "info@norhageindustri.com"
 
 #: footer.php:32
 msgid "Phone"
@@ -108,7 +108,7 @@ msgstr "Sitemap"
 
 #: footer.php:53
 msgid "Norhage can also be found on:"
-msgstr "Norhage kan også findes på:"
+msgstr "Norhage Industri kan også findes på:"
 
 #: functions.php:52
 msgid "Primary"
@@ -600,7 +600,7 @@ msgstr "Læs mere<span class=\"screen-reader-text\"> \"%s\"</span>"
 
 #. Theme Name of the plugin/theme
 msgid "norhage Industri"
-msgstr "norhage Industri"
+msgstr "Norhage Industri"
 
 #. Author of the plugin/theme
 msgid "Garbo"
