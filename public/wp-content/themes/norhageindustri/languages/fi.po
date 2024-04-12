@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: norhage Industri\n"
-"POT-Creation-Date: 2024-04-12 12:56+0200\n"
-"PO-Revision-Date: 2024-04-12 13:14+0200\n"
+"POT-Creation-Date: 2024-04-12 16:13+0200\n"
+"PO-Revision-Date: 2024-04-12 16:14+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -33,6 +33,22 @@ msgstr "voi rakas, meillä oli pulaa materiaalista.."
 #, php-format
 msgid "View all post filed under %s"
 msgstr "Syöte kaikille kategorian %s artikkeleille"
+
+#: blocks/cta-block/ctaBlock.php:38
+msgid "Need help with your choice?"
+msgstr "Tarvitsetko apua valinnassasi?"
+
+#: blocks/cta-block/ctaBlock.php:44
+msgid ""
+"Our experts are ready to assist you with selecting the best match for your "
+"growing operations."
+msgstr ""
+"Asiantuntijamme ovat valmiita auttamaan sinua valitsemaan parhaan ottelun "
+"kasvavaan toimintaasi."
+
+#: blocks/cta-block/ctaBlock.php:50
+msgid "Contact us today and we’ll jumpstart your project!"
+msgstr "Ota yhteyttä jo tänään, niin käynnistämme projektisi!"
 
 #: blocks/headerblock/headerblock.php:74
 msgid "Industrial greenhouse projects"

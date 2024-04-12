@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: norhage Industri\n"
-"POT-Creation-Date: 2024-04-12 15:10+0200\n"
+"POT-Creation-Date: 2024-04-12 16:13+0200\n"
 "PO-Revision-Date: 2023-12-08 13:34+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -33,6 +33,20 @@ msgstr ""
 #: blocks/categories-block/categoriesBlock.php:79
 #, php-format
 msgid "View all post filed under %s"
+msgstr ""
+
+#: blocks/cta-block/ctaBlock.php:38
+msgid "Need help with your choice?"
+msgstr ""
+
+#: blocks/cta-block/ctaBlock.php:44
+msgid ""
+"Our experts are ready to assist you with selecting the best match for your "
+"growing operations."
+msgstr ""
+
+#: blocks/cta-block/ctaBlock.php:50
+msgid "Contact us today and we’ll jumpstart your project!"
 msgstr ""
 
 #: blocks/headerblock/headerblock.php:74
