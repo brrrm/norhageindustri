@@ -136,7 +136,9 @@ a{
 	color: var(--bright-orange);
 	text-decoration: none;
 }
-.button{
+.button,
+a.wp-element-button,
+input[type="submit"]{
 	font-size: 1.35rem;
 	line-height: 1.791em;
 	padding: 0.13em 1em 0.133em 1em; 
@@ -145,16 +147,21 @@ a{
   	color: var(--dark-blue);
 }
 @media all and (max-width:768px){
-	.button{
+	.button,
+	a.wp-element-button,
+	input[type="submit"]{
 		font-size: 1em;
 	}
 }
-.button.blue-button{
+.button.blue-button,
+a.wp-element-button.blue-button{
   	color: var(--white);
   	background-color: var(--dark-blue);
 }
 .cta-phone.button,
-.cta-email.button{
+.cta-email.button,
+a.wp-element-button[href^="tel:"],
+a.wp-element-button[href^="mailto:"]{
   	background-image: url(images/svg/phone-icon.svg) ;
   	background-repeat: no-repeat;
   	background-position: 1.2em center;
@@ -162,9 +169,12 @@ a{
   	padding-left:2.5em;
   	font-weight: 700;
 }
-.cta-email.button{
+.cta-email.button,
+a.wp-element-button[href^="mailto:"]{
     background-image: url(images/svg/email-icon.svg);
 }
+
+
 
 .has-small-font-size,
 .has-medium-font-size,
@@ -1136,4 +1146,77 @@ body .image-popup .close-button{
 body .image-popup .close-button:hover,
 body .image-popup .scroll-button:hover{
 	background-color: #eee;
+}
+
+
+
+
+
+/**
+ * contact forms
+ */
+form.wpcf7-form p{
+	display: block;
+	margin: 1em 0;
+}
+form.wpcf7-form p br{
+	display: none;
+}
+form.wpcf7-form p span{
+	display: block;
+}
+form.wpcf7-form p label{
+	display: block;
+	margin: 0 0 0.3em;
+	font-weight: 600;
+	font-size: 0.667em;
+}
+form.wpcf7-form p .wpcf7-not-valid-tip{
+	font-size: 0.667em;
+	font-weight: 300;
+	font-style: italic;
+	display: block;
+	margin: 0.3em 0 0;
+}
+form.wpcf7-form p input,
+form.wpcf7-form p textarea{
+	display: block;
+	width: 100%;
+    line-height: 2em;
+    font-size: 1em;
+    font-family: 'kiro';
+    font-weight: 300;
+    padding: 0 0.5em;
+    border: none;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    background: #2d6b92;
+}
+form.wpcf7-form p textarea{
+	line-height: 1.5em;
+	height: 9em;
+	padding: 0.5em;
+}
+form.wpcf7-form p input:focus,
+form.wpcf7-form p textarea:focus{
+	outline: none;
+	background-color: #fafad8;
+	color: #000;
+}
+form.wpcf7-form p input[type="submit"]{
+    padding: 0.5em 1.5em;
+    border-bottom: none;
+    width: auto;
+    line-height: 1.5em;
+    border:2px solid var(--dark-blue);
+    background: #fff;
+    color: var(--dark-blue);
+}
+
+
+.wpcf7 form .wpcf7-response-output {
+	margin: 1em 0.5em 1em;
+	padding: 0.2em 1em;
+	border: 2px solid #00a0d2; /* Blue */
+	font-size: .8em;
 }
