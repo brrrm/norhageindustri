@@ -92,6 +92,15 @@
 			});
 		}
 
+		/**
+		 * eventListener for contactform submissions
+		 */
+		/*document.addEventListener( 'wpcf7mailsent', function ( event ) {
+		    gtag( 'event', 'wpcf7_submission', {
+		        'event_category': event.detail.contactFormId,
+		        'event_label': event.detail.unitTag
+		    } );
+		}, false );*/
 
 		/*
 		function gtag() { dataLayer.push(arguments); }
