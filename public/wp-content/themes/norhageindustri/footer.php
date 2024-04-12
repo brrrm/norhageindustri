@@ -31,8 +31,8 @@
 				
 				<dt><?php _e('Phone', 'norhageindustri'); ?></dt>
 				<dd>
-					<a href="tel:<?php str_replace(' ', '', _e('+47 967 59 359')); ?>"><?php _e('+47 967 59 359'); ?></a> <br />
-					<a href="tel:<?php str_replace(' ', '', _e('+47 983 67 181')); ?>"><?php _e('+47 983 67 181'); ?></a>
+					<a href="tel:<?php echo str_replace(' ', '', __('+47 967 59 359', 'norhageindustri')); ?>"><?php _e('+47 967 59 359', 'norhageindustri'); ?></a> <br />
+					<a href="tel:<?php echo str_replace(' ', '', __('+47 983 67 181', 'norhageindustri')); ?>"><?php _e('+47 983 67 181', 'norhageindustri'); ?></a>
 				</dd>
 
 				<dt><?php _e('B2C webshop', 'norhageindustri'); ?></dt>
