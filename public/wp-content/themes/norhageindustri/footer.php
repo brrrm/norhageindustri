@@ -27,7 +27,7 @@
 				</dd>
 				
 				<dt><?php _e('Email', 'norhageindustri'); ?></dt>
-				<dd><a href="mailto:<?php _e('sales@norhageindustri.com', 'norhageindustri'); ?>"><?php _e('sales@norhageindustri.com', 'norhageindustri'); ?></a></dd>
+				<dd><a href="mailto:<?php _e('info@norhageindustri.com', 'norhageindustri'); ?>"><?php _e('info@norhageindustri.com', 'norhageindustri'); ?></a></dd>
 				
 				<dt><?php _e('Phone', 'norhageindustri'); ?></dt>
 				<dd>
@@ -50,16 +50,13 @@
 		</nav><!-- #site-navigation -->
 
 		<nav id="socials-navigation">
-			<h3><?php _e('Norhage can also be found on:', 'norhageindustri'); ?></h3>
+			<h3><?php _e('Norhage Industri can also be found on:', 'norhageindustri'); ?></h3>
 			<ul>
 				<li class="facebook">
-					<a href="https://www.facebook.com/norhage.no" target="_blank" rel="nofollow">Facebook</a>
+					<a href="https://www.facebook.com/people/Norhage-Industri/61551080051832/" target="_blank" rel="nofollow">Facebook</a>
 				</li>
 				<li class="instagram">
-					<a href="https://www.instagram.com/norhage.no/" target="_blank" rel="nofollow">Instagram</a>
-				</li>
-				<li class="youtube">
-					<a href="https://www.youtube.com/channel/UCLJoLfGJShJfbZefhUlAs4Q" target="_blank" rel="nofollow">Youtube</a>
+					<a href="https://www.instagram.com/norhage_industri/" target="_blank" rel="nofollow">Instagram</a>
 				</li>
 			</ul>
 		</nav>

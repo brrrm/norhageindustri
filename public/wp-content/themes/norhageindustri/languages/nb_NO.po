@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: norhage Industri\n"
-"POT-Creation-Date: 2024-04-05 16:12+0200\n"
-"PO-Revision-Date: 2024-04-05 16:14+0200\n"
+"POT-Creation-Date: 2024-04-12 12:56+0200\n"
+"PO-Revision-Date: 2024-04-12 13:14+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nb_NO\n"
@@ -26,7 +26,7 @@ msgstr "404"
 
 #: 404.php:20
 msgid "oh dear, we had to short on material.."
-msgstr "Å kjære, vi måtte kort på materiale .."
+msgstr "å kjære, vi måtte kort på materiale .."
 
 #: blocks/categories-block/categoriesBlock.php:69
 #: blocks/categories-block/categoriesBlock.php:79
@@ -72,7 +72,7 @@ msgid ""
 "project. Don't hesitate to contact us"
 msgstr ""
 "Våre eksperter er tilgjengelige for å hjelpe og gi deg råd om ditt "
-"industrielle prosjekt. Ikke nøl med å kontakte oss"
+"industriprosjekt. Ikke nøl med å kontakte oss"
 
 #: footer.php:21
 msgid "Address"
@@ -82,9 +82,9 @@ msgstr "Adresse"
 msgid "Email"
 msgstr "E-post"
 
-#: footer.php:30 header.php:141
-msgid "sales@norhageindustri.com"
-msgstr "sales@norhageindustri.no"
+#: footer.php:30
+msgid "info@norhageindustri.com"
+msgstr "info@norhageindustri.no"
 
 #: footer.php:32
 msgid "Phone"
@@ -107,8 +107,8 @@ msgid "Sitemap"
 msgstr "Sidekart"
 
 #: footer.php:53
-msgid "Norhage can also be found on:"
-msgstr "Norhage finnes også på:"
+msgid "Norhage Industri can also be found on:"
+msgstr "Norhage Industri finnes også på:"
 
 #: functions.php:52
 msgid "Primary"
@@ -510,6 +510,10 @@ msgstr "Navigasjon"
 msgid "Contact us today"
 msgstr "Kontakt oss i dag"
 
+#: header.php:141
+msgid "sales@norhageindustri.com"
+msgstr "info@norhageindustri.no"
+
 #. translators: %s: post date.
 #: inc/template-tags.php:30
 #, php-format
@@ -583,8 +587,8 @@ msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
-"Beklager, men ingenting samsvarer med søkeordene dine. Vennligst prøv igjen "
-"med noen andre søkeord."
+"Beklager, men ingenting matchet søkeordene dine. Prøv igjen med andre "
+"søkeord."
 
 #: template-parts/content-none.php:44
 msgid ""

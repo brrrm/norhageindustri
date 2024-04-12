@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: norhage Industri\n"
-"POT-Creation-Date: 2024-04-05 16:12+0200\n"
-"PO-Revision-Date: 2024-04-05 16:14+0200\n"
+"POT-Creation-Date: 2024-04-12 12:56+0200\n"
+"PO-Revision-Date: 2024-04-12 13:14+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -26,7 +26,7 @@ msgstr "404"
 
 #: 404.php:20
 msgid "oh dear, we had to short on material.."
-msgstr "Voi rakas, meillä oli pulaa materiaalista.."
+msgstr "voi rakas, meillä oli pulaa materiaalista.."
 
 #: blocks/categories-block/categoriesBlock.php:69
 #: blocks/categories-block/categoriesBlock.php:79
@@ -36,7 +36,7 @@ msgstr "Syöte kaikille kategorian %s artikkeleille"
 
 #: blocks/headerblock/headerblock.php:74
 msgid "Industrial greenhouse projects"
-msgstr "Teollisuuden kasvihuone"
+msgstr "Teollisuuden kasvihuonehankkeet"
 
 #: blocks/headerblock/headerblock.php:88
 msgid "Installation services"
@@ -82,9 +82,9 @@ msgstr "Osoite"
 msgid "Email"
 msgstr "Sähköposti"
 
-#: footer.php:30 header.php:141
-msgid "sales@norhageindustri.com"
-msgstr "sales@norhageindustri.com"
+#: footer.php:30
+msgid "info@norhageindustri.com"
+msgstr "info@norhageindustri.com"
 
 #: footer.php:32
 msgid "Phone"
@@ -107,8 +107,8 @@ msgid "Sitemap"
 msgstr "Sivukartta"
 
 #: footer.php:53
-msgid "Norhage can also be found on:"
-msgstr "Norhage löytyy myös:"
+msgid "Norhage Industri can also be found on:"
+msgstr "Norhage Industri löytyy myös:"
 
 #: functions.php:52
 msgid "Primary"
@@ -510,6 +510,10 @@ msgstr "Navigaatio"
 msgid "Contact us today"
 msgstr "Ota yhteyttä jo tänään"
 
+#: header.php:141
+msgid "sales@norhageindustri.com"
+msgstr "info@norhageindustri.com"
+
 #. translators: %s: post date.
 #: inc/template-tags.php:30
 #, php-format
@@ -599,7 +603,7 @@ msgstr "Jatka lukemista<span class=\"screen-reader-text\">%s</span>"
 
 #. Theme Name of the plugin/theme
 msgid "norhage Industri"
-msgstr "norhage Industri"
+msgstr "Norhage Industri"
 
 #. Author of the plugin/theme
 msgid "Garbo"

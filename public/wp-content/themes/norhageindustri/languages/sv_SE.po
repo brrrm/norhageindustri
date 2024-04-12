@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: norhage Industri\n"
-"POT-Creation-Date: 2024-04-05 16:12+0200\n"
-"PO-Revision-Date: 2024-04-05 16:14+0200\n"
+"POT-Creation-Date: 2024-04-12 12:56+0200\n"
+"PO-Revision-Date: 2024-04-12 13:14+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sv_SE\n"
@@ -26,7 +26,7 @@ msgstr "404"
 
 #: 404.php:20
 msgid "oh dear, we had to short on material.."
-msgstr "Oj oj, vi var tvungna att ha ont om material."
+msgstr "oj oj, vi var tvungna att ha ont om material."
 
 #: blocks/categories-block/categoriesBlock.php:69
 #: blocks/categories-block/categoriesBlock.php:79
@@ -36,11 +36,11 @@ msgstr "Visa alla inlägg arkiverat under %s"
 
 #: blocks/headerblock/headerblock.php:74
 msgid "Industrial greenhouse projects"
-msgstr "Industrielle växthus"
+msgstr "Industriella växthusprojekt"
 
 #: blocks/headerblock/headerblock.php:88
 msgid "Installation services"
-msgstr "Installations"
+msgstr "Installationstjänster"
 
 #: blocks/headerblock/headerblock.php:95
 msgid "Maintenance & restoration"
@@ -82,9 +82,9 @@ msgstr "Adress"
 msgid "Email"
 msgstr "E-post"
 
-#: footer.php:30 header.php:141
-msgid "sales@norhageindustri.com"
-msgstr "sales@norhageindustri.se"
+#: footer.php:30
+msgid "info@norhageindustri.com"
+msgstr "info@norhageindustri.se"
 
 #: footer.php:32
 msgid "Phone"
@@ -107,8 +107,8 @@ msgid "Sitemap"
 msgstr "Webbplatskarta"
 
 #: footer.php:53
-msgid "Norhage can also be found on:"
-msgstr "Norhage finns också på:"
+msgid "Norhage Industri can also be found on:"
+msgstr "Norhage Industri finns också på:"
 
 #: functions.php:52
 msgid "Primary"
@@ -492,7 +492,7 @@ msgstr "Inga projekt hittades i papperskorgen"
 
 #: functions.php:485
 msgid "expand"
-msgstr "Expandera"
+msgstr "expandera"
 
 #: header.php:35
 msgid "Skip to content"
@@ -509,6 +509,10 @@ msgstr "Navigering"
 #: header.php:140
 msgid "Contact us today"
 msgstr "Kontakta oss idag"
+
+#: header.php:141
+msgid "sales@norhageindustri.com"
+msgstr "info@norhageindustri.se"
 
 #. translators: %s: post date.
 #: inc/template-tags.php:30
@@ -600,7 +604,7 @@ msgstr "Fortsätt läsa<span class=\"screen-reader-text\"> ”%s”</span>"
 
 #. Theme Name of the plugin/theme
 msgid "norhage Industri"
-msgstr "norhage Industri"
+msgstr "Norhage Industri"
 
 #. Author of the plugin/theme
 msgid "Garbo"

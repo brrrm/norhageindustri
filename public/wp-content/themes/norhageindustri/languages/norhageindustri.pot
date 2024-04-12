@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: norhage Industri\n"
-"POT-Creation-Date: 2024-04-05 16:12+0200\n"
+"POT-Creation-Date: 2024-04-12 12:56+0200\n"
 "PO-Revision-Date: 2023-12-08 13:34+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -81,8 +81,8 @@ msgstr ""
 msgid "Email"
 msgstr ""
 
-#: footer.php:30 header.php:141
-msgid "sales@norhageindustri.com"
+#: footer.php:30
+msgid "info@norhageindustri.com"
 msgstr ""
 
 #: footer.php:32
@@ -106,7 +106,7 @@ msgid "Sitemap"
 msgstr ""
 
 #: footer.php:53
-msgid "Norhage can also be found on:"
+msgid "Norhage Industri can also be found on:"
 msgstr ""
 
 #: functions.php:52
@@ -507,6 +507,10 @@ msgstr ""
 
 #: header.php:140
 msgid "Contact us today"
+msgstr ""
+
+#: header.php:141
+msgid "sales@norhageindustri.com"
 msgstr ""
 
 #. translators: %s: post date.
