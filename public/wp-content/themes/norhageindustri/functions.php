@@ -478,8 +478,6 @@ function norhage_menu_add_category_posts( $output, $item, $depth, $args ) {
     if( $args->menu_id == 'primary-menu' && $item->type == 'post_type' && $item->object == 'service') {
     	$thumb = get_the_post_thumbnail($item->object_id, [420,420]);
         $output = '<div class="image-button"><a href="' . esc_url( $item->url ) . '">' . $thumb . '</a><span class="title"><a href="' . esc_url( $item->url ) . '">' . $item->title . '</span></a></div>' ;
-    	error_log(print_r($item, true));
-    	error_log($output);
     }
     if( $args->menu_id == 'primary-menu' && in_array('menu-item-has-children', $item->classes) ){
 	    $output .= '<button class="expander">' . __('expand', 'norhageindustri') . '</button>';
@@ -492,7 +490,6 @@ add_action( 'walker_nav_menu_start_el', 'norhage_menu_add_category_posts', 10, 4
 # filter_hook function to react on start_in argument
 function norhage_wp_nav_menu_objects_start_in( $sorted_menu_items, $args ) {
     if(isset($args->show_submenu) && $args->show_submenu) {
-    	error_log('YOYOYOYOYOYOOY' . $args->start_in . '-----' . print_r($sorted_menu_items, true));
         $root_id = 0;
         foreach( $sorted_menu_items as $key => $item ) {
         	if($item->current){
