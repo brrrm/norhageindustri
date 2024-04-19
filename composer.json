@@ -14,7 +14,8 @@
 		"wpackagist-plugin/post-types-order": "^2.1",
 		"wpackagist-plugin/acf-content-analysis-for-yoast-seo": "^3.1",
 		"wpackagist-plugin/contact-form-7": "^5.9",
-		"wpackagist-plugin/webp-express": "^0.25.9"
+		"wpackagist-plugin/webp-express": "^0.25.9",
+		"wpackagist-plugin/redirection": "^5.4"
 	},
 	"repositories": [
 		{
