@@ -1051,6 +1051,22 @@ ul.product-teasers li.product a h2{
 	}
 }
 
+.pagination{
+	margin: 2em 0;
+	display: flex;
+	justify-content: center;
+}
+ul.page-numbers{
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+ul.page-numbers li{
+	display: inline-block;
+	margin: 0 1em 0 0;
+}
+
 
 
 body.showOverlay{

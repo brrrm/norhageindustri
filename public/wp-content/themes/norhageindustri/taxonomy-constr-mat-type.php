@@ -18,9 +18,6 @@ get_header();
 				<h1 class="page-title">
 					<?php echo single_cat_title( '', false ); ?>
 				</h1>
-				<?php
-				//the_archive_title( '<h1 class="page-title">' . single_cat_title( '', false ), '</h1>' );
-				?>
 			</header><!-- .page-header -->
 
 			<div class="entry-content">
@@ -39,14 +36,16 @@ get_header();
 					get_template_part( 'template-parts/content-teaser', get_post_type() ); ?>
 					</li>
 				<?php endwhile; ?>
-				 </ul>
-				 <?php 
-				 	the_posts_navigation();
+				</ul>
+				
+				<div class="pagination alignwide">
+					<?php echo paginate_links(['mid_size' => 10, 'show_all' => true, 'type' => 'list']); ?>
+				</div>
+
+				<?php
 					the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</div>
-
-			
 
 		<?php else :
 
