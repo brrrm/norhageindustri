@@ -680,6 +680,19 @@ add_filter( 'post_thumbnail_id', function($thumbnail_id, $post ){
 }, 10, 2);
 
 
+/**
+ * !! SECURITY !!
+ * Disable /users rest routes
+ */
+add_filter('rest_endpoints', function( $endpoints ) {
+    if ( isset( $endpoints['/wp/v2/users'] ) ) {
+        unset( $endpoints['/wp/v2/users'] );
+    }
+    if ( isset( $endpoints['/wp/v2/users/(?P<id>[\d]+)'] ) ) {
+        unset( $endpoints['/wp/v2/users/(?P<id>[\d]+)'] );
+    }
+    return $endpoints;
+});
 
 
 /*
