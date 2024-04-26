@@ -35,6 +35,15 @@ img{
 	box-sizing: border-box;
 }
 
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
 /**
  * TYPOGRAFIE
  */
@@ -299,7 +308,7 @@ header#masthead.over-headerblock nav#site-navigation .menu-secondary-menu-contai
 	background: var(--header-gradient);
 }
 
-header#masthead nav#site-navigation aside{
+header#masthead nav#site-navigation aside.contact{
 	position: absolute;
 	right: 1.416666667em;
 	top: 0.4em;
@@ -307,23 +316,23 @@ header#masthead nav#site-navigation aside{
 	line-height: 1.04em;
 	transition: opacity 0.5s ease-out 0s, z-index 0s linear 0.7s;
 }
-.small-height-header header#masthead nav#site-navigation aside{
+.small-height-header header#masthead nav#site-navigation aside.contact{
 	z-index: -1;
 	opacity: 0;
 }
 @media all and (max-width:768px){
-	header#masthead nav#site-navigation aside{
+	header#masthead nav#site-navigation aside.contact{
 		display: none;
 	}
 }
-header#masthead nav#site-navigation aside h3{
+header#masthead nav#site-navigation aside.contact h3{
 	font-size: 0.65em;
 	margin: 0;
 	font-style: italic;
 	font-size: 100;
 	color: #ffffff;
 }
-header#masthead nav#site-navigation aside a{
+header#masthead nav#site-navigation aside.contact a{
 	font-size: 1em;
 	font-weight: 700;
 	color: #ffffff;
@@ -584,6 +593,121 @@ header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.la
 
 
 /*
+ * search
+ */
+header#masthead nav#site-navigation aside.search{
+	position: absolute;
+	top: 0;
+	right: calc(40% + 2em);
+	margin: 0 0 0 1.5em;
+	z-index: 1;
+	padding: 0;
+}
+header#masthead nav#site-navigation aside.search form{
+	display: flex;
+	width: 2em;
+	margin: 0;
+	padding: 0.15em 0;
+	font-size: 1em;
+	background: var(--store-color);
+	border: 1px solid var(--white);
+	border-top: none;
+	border-radius: 0 0 1em 1em;
+	overflow: hidden;
+	transition: width 0.3s ease, font-size 0.3s ease;
+}
+
+body.small-height-header header#masthead nav#site-navigation aside.search form{
+	font-size: 0.8em;
+}
+header#masthead nav#site-navigation aside.search form:hover,
+header#masthead nav#site-navigation aside.search form:focus-within,
+header#masthead nav#site-navigation aside.search form:not(:has(input.search-field:placeholder-shown)){
+	width: 20em;
+	border-color: var(--store-color);
+	background-color: var(--white);
+}
+header#masthead nav#site-navigation aside.search form:focus-within{
+	background-color: #fafad8;
+}
+header#masthead nav#site-navigation aside.search form input.search-field,
+header#masthead nav#site-navigation aside.search form input.search-submit{
+	font-size: 0.7em;
+	background-color: transparent;
+	border: none;
+	line-height: 2em;
+}
+header#masthead nav#site-navigation aside.search form input.search-field{
+	flex: calc(1/0.7 * 18em) 0 1;
+	min-width: 0;
+	padding: 0 0;
+	transition: padding 0.3s ease;
+}
+header#masthead nav#site-navigation aside.search form:hover input.search-field,
+header#masthead nav#site-navigation aside.search form:focus-within input.search-field,
+header#masthead nav#site-navigation aside.search form:not(:has(input.search-field:placeholder-shown)) input.search-field{
+	padding: 0 1em;
+}
+header#masthead nav#site-navigation aside.search form input.search-field:focus{
+	outline: none;
+}
+header#masthead nav#site-navigation aside.search form input.search-submit{
+	flex: calc(1/0.7 * 2em) 0 0;
+	background: transparent url(images/svg/search.svg) center no-repeat;
+	background-size: auto 70%;
+	text-indent: -99999em;
+	overflow: hidden;
+}
+header#masthead nav#site-navigation aside.search form:hover input.search-submit,
+header#masthead nav#site-navigation aside.search form:focus-within input.search-submit,
+header#masthead nav#site-navigation aside.search form:not(:has(input.search-field:placeholder-shown)) input.search-submit{
+	background-image: url(images/svg/search-black.svg);
+}
+@media all and (max-width:768px){
+	header#masthead nav#site-navigation aside.search {
+		position: relative;
+		left: 0;
+		margin: 2em 0;
+		z-index: 0;
+		order: 1;
+	}
+	header#masthead nav#site-navigation aside.search form:hover,
+	header#masthead nav#site-navigation aside.search form:focus-within,
+	header#masthead nav#site-navigation aside.search form:not(:has(input.search-field:placeholder-shown)){
+		width: unset;
+	}
+	header#masthead nav#site-navigation aside.search form,
+	body.small-height-header header#masthead nav#site-navigation aside.search form{
+		width: 100%;
+		background: var(--white);
+		border: 1px solid var(--store-color);
+		border-radius: 1em;
+		font-size: 1em;
+	}
+	header#masthead nav#site-navigation aside.search form:hover{
+		width: unset;
+	}
+	header#masthead nav#site-navigation aside.search form input.search-submit{
+		background:transparent url(images/svg/search-black.svg) no-repeat center;
+		background-size: auto 70%;
+	}
+	header#masthead nav#site-navigation aside.search form input.search-field,
+	header#masthead nav#site-navigation aside.search form input.search-submit{
+		font-size: 1em;
+	}
+	header#masthead nav#site-navigation aside.search form input.search-field{
+		flex: calc(100% - 2em) 1 0;
+		padding: 0 1em;
+	}
+	header#masthead nav#site-navigation aside.search form input.search-submit{
+		flex: 2em 0 0;
+	}
+}
+
+
+
+
+/*
  * MOBILE MEU
  */
 header#masthead .menu-toggle{
@@ -597,6 +721,9 @@ header#masthead nav#site-navigation h2{
 		background: var(--dark-blue);
 		text-align: right;
 		border-bottom: 1px solid var(--white);
+	}
+	header#masthead:has(nav#site-navigation.expanded){
+		border-bottom-color: var(--dark-blue);
 	}
 	header#masthead.over-headerblock{
 		background: var(--header-gradient);
@@ -987,6 +1114,7 @@ ul.product-teasers{
 ul.product-teasers li.product{
 	position: relative;
 	flex: 30% 0 0;
+	overflow: hidden;
 }
 ul.product-teasers li.product a{
 	color: white;

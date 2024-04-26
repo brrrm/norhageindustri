@@ -140,6 +140,10 @@
 			
 			<h2><?php _e('Navigation', 'norhageindustri'); ?></h2>
 
+			<aside class="search">
+				<?php get_search_form(); ?>
+			</aside>
+
 			<?php
 			wp_nav_menu([
 				'theme_location' 	=> 'menu-1',
@@ -154,9 +158,10 @@
 			]);
 			?>
 
-			<aside>
+			<aside class="contact">
 				<h3><?php _e('Contact us today', 'norhageindustri'); ?></h3>
 				<a href="mailto:<?php _e('sales@norhageindustri.com', 'norhageindustri'); ?>"><?php _e('sales@norhageindustri.com', 'norhageindustri'); ?></a>
 			</aside>
+			
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

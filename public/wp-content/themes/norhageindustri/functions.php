@@ -694,6 +694,18 @@ add_filter('rest_endpoints', function( $endpoints ) {
     return $endpoints;
 });
 
+//Alter the WordPress search to return ONLY products etc, no pages
+if (!is_admin()) {
+	function search_filter_posts($query) {
+		if ($query->is_search) {
+			$query->set('post_type', ['product', 'plastic', 'constriction', 'service', 'project']);
+		}
+		return $query;
+	}
+	add_filter('pre_get_posts','search_filter_posts');
+}
+
+
 
 /*
 // CORS HOT FIX BY NB:

@@ -14,37 +14,47 @@ get_header();
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
+			<header class="entry-header">
 				<h1 class="page-title">
 					<?php
 					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', 'norhageindustri' ), '<span>' . get_search_query() . '</span>' );
+					printf( esc_html__( 'Search Results for: %s', 'norhageindustri' ), '<em>' . get_search_query() . '</em>' );
 					?>
 				</h1>
 			</header><!-- .page-header -->
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+			<div class="entry-content">
+				<ul class="product-teasers alignwide">
+				<?php
+				/* Start the Loop */
+				while ( have_posts() ) : ?>
+					<li class="product mini-teaser image-button">
+					<?php the_post();
 
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', 'search' );
+					/*
+					 * Include the Post-Type-specific template for the content.
+					 * If you want to override this in a child theme, then include a file
+					 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+					 */
+					get_template_part( 'template-parts/content-teaser', get_post_type() ); ?>
+					</li>
+				<?php endwhile; ?>
+				</ul>
+				
+				<div class="pagination alignwide">
+					<?php echo paginate_links(['mid_size' => 10, 'show_all' => true, 'type' => 'list']); ?>
+				</div>
 
-			endwhile;
+				<?php
+					the_archive_description( '<div class="archive-description">', '</div>' );
+				?>
+			</div>
 
-			the_posts_navigation();
-
-		else :
+		<?php else :
 
 			get_template_part( 'template-parts/content', 'none' );
 
-		endif;
-		?>
+		endif; ?>
 
 	</main><!-- #main -->
 
