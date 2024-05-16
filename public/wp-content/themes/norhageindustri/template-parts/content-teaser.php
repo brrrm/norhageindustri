@@ -13,7 +13,7 @@
 	<a href="<?php echo esc_url( get_permalink() ); ?>">
 		<?php
 			$title = get_the_title( );
-		    $thumb = get_the_post_thumbnail();
+		    $thumb = get_the_post_thumbnail($post->ID, 'medium', ['loading' => 'lazy']);
 	    ?>
 	    <h2 class="title"><?php echo esc_html( $title ); ?></h2>
 		<?php echo $thumb; ?>

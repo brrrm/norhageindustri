@@ -61,7 +61,7 @@ if($text_snippet){
 			<?php foreach($projects as $project):
 				$permalink = get_permalink( $project->ID );
         		$title = get_the_title( $project->ID );
-        		$thumb = get_the_post_thumbnail($project->ID);
+        		$thumb = get_the_post_thumbnail($project->ID, 'medium', ['loading' => 'lazy']);
         	?>
 				<li class="image-button">
 					<a href="<?php echo esc_url( $permalink ); ?>"><?php echo $thumb; ?></a>

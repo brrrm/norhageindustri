@@ -61,7 +61,7 @@ if ( ! empty( $block['align'] ) ) {
 				]);
 
 				if($first_post){
-					$image = get_the_post_thumbnail($first_post[0]->ID, 'medium');
+					$image = get_the_post_thumbnail($first_post[0]->ID, 'medium', ['loading' => 'lazy']);
 				}
 			}
 		?>
