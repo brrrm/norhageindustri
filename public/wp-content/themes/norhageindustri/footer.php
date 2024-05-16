@@ -36,7 +36,7 @@
 				</dd>
 
 				<dt><?php _e('B2C webshop', 'norhageindustri'); ?></dt>
-				<dd><a href="<?php printf('https://norhage.%s', $tld); ?>" target="_blank"><?php printf('norhage.%s', $tld); ?></a></dd>
+				<dd><a href="<?php _e('https://norhage.com', 'norhageindustri'); ?>" target="_blank"><?php _e('norhage.com', 'norhageindustri'); ?></a></dd>
 			</dl>
 		</div>
 		<nav id="footer-navigation" class="sitemap">
