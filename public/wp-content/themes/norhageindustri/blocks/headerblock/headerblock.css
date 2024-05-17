@@ -145,7 +145,8 @@
 @media screen and (min-width: 768px){
 	.headerblock .headerblock-text-col ul.usps{
 		position: absolute;
-		width: 15%;	
+		width: 15%;
+		max-width: calc((100vh - var(--header-height) - 3em) / 5); /* set a max-width to prevent overflow form the four squares */	
 		right: -3.5%;
 		top: calc(var(--header-height) + (100vh - var(--header-height)) / 2);
 		transform: translate(0, -50%);
@@ -159,7 +160,7 @@
 		aspect-ratio: 1;
 		overflow: hidden;
 		justify-content: center;
-		max-height: calc((100vh - var(--header-height) - 3em) / 4);
+		width: 100%;
 	}
 	.headerblock .headerblock-text-col ul.usps li:last-child{
 		margin-bottom: 0;
