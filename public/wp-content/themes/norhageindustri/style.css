@@ -478,7 +478,6 @@ header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu 
 	left: -120%;
 	width: 75%;
 	top: 0;
-	bottom: 0;
 	padding: 3em;
 	display: flex;
 	flex-wrap: wrap;
@@ -497,12 +496,18 @@ header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.la
 	transform: translate(0, 0);
 	opacity: 1;
 	transition: transform 0.3s ease-out, opacity 0.3s ease-out, left 0s linear 0s;
+	overflow: auto;
+	scrollbar-width: none;  /* Firefox */
+}
+header#masthead nav#site-navigation .menu-main-navigation-container ul.menu li:hover ul.sub-menu::-webkit-scrollbar,
+header#masthead nav#site-navigation .menu-secondary-menu-container ul.menu li.languages:hover ul.sub-menu::-webkit-scrollbar{
+	display: none;
 }
 header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu > li{
 	display: block;
 	width: 25%;
 	line-height: 2.5em;
-	padding-left: 0.5em;
+	padding-left: 0;
 }
 header#masthead nav#site-navigation .menu-main-navigation-container li:nth-child(4) ul.sub-menu > li{
 	flex: auto 0 0;
