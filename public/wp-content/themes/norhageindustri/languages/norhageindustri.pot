@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: norhage Industri\n"
-"POT-Creation-Date: 2024-05-17 15:49+0200\n"
+"POT-Creation-Date: 2024-05-17 16:11+0200\n"
 "PO-Revision-Date: 2023-12-08 13:34+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -82,7 +82,7 @@ msgid "Email"
 msgstr ""
 
 #: footer.php:30
-msgid "info@norhageindustri.com"
+msgid "info@norhageindustri.no"
 msgstr ""
 
 #: footer.php:32
