@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: norhage Industri\n"
-"POT-Creation-Date: 2024-04-12 16:13+0200\n"
-"PO-Revision-Date: 2024-04-12 16:14+0200\n"
+"POT-Creation-Date: 2024-05-17 15:49+0200\n"
+"PO-Revision-Date: 2024-05-17 16:09+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -33,23 +33,6 @@ msgstr "oh je, wir mussten an Material mangeln."
 #, php-format
 msgid "View all post filed under %s"
 msgstr "Alle unter %s eingereichten Stellen anzeigen"
-
-#: blocks/cta-block/ctaBlock.php:38
-msgid "Need help with your choice?"
-msgstr "Benötigen Sie Hilfe bei der Auswahl?"
-
-#: blocks/cta-block/ctaBlock.php:44
-msgid ""
-"Our experts are ready to assist you with selecting the best match for your "
-"growing operations."
-msgstr ""
-"Unsere Experten sind bereit, Sie bei der Auswahl der besten Lösung für Ihren "
-"Anbaubetrieb zu unterstützen."
-
-#: blocks/cta-block/ctaBlock.php:50
-msgid "Contact us today and we’ll jumpstart your project!"
-msgstr ""
-"Kontaktieren Sie uns noch heute und wir bringen Ihr Projekt in Schwung!"
 
 #: blocks/headerblock/headerblock.php:74
 msgid "Industrial greenhouse projects"
@@ -101,7 +84,7 @@ msgstr "E-Mail"
 
 #: footer.php:30
 msgid "info@norhageindustri.com"
-msgstr "info@norhageindustri.com"
+msgstr "info@norhageindustri.no"
 
 #: footer.php:32
 msgid "Phone"
@@ -118,6 +101,14 @@ msgstr "+47 983 67 181"
 #: footer.php:38
 msgid "B2C webshop"
 msgstr "B2C-Webshop"
+
+#: footer.php:39
+msgid "https://norhage.com"
+msgstr "https://norhage.de"
+
+#: footer.php:39
+msgid "norhage.com"
+msgstr "norhage.de"
 
 #: footer.php:43 footer.php:44
 msgid "Sitemap"
@@ -507,27 +498,27 @@ msgstr "Keine Projekte gefunden"
 msgid "No projects found in trash"
 msgstr "Keine Porojekte im Papierkorb gefunden"
 
-#: functions.php:485
+#: functions.php:483
 msgid "expand"
 msgstr "aufklappen"
 
-#: header.php:35
+#: header.php:53
 msgid "Skip to content"
 msgstr "Zum Inhalt springen"
 
-#: header.php:119
+#: header.php:137
 msgid "Primary Menu"
 msgstr "Hauptmenü"
 
-#: header.php:123
+#: header.php:141
 msgid "Navigation"
 msgstr "Navigation"
 
-#: header.php:140
+#: header.php:162
 msgid "Contact us today"
 msgstr "Kontaktieren Sie uns noch heute"
 
-#: header.php:141
+#: header.php:163
 msgid "sales@norhageindustri.com"
 msgstr "info@norhageindustri.com"
 
@@ -587,6 +578,19 @@ msgstr "Bearbeiten <span class=\"screen-reader-text\">%s</span>"
 msgid "Search Results for: %s"
 msgstr "Suchergebnisse für: %s"
 
+#: searchform.php:24
+msgid "Search&hellip;"
+msgstr "Suche&hellip;"
+
+#: searchform.php:25
+msgid "Search..."
+msgstr "Suche..."
+
+#: searchform.php:26
+msgctxt "submit button"
+msgid "Search"
+msgstr "Suche"
+
 #: template-parts/content-none.php:14
 msgid "Nothing Found"
 msgstr "Nichts gefunden"
@@ -633,3 +637,17 @@ msgstr "Garbo"
 #. Author URI of the plugin/theme
 msgid "https://garbo.nl"
 msgstr "https://garbo.nl"
+
+#~ msgid "Need help with your choice?"
+#~ msgstr "Benötigen Sie Hilfe bei der Auswahl?"
+
+#~ msgid ""
+#~ "Our experts are ready to assist you with selecting the best match for "
+#~ "your growing operations."
+#~ msgstr ""
+#~ "Unsere Experten sind bereit, Sie bei der Auswahl der besten Lösung für "
+#~ "Ihren Anbaubetrieb zu unterstützen."
+
+#~ msgid "Contact us today and we’ll jumpstart your project!"
+#~ msgstr ""
+#~ "Kontaktieren Sie uns noch heute und wir bringen Ihr Projekt in Schwung!"
