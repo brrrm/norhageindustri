@@ -160,7 +160,7 @@
 
 			<aside class="contact">
 				<h3><?php _e('Contact us today', 'norhageindustri'); ?></h3>
-				<a href="mailto:<?php _e('sales@norhageindustri.com', 'norhageindustri'); ?>"><?php _e('sales@norhageindustri.com', 'norhageindustri'); ?></a>
+				<a href="mailto:<?php _e('info@norhageindustri.no', 'norhageindustri'); ?>"><?php _e('info@norhageindustri.no', 'norhageindustri'); ?></a>
 			</aside>
 			
 		</nav><!-- #site-navigation -->
