@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: norhage Industri\n"
-"POT-Creation-Date: 2024-05-17 16:11+0200\n"
+"POT-Creation-Date: 2024-06-18 12:10+0200\n"
 "PO-Revision-Date: 2023-12-08 13:34+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -81,8 +81,8 @@ msgstr ""
 msgid "Email"
 msgstr ""
 
-#: footer.php:30
-msgid "info@norhageindustri.no"
+#: footer.php:30 header.php:163
+msgid "info@norhageindustri.com"
 msgstr ""
 
 #: footer.php:32
@@ -267,237 +267,191 @@ msgstr ""
 msgid "Material types"
 msgstr ""
 
-#: functions.php:193
-msgctxt "taxonomy general name"
-msgid "Service type"
-msgstr ""
-
-#: functions.php:194
-msgctxt "taxonomy singular name"
-msgid "Service types"
-msgstr ""
-
-#: functions.php:195
-msgid "Search service types"
-msgstr ""
-
-#: functions.php:196
-msgid "All Service types"
-msgstr ""
-
-#: functions.php:197
-msgid "Parent Service type"
-msgstr ""
-
-#: functions.php:198
-msgid "Parent Service type:"
-msgstr ""
-
-#: functions.php:199
-msgid "Edit Service type"
-msgstr ""
-
-#: functions.php:200
-msgid "Update Service type"
-msgstr ""
-
-#: functions.php:201
-msgid "Save Service type"
-msgstr ""
-
-#: functions.php:202
-msgid "New Service type name"
-msgstr ""
-
-#: functions.php:203
-msgid "Service types"
-msgstr ""
-
-#: functions.php:233
+#: functions.php:216
 msgid "Greenhouses"
 msgstr ""
 
-#: functions.php:234
+#: functions.php:217
 msgid "Greenhouse"
 msgstr ""
 
-#: functions.php:235 functions.php:238
+#: functions.php:218 functions.php:221
 msgid "New greenhouse"
 msgstr ""
 
-#: functions.php:236
+#: functions.php:219
 msgid "Add new greenhouse"
 msgstr ""
 
-#: functions.php:237
+#: functions.php:220
 msgid "Edit greenhouse"
 msgstr ""
 
-#: functions.php:239
+#: functions.php:222
 msgid "View greenhouse"
 msgstr ""
 
-#: functions.php:240
+#: functions.php:223
 msgid "Search greenhouse"
 msgstr ""
 
-#: functions.php:241
+#: functions.php:224
 msgid "No greenhouses found"
 msgstr ""
 
-#: functions.php:242
+#: functions.php:225
 msgid "No greenhouses found in trash"
 msgstr ""
 
-#: functions.php:249
+#: functions.php:232
 msgid "Plastics"
 msgstr ""
 
-#: functions.php:250
+#: functions.php:233
 msgid "Plastic"
 msgstr ""
 
-#: functions.php:251 functions.php:254
+#: functions.php:234 functions.php:237
 msgid "New plastic"
 msgstr ""
 
-#: functions.php:252
+#: functions.php:235
 msgid "Add new plastic"
 msgstr ""
 
-#: functions.php:253
+#: functions.php:236
 msgid "Edit plastic"
 msgstr ""
 
-#: functions.php:255
+#: functions.php:238
 msgid "View plastics"
 msgstr ""
 
-#: functions.php:256
+#: functions.php:239
 msgid "Search plastics"
 msgstr ""
 
-#: functions.php:257
+#: functions.php:240
 msgid "No plastics found"
 msgstr ""
 
-#: functions.php:258
+#: functions.php:241
 msgid "No plastics found in trash"
 msgstr ""
 
-#: functions.php:265
+#: functions.php:248
 msgid "Services"
 msgstr ""
 
-#: functions.php:266
+#: functions.php:249
 msgid "Service"
 msgstr ""
 
-#: functions.php:267 functions.php:270
+#: functions.php:250 functions.php:253
 msgid "New service"
 msgstr ""
 
-#: functions.php:268
+#: functions.php:251
 msgid "Add new service"
 msgstr ""
 
-#: functions.php:269
+#: functions.php:252
 msgid "Edit service"
 msgstr ""
 
-#: functions.php:271
+#: functions.php:254
 msgid "View service"
 msgstr ""
 
-#: functions.php:272
+#: functions.php:255
 msgid "Search services"
 msgstr ""
 
-#: functions.php:273
+#: functions.php:256
 msgid "No services found"
 msgstr ""
 
-#: functions.php:274
+#: functions.php:257
 msgid "No services found in trash"
 msgstr ""
 
-#: functions.php:281
+#: functions.php:264
 msgid "Construction materials"
 msgstr ""
 
-#: functions.php:282
+#: functions.php:265
 msgid "Construction material"
 msgstr ""
 
-#: functions.php:283 functions.php:286
+#: functions.php:266 functions.php:269
 msgid "New construction material"
 msgstr ""
 
-#: functions.php:284
+#: functions.php:267
 msgid "Add new construction material"
 msgstr ""
 
-#: functions.php:285
+#: functions.php:268
 msgid "Edit construction material"
 msgstr ""
 
-#: functions.php:287
+#: functions.php:270
 msgid "View construction material"
 msgstr ""
 
-#: functions.php:288
+#: functions.php:271
 msgid "Search construction materials"
 msgstr ""
 
-#: functions.php:289
+#: functions.php:272
 msgid "No construction materials found"
 msgstr ""
 
-#: functions.php:290
+#: functions.php:273
 msgid "No construction materials found in trash"
 msgstr ""
 
-#: functions.php:326
+#: functions.php:309
 msgid "You should know that"
 msgstr ""
 
-#: functions.php:384
+#: functions.php:367
 msgid "Projects"
 msgstr ""
 
-#: functions.php:385
+#: functions.php:368
 msgid "Project"
 msgstr ""
 
-#: functions.php:386 functions.php:389
+#: functions.php:369 functions.php:372
 msgid "New project"
 msgstr ""
 
-#: functions.php:387
+#: functions.php:370
 msgid "Add new project"
 msgstr ""
 
-#: functions.php:388
+#: functions.php:371
 msgid "Edit project"
 msgstr ""
 
-#: functions.php:390
+#: functions.php:373
 msgid "View project"
 msgstr ""
 
-#: functions.php:391
+#: functions.php:374
 msgid "Search project"
 msgstr ""
 
-#: functions.php:392
+#: functions.php:375
 msgid "No projects found"
 msgstr ""
 
-#: functions.php:393
+#: functions.php:376
 msgid "No projects found in trash"
 msgstr ""
 
-#: functions.php:483
+#: functions.php:466
 msgid "expand"
 msgstr ""
 
@@ -515,10 +469,6 @@ msgstr ""
 
 #: header.php:162
 msgid "Contact us today"
-msgstr ""
-
-#: header.php:163
-msgid "sales@norhageindustri.com"
 msgstr ""
 
 #. translators: %s: post date.

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: norhage Industri\n"
-"POT-Creation-Date: 2024-05-17 16:12+0200\n"
-"PO-Revision-Date: 2024-05-17 16:12+0200\n"
+"POT-Creation-Date: 2024-06-18 12:11+0200\n"
+"PO-Revision-Date: 2024-06-18 12:11+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nb_NO\n"
@@ -82,8 +82,8 @@ msgstr "Adresse"
 msgid "Email"
 msgstr "E-post"
 
-#: footer.php:30
-msgid "info@norhageindustri.no"
+#: footer.php:30 header.php:163
+msgid "info@norhageindustri.com"
 msgstr "info@norhageindustri.no"
 
 #: footer.php:32
@@ -268,237 +268,191 @@ msgstr "Nytt navn på materialtype"
 msgid "Material types"
 msgstr "Materialtyper"
 
-#: functions.php:193
-msgctxt "taxonomy general name"
-msgid "Service type"
-msgstr "Tjenestetype"
-
-#: functions.php:194
-msgctxt "taxonomy singular name"
-msgid "Service types"
-msgstr "Tjenestetyper"
-
-#: functions.php:195
-msgid "Search service types"
-msgstr "Typer søketjenester"
-
-#: functions.php:196
-msgid "All Service types"
-msgstr "Alle tjenestetyper"
-
-#: functions.php:197
-msgid "Parent Service type"
-msgstr "Type overordnet tjeneste"
-
-#: functions.php:198
-msgid "Parent Service type:"
-msgstr "Type overordnet tjeneste:"
-
-#: functions.php:199
-msgid "Edit Service type"
-msgstr "Endre tjenestetype"
-
-#: functions.php:200
-msgid "Update Service type"
-msgstr "Type oppdateringstjeneste"
-
-#: functions.php:201
-msgid "Save Service type"
-msgstr "Type Lagre tjeneste"
-
-#: functions.php:202
-msgid "New Service type name"
-msgstr "Nytt navn på tjenestetype"
-
-#: functions.php:203
-msgid "Service types"
-msgstr "Tjenestetyper"
-
-#: functions.php:233
+#: functions.php:216
 msgid "Greenhouses"
 msgstr "Drivhusene"
 
-#: functions.php:234
+#: functions.php:217
 msgid "Greenhouse"
 msgstr "Drivhus"
 
-#: functions.php:235 functions.php:238
+#: functions.php:218 functions.php:221
 msgid "New greenhouse"
 msgstr "Nytt drivhus"
 
-#: functions.php:236
+#: functions.php:219
 msgid "Add new greenhouse"
 msgstr "Legg til nytt drivhus"
 
-#: functions.php:237
+#: functions.php:220
 msgid "Edit greenhouse"
 msgstr "Rediger drivhus"
 
-#: functions.php:239
+#: functions.php:222
 msgid "View greenhouse"
 msgstr "Se drivhus"
 
-#: functions.php:240
+#: functions.php:223
 msgid "Search greenhouse"
 msgstr "Søk drivhus"
 
-#: functions.php:241
+#: functions.php:224
 msgid "No greenhouses found"
 msgstr "Fant ingen drivhus"
 
-#: functions.php:242
+#: functions.php:225
 msgid "No greenhouses found in trash"
 msgstr "Ingen drivhus funnet i søppel"
 
-#: functions.php:249
+#: functions.php:232
 msgid "Plastics"
 msgstr "Plast"
 
-#: functions.php:250
+#: functions.php:233
 msgid "Plastic"
 msgstr "Plast"
 
-#: functions.php:251 functions.php:254
+#: functions.php:234 functions.php:237
 msgid "New plastic"
 msgstr "Ny plast"
 
-#: functions.php:252
+#: functions.php:235
 msgid "Add new plastic"
 msgstr "Legg til ny plast"
 
-#: functions.php:253
+#: functions.php:236
 msgid "Edit plastic"
 msgstr "Rediger plast"
 
-#: functions.php:255
+#: functions.php:238
 msgid "View plastics"
 msgstr "Se plast"
 
-#: functions.php:256
+#: functions.php:239
 msgid "Search plastics"
 msgstr "Søk plast"
 
-#: functions.php:257
+#: functions.php:240
 msgid "No plastics found"
 msgstr "Fant ingen plast"
 
-#: functions.php:258
+#: functions.php:241
 msgid "No plastics found in trash"
 msgstr "Fant ingen plast i søppel"
 
-#: functions.php:265
+#: functions.php:248
 msgid "Services"
 msgstr "Tjenester"
 
-#: functions.php:266
+#: functions.php:249
 msgid "Service"
 msgstr "Tjeneste"
 
-#: functions.php:267 functions.php:270
+#: functions.php:250 functions.php:253
 msgid "New service"
 msgstr "Legg tjeneste"
 
-#: functions.php:268
+#: functions.php:251
 msgid "Add new service"
 msgstr "Legg til ny tjeneste"
 
-#: functions.php:269
+#: functions.php:252
 msgid "Edit service"
 msgstr "Rediger tjeneste"
 
-#: functions.php:271
+#: functions.php:254
 msgid "View service"
 msgstr "Vis tjeneste"
 
-#: functions.php:272
+#: functions.php:255
 msgid "Search services"
 msgstr "Søk i tjenester"
 
-#: functions.php:273
+#: functions.php:256
 msgid "No services found"
 msgstr "Fant ingen tjenester"
 
-#: functions.php:274
+#: functions.php:257
 msgid "No services found in trash"
 msgstr "Ingen tjenester funnet i søppel"
 
-#: functions.php:281
+#: functions.php:264
 msgid "Construction materials"
 msgstr "Byggematerialer"
 
-#: functions.php:282
+#: functions.php:265
 msgid "Construction material"
 msgstr "Byggemateriale"
 
-#: functions.php:283 functions.php:286
+#: functions.php:266 functions.php:269
 msgid "New construction material"
 msgstr "Nytt byggemateriale"
 
-#: functions.php:284
+#: functions.php:267
 msgid "Add new construction material"
 msgstr "Legg til nytt byggemateriale"
 
-#: functions.php:285
+#: functions.php:268
 msgid "Edit construction material"
 msgstr "Rediger byggemateriale"
 
-#: functions.php:287
+#: functions.php:270
 msgid "View construction material"
 msgstr "Se byggemateriale"
 
-#: functions.php:288
+#: functions.php:271
 msgid "Search construction materials"
 msgstr "Søk i byggematerialer"
 
-#: functions.php:289
+#: functions.php:272
 msgid "No construction materials found"
 msgstr "Fant ingen byggematerialer"
 
-#: functions.php:290
+#: functions.php:273
 msgid "No construction materials found in trash"
 msgstr "Fant ingen byggematerialer i søppel"
 
-#: functions.php:326
+#: functions.php:309
 msgid "You should know that"
 msgstr "Du bør vite det"
 
-#: functions.php:384
+#: functions.php:367
 msgid "Projects"
 msgstr "Prosjekter"
 
-#: functions.php:385
+#: functions.php:368
 msgid "Project"
 msgstr "Prosjekt"
 
-#: functions.php:386 functions.php:389
+#: functions.php:369 functions.php:372
 msgid "New project"
 msgstr "Nytt prosjekt"
 
-#: functions.php:387
+#: functions.php:370
 msgid "Add new project"
 msgstr "Nytt prosjekt"
 
-#: functions.php:388
+#: functions.php:371
 msgid "Edit project"
 msgstr "Rediger prosjekt"
 
-#: functions.php:390
+#: functions.php:373
 msgid "View project"
 msgstr "Vis prosjekt"
 
-#: functions.php:391
+#: functions.php:374
 msgid "Search project"
 msgstr "Søk prosjekt"
 
-#: functions.php:392
+#: functions.php:375
 msgid "No projects found"
 msgstr "Ingen prosjekter funnet"
 
-#: functions.php:393
+#: functions.php:376
 msgid "No projects found in trash"
 msgstr "Ingen prosjekter funnet i papirkurven"
 
-#: functions.php:483
+#: functions.php:466
 msgid "expand"
 msgstr "utvide"
 
@@ -517,10 +471,6 @@ msgstr "Navigasjon"
 #: header.php:162
 msgid "Contact us today"
 msgstr "Kontakt oss i dag"
-
-#: header.php:163
-msgid "sales@norhageindustri.com"
-msgstr "info@norhageindustri.no"
 
 #. translators: %s: post date.
 #: inc/template-tags.php:30
@@ -634,6 +584,44 @@ msgstr "Garbo"
 #. Author URI of the plugin/theme
 msgid "https://garbo.nl"
 msgstr "https://garbo.nl"
+
+#~ msgctxt "taxonomy general name"
+#~ msgid "Service type"
+#~ msgstr "Tjenestetype"
+
+#~ msgctxt "taxonomy singular name"
+#~ msgid "Service types"
+#~ msgstr "Tjenestetyper"
+
+#~ msgid "Search service types"
+#~ msgstr "Typer søketjenester"
+
+#~ msgid "All Service types"
+#~ msgstr "Alle tjenestetyper"
+
+#~ msgid "Parent Service type"
+#~ msgstr "Type overordnet tjeneste"
+
+#~ msgid "Parent Service type:"
+#~ msgstr "Type overordnet tjeneste:"
+
+#~ msgid "Edit Service type"
+#~ msgstr "Endre tjenestetype"
+
+#~ msgid "Update Service type"
+#~ msgstr "Type oppdateringstjeneste"
+
+#~ msgid "Save Service type"
+#~ msgstr "Type Lagre tjeneste"
+
+#~ msgid "New Service type name"
+#~ msgstr "Nytt navn på tjenestetype"
+
+#~ msgid "Service types"
+#~ msgstr "Tjenestetyper"
+
+#~ msgid "sales@norhageindustri.com"
+#~ msgstr "info@norhageindustri.no"
 
 #~ msgid "Need help with your choice?"
 #~ msgstr "Trenger du hjelp med valget ditt?"

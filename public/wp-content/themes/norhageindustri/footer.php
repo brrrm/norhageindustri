@@ -27,7 +27,7 @@
 				</dd>
 				
 				<dt><?php _e('Email', 'norhageindustri'); ?></dt>
-				<dd><a href="mailto:<?php _e('info@norhageindustri.no', 'norhageindustri'); ?>"><?php _e('info@norhageindustri.no', 'norhageindustri'); ?></a></dd>
+				<dd><a href="mailto:<?php _e('info@norhageindustri.com', 'norhageindustri'); ?>"><?php _e('info@norhageindustri.com', 'norhageindustri'); ?></a></dd>
 				
 				<dt><?php _e('Phone', 'norhageindustri'); ?></dt>
 				<dd>
