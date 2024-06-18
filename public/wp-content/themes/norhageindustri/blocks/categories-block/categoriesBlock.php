@@ -18,6 +18,7 @@ switch($catName){
 		$post_type = 'plastic';
 		break;
 	case 'service-type':
+		return; // this taxonomy has been deleted. Preventing errors on pages with old blocks
 		$post_type = 'service';
 		break;
 	case 'constr-mat-type':
