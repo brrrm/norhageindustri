@@ -185,23 +185,6 @@ function norhageindustri_create_posttypes() {
 				'new_item_name' => __( 'New Material type name' ),
 				'menu_name' => __( 'Material types' ),
 			]
-		],
-		'service-type'		=> [
-			'machine-name'					=> 'service-type',
-			'content-type'					=> 'service',
-			'labels'						=> [
-				'name' => _x( 'Service type', 'taxonomy general name' ),
-				'singular_name' => _x( 'Service types', 'taxonomy singular name' ),
-				'search_items' =>  __( 'Search service types' ),
-				'all_items' => __( 'All Service types' ),
-				'parent_item' => __( 'Parent Service type' ),
-				'parent_item_colon' => __( 'Parent Service type:' ),
-				'edit_item' => __( 'Edit Service type' ),
-				'update_item' => __( 'Update Service type' ),
-				'add_new_item' => __( 'Save Service type' ),
-				'new_item_name' => __( 'New Service type name' ),
-				'menu_name' => __( 'Service types' ),
-			]
 		]
 	];
 
@@ -260,7 +243,7 @@ function norhageindustri_create_posttypes() {
 		],
  		'service'	=> [
  			'slug'		=> 'service',
- 			'taxonomies'	=> ['service-type'],
+ 			'taxonomies'	=> [],
  			'labels'	=> [
 				'name' 						=> __( 'Services', 'norhageindustri' ),
 				'singular_name' 			=> __( 'Service', 'norhageindustri' ),
