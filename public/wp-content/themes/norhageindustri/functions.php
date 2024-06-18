@@ -689,6 +689,34 @@ if (!is_admin()) {
 }
 
 
+add_filter( 'wpseo_breadcrumb_links', 'norhage_breadcrumb_links' );
+function norhage_breadcrumb_links($links){
+	error_log(print_r($links, true));
+	if(isset($links[1]) && isset($links[1]['taxonomy'])){
+		$between_post = false;
+		switch($links[1]['taxonomy']){
+			case 'plastic-type':
+				$between_post = get_post(pll_get_post(801));
+				break;
+			case 'constr-mat-type':
+				$between_post = get_post(pll_get_post(836));
+				break;
+			case 'product-type':
+				$between_post = get_post(pll_get_post(297));
+				break;
+		}
+		if($between_post !== false){
+			$between = [[
+				'url'		=> get_permalink($between_post->ID),
+				'text'		=> $between_post->post_title,
+				'id'		=> $between_post->ID,
+			]];
+			array_splice( $links, 1, 0, $between );
+		}
+	}
+	return $links;
+}
+
 
 /*
 // CORS HOT FIX BY NB:
