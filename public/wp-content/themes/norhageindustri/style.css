@@ -768,8 +768,9 @@ header#masthead nav#site-navigation h2{
 		text-align: left;
 		border-bottom: none;
 		background: var(--light-blue);
-		height: auto;
-		min-height: 100vh;
+		height: calc(100vh - var(--header-nav-height));
+		min-height: unset;
+		overflow: auto;
 		position: relative;
 		top: 0;
 		padding: 2em 1em;
