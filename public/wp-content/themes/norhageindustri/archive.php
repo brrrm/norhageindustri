@@ -16,6 +16,11 @@ get_header();
 
 			<header class="entry-header">
 				<?php
+					if ( function_exists('yoast_breadcrumb') && !$is_preview ) {
+						yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+					}
+				?>
+				<?php
 				the_archive_title( '<h1 class="page-title">', '</h1>' );
 				?>
 			</header><!-- .page-header -->

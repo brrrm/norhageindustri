@@ -12,6 +12,11 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php if(!has_block('norhageindustri/headerblock') && !has_block('norhageindustri/product-header-block')){ ?>
 	<header class="entry-header">
+		<?php
+			if ( function_exists('yoast_breadcrumb') ) {
+				yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+			}
+		?>
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 	<?php } ?>

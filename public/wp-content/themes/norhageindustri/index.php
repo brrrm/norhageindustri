@@ -23,6 +23,11 @@ get_header();
 			if ( is_home() && ! is_front_page() ) :
 				?>
 				<header>
+					<?php
+						if ( function_exists('yoast_breadcrumb') && !$is_preview ) {
+							yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+						}
+					?>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
 				<?php
