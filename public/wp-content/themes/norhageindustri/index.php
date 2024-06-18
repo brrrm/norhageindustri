@@ -24,7 +24,7 @@ get_header();
 				?>
 				<header>
 					<?php
-						if ( function_exists('yoast_breadcrumb') && !$is_preview ) {
+						if ( function_exists('yoast_breadcrumb') ) {
 							yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
 						}
 					?>
