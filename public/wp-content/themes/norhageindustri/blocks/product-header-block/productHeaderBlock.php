@@ -60,13 +60,18 @@ $allowedBlocks = ['core/post-title'];
 
 	<?php if ( $images ) : ?>
 		<div class="image-col">
+			<?php $counter = 0; ?>
 			<?php foreach( $images as $image ): ?>
 			<figure class="header-image">
-				<?php 
+				<?php
+				$counter++; 
 				if ( $image ) :
 					echo wp_get_attachment_image( $image['ID'], 'full', '', array( 'class' => 'header-image__img', 'alt' => $image['alt'] ) ); 
 				endif; 
-				?>
+
+				if($counter == 5 && count($images) > 5): ?>
+					<span class="click-for-more-images">+<?php echo count($images) - 5; ?></span>
+				<?php endif; ?>
 			</figure>
 			<?php endforeach; ?>
 		</div>
