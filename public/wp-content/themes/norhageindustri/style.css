@@ -1307,6 +1307,10 @@ body .image-popup .image-col .header-image img{
 	display: block;
 }
 
+body .image-popup .image-col.cover .header-image picture{
+	width: 100%;
+	height: 100%;
+}
 body .image-popup .image-col.cover .header-image img{
 	object-fit: cover;
 	width: 100%;
