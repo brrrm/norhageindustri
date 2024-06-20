@@ -41,10 +41,10 @@ $post_id_greenhouses = 190;
 $post_id_services = 196;
 $post_id_plastics = 192;
 $post_id_materials = 194;
-$url_greenhouses = esc_url(get_permalink(pll_get_post($post_id_greenhouses)));
-$url_services = esc_url(get_permalink(pll_get_post($post_id_services)));
-$url_plastics = esc_url(get_permalink(pll_get_post($post_id_plastics)));
-$url_materials = esc_url(get_permalink(pll_get_post($post_id_materials)));
+$url_greenhouses = function_exists('pll_get_post')? esc_url(get_permalink(pll_get_post($post_id_greenhouses))) : esc_url(get_permalink($post_id_greenhouses));
+$url_services = function_exists('pll_get_post')? esc_url(get_permalink(pll_get_post($post_id_services))) : esc_url(get_permalink($post_id_services));
+$url_plastics = function_exists('pll_get_post')? esc_url(get_permalink(pll_get_post($post_id_plastics))) : esc_url(get_permalink($post_id_plastics));
+$url_materials = function_exists('pll_get_post')? esc_url(get_permalink(pll_get_post($post_id_materials))) : esc_url(get_permalink($post_id_materials));
 
 ?>
 

@@ -691,7 +691,9 @@ if (!is_admin()) {
 
 add_filter( 'wpseo_breadcrumb_links', 'norhage_breadcrumb_links' );
 function norhage_breadcrumb_links($links){
-	error_log(print_r($links, true));
+	if(!function_exists('pll_get_post')){
+		return $links;
+	}
 	if(isset($links[1]) && isset($links[1]['taxonomy'])){
 		$between_post = false;
 		switch($links[1]['taxonomy']){
