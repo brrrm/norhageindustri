@@ -1,0 +1,588 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2024-08-07 16:53+0200\n"
+"PO-Revision-Date: 2024-08-07 17:13+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: lt_LT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.1\n"
+"X-Poedit-Basepath: .\n"
+
+#: 404.php:18
+msgid "404"
+msgstr "404"
+
+#: 404.php:20
+msgid "oh dear, we had to short on material.."
+msgstr "oi, mielieji, turėjome pritrūkti medžiagos.."
+
+#: blocks/categories-block/categoriesBlock.php:70
+#: blocks/categories-block/categoriesBlock.php:80
+#, php-format
+msgid "View all post filed under %s"
+msgstr "Peržiūrėti visą įrašą, pateiktą pagal %s"
+
+#: blocks/headerblock/headerblock.php:74
+msgid "Industrial greenhouse projects"
+msgstr "Pramoniniai šiltnamio efektą sukeliančių dujų projektai"
+
+#: blocks/headerblock/headerblock.php:88
+msgid "Installation services"
+msgstr "Montavimo paslaugos"
+
+#: blocks/headerblock/headerblock.php:95
+msgid "Maintenance & restoration"
+msgstr "Priežiūra ir restauravimas"
+
+#: blocks/headerblock/headerblock.php:104
+msgid "Roofing & facade, PVC curtains"
+msgstr "Stogo danga ir fasadas, PVC užuolaidos"
+
+#: blocks/projects-block/projectsBlock.php:53
+msgid "Left"
+msgstr "Kairė"
+
+#: blocks/projects-block/projectsBlock.php:54
+msgid "Right"
+msgstr "Dešinė"
+
+#: blocks/projects-block/projectsBlock.php:71
+msgid "Read more ->"
+msgstr "Skaityti daugiau ->"
+
+#: footer.php:18
+msgid "Norhage Industri"
+msgstr "Norhage Industri"
+
+#: footer.php:19
+msgid ""
+"Our experts are available to assist and advise you on your industrial "
+"project. Don't hesitate to contact us"
+msgstr ""
+"Mūsų ekspertai gali padėti ir patarti dėl jūsų pramoninio projekto. "
+"Nedvejodami susisiekite su mumis"
+
+#: footer.php:21
+msgid "Address"
+msgstr "Adresas"
+
+#: footer.php:23
+msgid ""
+"TEHI AS <br />\n"
+"\t\t\t\t\t\t\tPostboks 195 <br />\n"
+"\t\t\t\t\t\t\t4350 Kleppe <br />\n"
+"\t\t\t\t\t\t\tNorge"
+msgstr ""
+
+#: footer.php:29
+msgid "Email"
+msgstr "El. paštas"
+
+#: footer.php:30 header.php:163
+msgid "info@norhageindustri.com"
+msgstr "info@norhageindustri.lt"
+
+#: footer.php:32
+msgid "Phone"
+msgstr "Telefonas"
+
+#: footer.php:34
+msgid ""
+"<a href=\"tel:+4796759359\">+47 967 59 359</a> <br />\n"
+"\t\t\t\t\t\t\t<a href=\"tel:+4798367181\">+47 983 67 181</a>"
+msgstr ""
+"<a href=\"tel:+4796759359\">+47 967 59 359</a> <br />\n"
+"\t\t\t\t\t\t\t<a href=\"tel:+4798367181\">+47 983 67 181</a>"
+
+#: footer.php:38
+msgid "B2C webshop"
+msgstr "B2C internetinė parduotuvė"
+
+#: footer.php:39
+msgid "https://norhage.com"
+msgstr "https://norhage.no"
+
+#: footer.php:39
+msgid "norhage.com"
+msgstr "norhage.no"
+
+#: footer.php:43 footer.php:44
+msgid "Sitemap"
+msgstr "Svetainės struktūra"
+
+#: footer.php:53
+msgid "Norhage Industri can also be found on:"
+msgstr "\"Norhage Industri\" taip pat galima rasti:"
+
+#: functions.php:52
+msgid "Primary"
+msgstr "Pagrindinis"
+
+#: functions.php:53
+msgid "Secondary navigation"
+msgstr "Antrinė navigacija"
+
+#: functions.php:54
+msgid "Footer navigation"
+msgstr "Poraštės naršymas"
+
+#: functions.php:142
+msgctxt "taxonomy general name"
+msgid "Greenhouse type"
+msgstr "Šiltnamio tipas"
+
+#: functions.php:143
+msgctxt "taxonomy singular name"
+msgid "Greenhouse types"
+msgstr "Šiltnamio tipai"
+
+#: functions.php:144
+msgid "Search greenhouse types"
+msgstr "Ieškoti šiltnamio efektą sukeliančių tipų"
+
+#: functions.php:145
+msgid "All greenhouse types"
+msgstr "Visi šiltnamio tipai"
+
+#: functions.php:146
+msgid "Parent greenhouse type"
+msgstr "Tėvų šiltnamio tipas"
+
+#: functions.php:147
+msgid "Parent greenhouse type:"
+msgstr "Tėvų šiltnamio tipas:"
+
+#: functions.php:148
+msgid "Edit greenhouse type"
+msgstr "Redaguoti šiltnamio efektą sukeliančių tipų"
+
+#: functions.php:149
+msgid "Update greenhouse type"
+msgstr "Atnaujinkite šiltnamio efektą sukeliančių tipų"
+
+#: functions.php:150
+msgid "Save greenhouse type"
+msgstr "Išsaugokite šiltnamio efektą sukeliančių tipų"
+
+#: functions.php:151
+msgid "New greenhouse type name"
+msgstr "Naujas šiltnamio tipo pavadinimas"
+
+#: functions.php:152
+msgid "Greenhouse types"
+msgstr "Šiltnamio tipai"
+
+#: functions.php:159
+msgctxt "taxonomy general name"
+msgid "Plastic type"
+msgstr "Plastikinis tipas"
+
+#: functions.php:160
+msgctxt "taxonomy singular name"
+msgid "Plastic types"
+msgstr "Plastikiniai tipai"
+
+#: functions.php:161
+msgid "Search plastic types"
+msgstr "Ieškoti plastiko tipų"
+
+#: functions.php:162
+msgid "All plastic types"
+msgstr "Visi plastiko tipai"
+
+#: functions.php:163
+msgid "Parent plastic type"
+msgstr "Pirminis plastiko tipas"
+
+#: functions.php:164
+msgid "Parent plastic type:"
+msgstr "Pirminis plastiko tipas:"
+
+#: functions.php:165
+msgid "Edit plastic type"
+msgstr "Redaguoti plastiko tipą"
+
+#: functions.php:166
+msgid "Update plastic type"
+msgstr "Atnaujinkite plastiko tipą"
+
+#: functions.php:167
+msgid "Save plastic type"
+msgstr "Išsaugokite plastiko tipą"
+
+#: functions.php:168
+msgid "New plastic type name"
+msgstr "Naujas plastiko tipo pavadinimas"
+
+#: functions.php:169
+msgid "Plastic types"
+msgstr "Plastikiniai tipai"
+
+#: functions.php:176
+msgctxt "taxonomy general name"
+msgid "Material type"
+msgstr "Medžiagos tipas"
+
+#: functions.php:177
+msgctxt "taxonomy singular name"
+msgid "Material types"
+msgstr "Medžiagų tipai"
+
+#: functions.php:178
+msgid "Search material types"
+msgstr "Ieškoti medžiagų tipų"
+
+#: functions.php:179
+msgid "All Material types"
+msgstr "Visi medžiagų tipai"
+
+#: functions.php:180
+msgid "Parent Material type"
+msgstr "Pirminės medžiagos tipas"
+
+#: functions.php:181
+msgid "Parent Material type:"
+msgstr "Pirminės medžiagos tipas:"
+
+#: functions.php:182
+msgid "Edit Material type"
+msgstr "Redaguoti medžiagos tipą"
+
+#: functions.php:183
+msgid "Update Material type"
+msgstr "Atnaujinti medžiagos tipą"
+
+#: functions.php:184
+msgid "Save Material type"
+msgstr "Išsaugoti medžiagos tipą"
+
+#: functions.php:185
+msgid "New Material type name"
+msgstr "Naujas medžiagos tipo pavadinimas"
+
+#: functions.php:186
+msgid "Material types"
+msgstr "Medžiagų tipai"
+
+#: functions.php:216
+msgid "Greenhouses"
+msgstr "Šiltnamiai"
+
+#: functions.php:217
+msgid "Greenhouse"
+msgstr "Šiltnamio efektą sukeliančių"
+
+#: functions.php:218 functions.php:221
+msgid "New greenhouse"
+msgstr "Naujas šiltnamis"
+
+#: functions.php:219
+msgid "Add new greenhouse"
+msgstr "Pridėti naują šiltnamį"
+
+#: functions.php:220
+msgid "Edit greenhouse"
+msgstr "Redaguoti šiltnamį"
+
+#: functions.php:222
+msgid "View greenhouse"
+msgstr "Žiūrėti šiltnamį"
+
+#: functions.php:223
+msgid "Search greenhouse"
+msgstr "Ieškoti šiltnamio efektą sukeliančių dujų"
+
+#: functions.php:224
+msgid "No greenhouses found"
+msgstr "Šiltnamių nerasta"
+
+#: functions.php:225
+msgid "No greenhouses found in trash"
+msgstr "Šiukšliadėžėse nerasta šiltnamių"
+
+#: functions.php:232
+msgid "Plastics"
+msgstr "Plastikai"
+
+#: functions.php:233
+msgid "Plastic"
+msgstr "Plastiko"
+
+#: functions.php:234 functions.php:237
+msgid "New plastic"
+msgstr "Naujas plastikas"
+
+#: functions.php:235
+msgid "Add new plastic"
+msgstr "Įpilkite naujo plastiko"
+
+#: functions.php:236
+msgid "Edit plastic"
+msgstr "Redaguoti plastiką"
+
+#: functions.php:238
+msgid "View plastics"
+msgstr "Peržiūrėti plastiką"
+
+#: functions.php:239
+msgid "Search plastics"
+msgstr "Ieškoti plastikų"
+
+#: functions.php:240
+msgid "No plastics found"
+msgstr "Plastiko nerasta"
+
+#: functions.php:241
+msgid "No plastics found in trash"
+msgstr "Šiukšliadėžėje nerasta plastiko"
+
+#: functions.php:248
+msgid "Services"
+msgstr "Paslaugos"
+
+#: functions.php:249
+msgid "Service"
+msgstr "Paslauga"
+
+#: functions.php:250 functions.php:253
+msgid "New service"
+msgstr "Nauja paslauga"
+
+#: functions.php:251
+msgid "Add new service"
+msgstr "Pridėti naują paslaugą"
+
+#: functions.php:252
+msgid "Edit service"
+msgstr "Redaguoti paslaugą"
+
+#: functions.php:254
+msgid "View service"
+msgstr "Peržiūrėti paslaugą"
+
+#: functions.php:255
+msgid "Search services"
+msgstr "Paieškos paslaugos"
+
+#: functions.php:256
+msgid "No services found"
+msgstr "Nerasta jokių paslaugų"
+
+#: functions.php:257
+msgid "No services found in trash"
+msgstr "Šiukšliadėžėje nerasta jokių paslaugų"
+
+#: functions.php:264
+msgid "Construction materials"
+msgstr "Statybinės medžiagos"
+
+#: functions.php:265
+msgid "Construction material"
+msgstr "Statybinė medžiaga"
+
+#: functions.php:266 functions.php:269
+msgid "New construction material"
+msgstr "Nauja statybinė medžiaga"
+
+#: functions.php:267
+msgid "Add new construction material"
+msgstr "Pridėkite naują statybinę medžiagą"
+
+#: functions.php:268
+msgid "Edit construction material"
+msgstr "Redaguoti statybinę medžiagą"
+
+#: functions.php:270
+msgid "View construction material"
+msgstr "Peržiūrėti statybinę medžiagą"
+
+#: functions.php:271
+msgid "Search construction materials"
+msgstr "Ieškoti statybinių medžiagų"
+
+#: functions.php:272
+msgid "No construction materials found"
+msgstr "Statybinių medžiagų nerasta"
+
+#: functions.php:273
+msgid "No construction materials found in trash"
+msgstr "Šiukšliadėžėse nerasta statybinių medžiagų"
+
+#: functions.php:309
+msgid "You should know that"
+msgstr "Turėtumėte tai žinoti"
+
+#: functions.php:367
+msgid "Projects"
+msgstr "Projektai"
+
+#: functions.php:368
+msgid "Project"
+msgstr "Projektas"
+
+#: functions.php:369 functions.php:372
+msgid "New project"
+msgstr "Naujas projektas"
+
+#: functions.php:370
+msgid "Add new project"
+msgstr "Pridėti naują projektą"
+
+#: functions.php:371
+msgid "Edit project"
+msgstr "Redaguoti projektą"
+
+#: functions.php:373
+msgid "View project"
+msgstr "Peržiūrėti projektą"
+
+#: functions.php:374
+msgid "Search project"
+msgstr "Paieškos projektas"
+
+#: functions.php:375
+msgid "No projects found"
+msgstr "Atsiprašome, jokių projektų nerasta"
+
+#: functions.php:376
+msgid "No projects found in trash"
+msgstr "Šiukšlių dėžėje projektų nerasta"
+
+#: functions.php:466
+msgid "expand"
+msgstr "Išplėsti"
+
+#: header.php:53
+msgid "Skip to content"
+msgstr "Praleisti ir pereiti į turinį"
+
+#: header.php:137
+msgid "Primary Menu"
+msgstr "Pagrindinis meniu"
+
+#: header.php:141
+msgid "Navigation"
+msgstr "Navigacija"
+
+#: header.php:162
+msgid "Contact us today"
+msgstr "Susisiekite su mumis šiandien"
+
+#. translators: %s: post date.
+#: inc/template-tags.php:30
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Paskelbta %s"
+
+#. translators: %s: post author.
+#: inc/template-tags.php:46
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr "%s"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:63
+msgid ", "
+msgstr ", "
+
+#. translators: 1: list of categories.
+#: inc/template-tags.php:66
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Publikuota %1$s"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:70
+msgctxt "list item separator"
+msgid ", "
+msgstr ", "
+
+#. translators: 1: list of tags.
+#: inc/template-tags.php:73
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Pažymėtas %1$s"
+
+#. translators: %s: post title
+#: inc/template-tags.php:83
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "Palikite komentarą<span class=\"screen-reader-text\">  %s</span>"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:100
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "Redaguoti <span class=\"screen-reader-text\">%s</span>"
+
+#. translators: %s: search query.
+#: search.php:21
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Rezultatai Ieškant: %s"
+
+#: searchform.php:24
+msgid "Search&hellip;"
+msgstr "Ieškoti&hellip;"
+
+#: searchform.php:25
+msgid "Search..."
+msgstr "Paieška..."
+
+#: searchform.php:26
+msgctxt "submit button"
+msgid "Search"
+msgstr "Ieškoti"
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Nieko nerasta"
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:24
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Pasiruošę paskelbti savo pirmąjį įrašą? <a href=\"%1$s\">Pradėkite čia</"
+"a>."
+
+#: template-parts/content-none.php:37
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Apgailestaujame, bet mes nieko neradome pagal jūsų paieškos kriterijus. "
+"Gal pamėginkite pasirinkti kitus žodžius."
+
+#: template-parts/content-none.php:44
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Atrodo, kad mes negalime rasti to, ko ieškote. Galbūt paieška gali "
+"padėti."
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content.php:41
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Skaityti daugiau <span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#. Theme Name of the plugin/theme
+msgid "norhage Industri"
+msgstr "norhage Industri"
+
+#. Author of the plugin/theme
+msgid "Garbo"
+msgstr "Garbo"
+
+#. Author URI of the plugin/theme
+msgid "https://garbo.nl"
+msgstr "https://garbo.nl"
