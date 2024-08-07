@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: norhage Industri\n"
-"POT-Creation-Date: 2024-06-18 12:10+0200\n"
+"POT-Creation-Date: 2024-08-07 16:53+0200\n"
 "PO-Revision-Date: 2023-12-08 13:34+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -29,8 +29,8 @@ msgstr ""
 msgid "oh dear, we had to short on material.."
 msgstr ""
 
-#: blocks/categories-block/categoriesBlock.php:69
-#: blocks/categories-block/categoriesBlock.php:79
+#: blocks/categories-block/categoriesBlock.php:70
+#: blocks/categories-block/categoriesBlock.php:80
 #, php-format
 msgid "View all post filed under %s"
 msgstr ""
@@ -77,6 +77,14 @@ msgstr ""
 msgid "Address"
 msgstr ""
 
+#: footer.php:23
+msgid ""
+"TEHI AS <br />\n"
+"\t\t\t\t\t\t\tPostboks 195 <br />\n"
+"\t\t\t\t\t\t\t4350 Kleppe <br />\n"
+"\t\t\t\t\t\t\tNorge"
+msgstr ""
+
 #: footer.php:29
 msgid "Email"
 msgstr ""
@@ -90,11 +98,9 @@ msgid "Phone"
 msgstr ""
 
 #: footer.php:34
-msgid "+47 967 59 359"
-msgstr ""
-
-#: footer.php:35
-msgid "+47 983 67 181"
+msgid ""
+"<a href=\"tel:+4796759359\">+47 967 59 359</a> <br />\n"
+"\t\t\t\t\t\t\t<a href=\"tel:+4798367181\">+47 983 67 181</a>"
 msgstr ""
 
 #: footer.php:38
@@ -563,7 +569,7 @@ msgid ""
 msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
-#: template-parts/content.php:36
+#: template-parts/content.php:41
 #, php-format
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""

@@ -1051,6 +1051,10 @@ footer.site-footer nav#socials-navigation ul li.instagram a{
 footer.site-footer nav#socials-navigation ul li.youtube a{
 	background-image: url(images/svg/youtube-icon.svg);
 }
+footer.site-footer nav#socials-navigation ul li.linkedin a{
+	background-image: url(images/svg/linked-in.svg);
+	border-radius: 6px;
+}
 
 @media screen and (max-width:768px){
 	footer.site-footer{

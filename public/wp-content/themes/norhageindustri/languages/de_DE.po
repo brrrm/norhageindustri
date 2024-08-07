@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: norhage Industri\n"
-"POT-Creation-Date: 2024-06-18 12:11+0200\n"
-"PO-Revision-Date: 2024-06-18 12:11+0200\n"
+"POT-Creation-Date: 2024-08-07 17:03+0200\n"
+"PO-Revision-Date: 2024-08-07 17:04+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -28,8 +28,8 @@ msgstr "404"
 msgid "oh dear, we had to short on material.."
 msgstr "oh je, wir mussten an Material mangeln."
 
-#: blocks/categories-block/categoriesBlock.php:69
-#: blocks/categories-block/categoriesBlock.php:79
+#: blocks/categories-block/categoriesBlock.php:70
+#: blocks/categories-block/categoriesBlock.php:80
 #, php-format
 msgid "View all post filed under %s"
 msgstr "Alle unter %s eingereichten Stellen anzeigen"
@@ -78,6 +78,18 @@ msgstr ""
 msgid "Address"
 msgstr "Adresse"
 
+#: footer.php:23
+msgid ""
+"TEHI AS <br />\n"
+"\t\t\t\t\t\t\tPostboks 195 <br />\n"
+"\t\t\t\t\t\t\t4350 Kleppe <br />\n"
+"\t\t\t\t\t\t\tNorge"
+msgstr ""
+"Tehi UG <br />\n"
+"Adolfstraße 1 <br />\n"
+"Wiesbaden, 65185 HE <br />\n"
+"Deutschland"
+
 #: footer.php:29
 msgid "Email"
 msgstr "E-Mail"
@@ -91,12 +103,12 @@ msgid "Phone"
 msgstr "Telefonnummer"
 
 #: footer.php:34
-msgid "+47 967 59 359"
-msgstr "+47 967 59 359"
-
-#: footer.php:35
-msgid "+47 983 67 181"
-msgstr "+47 983 67 181"
+msgid ""
+"<a href=\"tel:+4796759359\">+47 967 59 359</a> <br />\n"
+"\t\t\t\t\t\t\t<a href=\"tel:+4798367181\">+47 983 67 181</a>"
+msgstr ""
+"<a href=\"tel:+4796759359\">\n"
+"+49 611 76039000</a>"
 
 #: footer.php:38
 msgid "B2C webshop"
@@ -571,7 +583,7 @@ msgstr ""
 "Suche helfen."
 
 #. translators: %s: Name of current post. Only visible to screen readers
-#: template-parts/content.php:36
+#: template-parts/content.php:41
 #, php-format
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "Weiterlesen<span class=\"screen-reader-text\"> \"%s\"</span>"
@@ -587,6 +599,12 @@ msgstr "Garbo"
 #. Author URI of the plugin/theme
 msgid "https://garbo.nl"
 msgstr "https://garbo.nl"
+
+#~ msgid "+47 967 59 359"
+#~ msgstr "+47 967 59 359"
+
+#~ msgid "+47 983 67 181"
+#~ msgstr "+47 983 67 181"
 
 #~ msgctxt "taxonomy general name"
 #~ msgid "Service type"

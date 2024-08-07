@@ -20,10 +20,10 @@
 			<dl>
 				<dt><?php _e('Address', 'norhageindustri'); ?></dt>
 				<dd>
-					TEHI AS <br />
-					Postboks 195 <br />
-					4350 Kleppe <br />
-					Norge
+					<?php _e('TEHI AS <br />
+							Postboks 195 <br />
+							4350 Kleppe <br />
+							Norge', 'norhageindustri'); ?>
 				</dd>
 				
 				<dt><?php _e('Email', 'norhageindustri'); ?></dt>
@@ -31,8 +31,8 @@
 				
 				<dt><?php _e('Phone', 'norhageindustri'); ?></dt>
 				<dd>
-					<a href="tel:<?php echo str_replace(' ', '', __('+47 967 59 359', 'norhageindustri')); ?>"><?php _e('+47 967 59 359', 'norhageindustri'); ?></a> <br />
-					<a href="tel:<?php echo str_replace(' ', '', __('+47 983 67 181', 'norhageindustri')); ?>"><?php _e('+47 983 67 181', 'norhageindustri'); ?></a>
+					<?php _e('<a href="tel:+4796759359">+47 967 59 359</a> <br />
+							<a href="tel:+4798367181">+47 983 67 181</a>', 'norhageindustri'); ?>
 				</dd>
 
 				<dt><?php _e('B2C webshop', 'norhageindustri'); ?></dt>
@@ -57,6 +57,9 @@
 				</li>
 				<li class="instagram">
 					<a href="https://www.instagram.com/norhage_industri/" target="_blank" rel="nofollow">Instagram</a>
+				</li>
+				<li class="linkedin">
+					<a href="https://www.linkedin.com/company/tehi-as/" target="_blank" rel="nofollow">LinkedIn</a>
 				</li>
 			</ul>
 		</nav>
