@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2024-08-07 16:53+0200\n"
-"PO-Revision-Date: 2024-08-07 17:13+0200\n"
+"POT-Creation-Date: 2024-09-09 14:15+0200\n"
+"PO-Revision-Date: 2024-09-09 14:17+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: lt_LT\n"
@@ -72,10 +72,10 @@ msgstr "Adresas"
 
 #: footer.php:23
 msgid ""
-"TEHI AS <br />\n"
-"\t\t\t\t\t\t\tPostboks 195 <br />\n"
-"\t\t\t\t\t\t\t4350 Kleppe <br />\n"
-"\t\t\t\t\t\t\tNorge"
+"TEHI AS\n"
+"\t\t\t\t\t\tVardheivegen 68\n"
+"\t\t\t\t\t\t4340 Bryne\n"
+"\t\t\t\t\t\tNorge"
 msgstr ""
 
 #: footer.php:29
@@ -550,24 +550,22 @@ msgstr "Nieko nerasta"
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
-"Pasiruošę paskelbti savo pirmąjį įrašą? <a href=\"%1$s\">Pradėkite čia</"
-"a>."
+"Pasiruošę paskelbti savo pirmąjį įrašą? <a href=\"%1$s\">Pradėkite čia</a>."
 
 #: template-parts/content-none.php:37
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
-"Apgailestaujame, bet mes nieko neradome pagal jūsų paieškos kriterijus. "
-"Gal pamėginkite pasirinkti kitus žodžius."
+"Apgailestaujame, bet mes nieko neradome pagal jūsų paieškos kriterijus. Gal "
+"pamėginkite pasirinkti kitus žodžius."
 
 #: template-parts/content-none.php:44
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
-"Atrodo, kad mes negalime rasti to, ko ieškote. Galbūt paieška gali "
-"padėti."
+"Atrodo, kad mes negalime rasti to, ko ieškote. Galbūt paieška gali padėti."
 
 #. translators: %s: Name of current post. Only visible to screen readers
 #: template-parts/content.php:41

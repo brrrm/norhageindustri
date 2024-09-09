@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: norhage Industri\n"
-"POT-Creation-Date: 2024-08-07 16:57+0200\n"
-"PO-Revision-Date: 2024-08-07 16:58+0200\n"
+"POT-Creation-Date: 2024-09-09 14:16+0200\n"
+"PO-Revision-Date: 2024-09-09 14:16+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nb_NO\n"
@@ -80,10 +80,10 @@ msgstr "Adresse"
 
 #: footer.php:23
 msgid ""
-"TEHI AS <br />\n"
-"\t\t\t\t\t\t\tPostboks 195 <br />\n"
-"\t\t\t\t\t\t\t4350 Kleppe <br />\n"
-"\t\t\t\t\t\t\tNorge"
+"TEHI AS\n"
+"\t\t\t\t\t\tVardheivegen 68\n"
+"\t\t\t\t\t\t4340 Bryne\n"
+"\t\t\t\t\t\tNorge"
 msgstr ""
 
 #: footer.php:29

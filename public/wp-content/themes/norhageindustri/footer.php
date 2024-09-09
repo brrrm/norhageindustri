@@ -20,10 +20,10 @@
 			<dl>
 				<dt><?php _e('Address', 'norhageindustri'); ?></dt>
 				<dd>
-					<?php _e('TEHI AS <br />
-							Postboks 195 <br />
-							4350 Kleppe <br />
-							Norge', 'norhageindustri'); ?>
+					<?php echo nl2br(__('TEHI AS
+						Vardheivegen 68
+						4340 Bryne
+						Norge', 'norhageindustri')); ?>
 				</dd>
 				
 				<dt><?php _e('Email', 'norhageindustri'); ?></dt>
