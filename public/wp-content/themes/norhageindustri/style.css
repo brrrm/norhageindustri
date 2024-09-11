@@ -1345,3 +1345,16 @@ body .image-popup .scroll-button:hover{
 
 
 
+/** 
+ * verberg recaptcha badge 
+ * */
+.grecaptcha-badge { visibility: hidden; }
+.recaptcha-disclaimer{
+    font-size: 0.7em;
+    line-height: 1.1667;
+    color: #ccc;
+}
+.recaptcha-disclaimer a{
+	color: inherit;
+}
+
