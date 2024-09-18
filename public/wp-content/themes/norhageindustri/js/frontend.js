@@ -92,6 +92,23 @@
 			});
 		}
 
+		$('.reviews-block .reviews').slick({
+			autoplay: true,
+			autoplaySpeed: 2000,
+			arrows: true,
+			pauseOnHover: true,
+			adaptiveHeight: true,
+			responsive: [
+				{
+					breakpoint: 768,
+					settings: {
+						arrows: false
+					}
+				}
+			]
+		});
+
+
 		/**
 		 * eventListener for contactform submissions
 		 */

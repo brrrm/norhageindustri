@@ -33,15 +33,18 @@ if ( ! empty( $block['align'] ) ) {
 	<?php if( have_rows('reviews') ): ?>
 	    <div class="reviews">
 	    <?php while( have_rows('reviews') ): the_row(); 
-	        $image = get_sub_field('image');
+	        $image = get_sub_field('review_image');
 	        ?>
 	        <article>
 	        	<header>
 	        		<h3><?php the_sub_field('review_title'); ?></h3>
 	        	</header>
 	        	<figure>
-	        		<?php $image = get_sub_field('review_image'); ?>
-	        		<?php echo wp_get_attachment_image( $image['ID'], 'full', '', [ 'alt' => $image['alt']] ); ?>
+		        	<?php if($image):
+		        		echo wp_get_attachment_image( $image['ID'], 'full', '', [ 'alt' => $image['alt']] );
+		        	else: ?>
+		        		<span class="dashicons dashicons-heart"></span>
+		        	<?php endif; ?>
 	        	</figure>
 	        	<div class="review-text"><?php the_sub_field('review_text'); ?></div>
 	        	<footer>

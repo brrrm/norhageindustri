@@ -9,7 +9,7 @@
 
 if ( ! defined( '_G_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_G_VERSION', '0.0.10' );
+	define( '_G_VERSION', '0.0.11' );
 }
 
 /**
@@ -506,8 +506,10 @@ add_filter("wp_nav_menu_objects",'norhage_wp_nav_menu_objects_start_in',10,2);
  * Enqueue scripts and styles.
  */
 function norhageindustri_scripts() {
+	wp_enqueue_style( 'slick', get_stylesheet_directory_uri() . '/js/slick/slick.css', [], _G_VERSION );
 	wp_enqueue_style( 'norhageindustri-style', get_stylesheet_uri(), array(), _G_VERSION );
-	wp_enqueue_script('reeleaf-misc', get_stylesheet_directory_uri() . '/js/frontend.js', ['jquery'], _G_VERSION);
+	wp_enqueue_script('norhageindustri-misc', get_stylesheet_directory_uri() . '/js/frontend.js', ['jquery'], _G_VERSION);
+	wp_enqueue_script( 'slick-js', get_stylesheet_directory_uri() . '/js/slick/slick.min.js', ['jquery'], _G_VERSION, ['in_footer' => true, 'strategy' => 'defer'] );
 }
 add_action( 'wp_enqueue_scripts', 'norhageindustri_scripts' );
 
