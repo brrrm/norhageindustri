@@ -97,7 +97,7 @@
 			autoplaySpeed: 2000,
 			arrows: true,
 			pauseOnHover: true,
-			adaptiveHeight: true,
+			adaptiveHeight: false,
 			responsive: [
 				{
 					breakpoint: 768,
