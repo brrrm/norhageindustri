@@ -519,11 +519,6 @@ header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu 
 	line-height: 2.5em;
 	padding-left: 0;
 }
-header#masthead nav#site-navigation .menu-main-navigation-container li:nth-child(4) ul.sub-menu > li{
-	flex: auto 0 0;
-	width: auto;
-	padding-left: 0;
-}
 header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu > li > a{
 	display: block;
 	padding: 0 2em;
