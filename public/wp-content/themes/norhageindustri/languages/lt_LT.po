@@ -63,7 +63,7 @@ msgid ""
 "Our experts are available to assist and advise you on your industrial "
 "project. Don't hesitate to contact us"
 msgstr ""
-"Mūsų ekspertai gali padėti ir patarti dėl jūsų pramoninio projekto. "
+"Mūsų ekspertai gali padėti ir patarti dėl jūsų projekto."
 "Nedvejodami susisiekite su mumis"
 
 #: footer.php:21
@@ -77,6 +77,10 @@ msgid ""
 "\t\t\t\t\t\t4340 Bryne\n"
 "\t\t\t\t\t\tNorge"
 msgstr ""
+"UAB Tehis\n"
+"Tiekėjų g. 19E\n"
+"Kretinga, 97123\n"
+"Lietuva"
 
 #: footer.php:29
 msgid "Email"
@@ -95,7 +99,7 @@ msgid ""
 "<a href=\"tel:+4796759359\">+47 967 59 359</a> <br />\n"
 "\t\t\t\t\t\t\t<a href=\"tel:+4798367181\">+47 983 67 181</a>"
 msgstr ""
-"<a href=\"tel:+4796759359\">+47 967 59 359</a> <br />\n"
+"<a href=\"tel:+4796759359\">+370 671 20 024</a> <br />\n"
 "\t\t\t\t\t\t\t<a href=\"tel:+4798367181\">+47 983 67 181</a>"
 
 #: footer.php:38
@@ -104,11 +108,11 @@ msgstr "B2C internetinė parduotuvė"
 
 #: footer.php:39
 msgid "https://norhage.com"
-msgstr "https://norhage.no"
+msgstr "https://norhage.lt"
 
 #: footer.php:39
 msgid "norhage.com"
-msgstr "norhage.no"
+msgstr "norhage.lt"
 
 #: footer.php:43 footer.php:44
 msgid "Sitemap"
