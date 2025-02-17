@@ -479,16 +479,6 @@ header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu{
 	background-position: 25% 0;
 	border-bottom: 1px solid var(--dark-blue);
 }
-header#masthead nav#site-navigation .menu-main-navigation-container li:nth-child(4) ul.sub-menu{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-content: flex-start;
-	gap: 1em;
-	background-image: none;
-	padding-left: 2em;
-	padding-right: 2em;
-}
 header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu a:link,
 header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu a:visited{
 	color: var(--dark-blue);
@@ -527,11 +517,6 @@ header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu 
 	display: block;
 	width: 25%;
 	line-height: 2.5em;
-	padding-left: 0;
-}
-header#masthead nav#site-navigation .menu-main-navigation-container li:nth-child(4) ul.sub-menu > li{
-	flex: auto 0 0;
-	width: auto;
 	padding-left: 0;
 }
 header#masthead nav#site-navigation .menu-main-navigation-container ul.sub-menu > li > a{

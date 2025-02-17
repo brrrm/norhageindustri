@@ -72,7 +72,7 @@
                     "aria-label": "",
                     "type": "textarea",
                     "instructions": "",
-                    "required": 0,
+                    "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -80,10 +80,10 @@
                         "id": ""
                     },
                     "default_value": "Maecenas pulvinar volutpat sollicitudin. Suspendisse iaculis eget mauris nec sodales. Proin vestibulum dui quam, posuere pharetra nunc dictum non. Aenean vulputate orci vitae tellus dignissim, vel viverra massa rhoncus.",
-                    "maxlength": "",
-                    "rows": "",
+                    "maxlength": 300,
+                    "rows": 4,
                     "placeholder": "",
-                    "new_lines": "",
+                    "new_lines": "wpautop",
                     "parent_repeater": "field_651fd6b8b0fe5"
                 },
                 {
@@ -153,6 +153,23 @@
                     "mime_types": "",
                     "preview_size": "medium",
                     "parent_repeater": "field_651fd6b8b0fe5"
+                },
+                {
+                    "key": "field_6734b8262e7cc",
+                    "label": "Read more link",
+                    "name": "read_more_link",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "parent_repeater": "field_651fd6b8b0fe5"
                 }
             ]
         }
@@ -175,5 +192,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1696589006
+    "modified": 1731508340
 }

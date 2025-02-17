@@ -9,7 +9,7 @@
 
 if ( ! defined( '_G_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_G_VERSION', '0.0.11' );
+	define( '_G_VERSION', '0.0.13' );
 }
 
 /**
@@ -185,6 +185,23 @@ function norhageindustri_create_posttypes() {
 				'new_item_name' => __( 'New Material type name' ),
 				'menu_name' => __( 'Material types' ),
 			]
+		],
+		'stainless-steel-type'		=> [
+			'machine-name'					=> 'stainless-steel-type',
+			'content-type'					=> 'steel',
+			'labels'						=> [
+				'name' => _x( 'Stainless steel type', 'taxonomy general name' ),
+				'singular_name' => _x( 'Stainless steel types', 'taxonomy singular name' ),
+				'search_items' =>  __( 'Search Stainless steel types' ),
+				'all_items' => __( 'All Stainless steel types' ),
+				'parent_item' => __( 'Parent Stainless steel type' ),
+				'parent_item_colon' => __( 'Parent Stainless steel type:' ),
+				'edit_item' => __( 'Edit Stainless steel type' ),
+				'update_item' => __( 'Update Stainless steel type' ),
+				'add_new_item' => __( 'Save Stainless steel type' ),
+				'new_item_name' => __( 'New Stainless steel type name' ),
+				'menu_name' => __( 'Stainless steel types' ),
+			]
 		]
 	];
 
@@ -271,6 +288,22 @@ function norhageindustri_create_posttypes() {
 				'search_items'				=> __( 'Search construction materials', 'norhageindustri' ),
 				'not_found' 				=>  __( 'No construction materials found', 'norhageindustri' ),
 				'not_found_in_trash' 		=> __( 'No construction materials found in trash', 'norhageindustri'),
+			]
+		],
+ 		'steel'	=> [
+ 			'slug'		=> 'steel',
+ 			'taxonomies'	=> ['stainless-steel-type'],
+ 			'labels'	=> [
+				'name' 						=> __( 'Stainless steel', 'norhageindustri' ),
+				'singular_name' 			=> __( 'Stainless steel', 'norhageindustri' ),
+				'add_new' 					=> __( 'New stainless steel', 'norhageindustri' ),
+				'add_new_item' 				=> __( 'Add new stainless steel', 'norhageindustri' ),
+				'edit_item' 				=> __( 'Edit stainless steel', 'norhageindustri' ),
+				'new_item'					=> __( 'New stainless steel', 'norhageindustri' ),
+				'view_item' 				=> __( 'View stainless steel', 'norhageindustri' ),
+				'search_items'				=> __( 'Search stainless steel', 'norhageindustri' ),
+				'not_found' 				=>  __( 'No stainless steel found', 'norhageindustri' ),
+				'not_found_in_trash' 		=> __( 'No stainless steel found in trash', 'norhageindustri'),
 			]
 		]
 	];

@@ -9,7 +9,7 @@
 		window.scrollInterval = window.setInterval(function(){
 			if(window.scrollY > window.innerHeight){
 				$('body:not(.small-height-header)').addClass('small-height-header');
-			}else{
+			}else if(window.scrollY < window.innerHeight - $('#masthead').height()){
 				$('body.small-height-header').removeClass('small-height-header');
 			}
 		}, 100);
@@ -97,7 +97,7 @@
 			autoplaySpeed: 2000,
 			arrows: true,
 			pauseOnHover: true,
-			adaptiveHeight: true,
+			adaptiveHeight: false,
 			responsive: [
 				{
 					breakpoint: 768,

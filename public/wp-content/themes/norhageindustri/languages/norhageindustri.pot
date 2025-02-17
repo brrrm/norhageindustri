@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: norhage Industri\n"
-"POT-Creation-Date: 2024-09-09 14:15+0200\n"
+"POT-Creation-Date: 2024-11-26 10:31+0100\n"
 "PO-Revision-Date: 2023-12-08 13:34+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -35,19 +35,19 @@ msgstr ""
 msgid "View all post filed under %s"
 msgstr ""
 
-#: blocks/headerblock/headerblock.php:74
+#: blocks/headerblock/headerblock.php:76
 msgid "Industrial greenhouse projects"
 msgstr ""
 
-#: blocks/headerblock/headerblock.php:88
+#: blocks/headerblock/headerblock.php:92
 msgid "Installation services"
 msgstr ""
 
-#: blocks/headerblock/headerblock.php:95
+#: blocks/headerblock/headerblock.php:101
 msgid "Maintenance & restoration"
 msgstr ""
 
-#: blocks/headerblock/headerblock.php:104
+#: blocks/headerblock/headerblock.php:112
 msgid "Roofing & facade, PVC curtains"
 msgstr ""
 
@@ -61,6 +61,10 @@ msgstr ""
 
 #: blocks/projects-block/projectsBlock.php:71
 msgid "Read more ->"
+msgstr ""
+
+#: blocks/reviews-block/reviewsBlock.php:58
+msgid "Read more"
 msgstr ""
 
 #: footer.php:18
@@ -89,7 +93,7 @@ msgstr ""
 msgid "Email"
 msgstr ""
 
-#: footer.php:30 header.php:163
+#: footer.php:30 header.php:154
 msgid "info@norhageindustri.com"
 msgstr ""
 
@@ -273,207 +277,285 @@ msgstr ""
 msgid "Material types"
 msgstr ""
 
-#: functions.php:216
-msgid "Greenhouses"
+#: functions.php:193
+msgctxt "taxonomy general name"
+msgid "Stainless steel type"
 msgstr ""
 
-#: functions.php:217
-msgid "Greenhouse"
+#: functions.php:194
+msgctxt "taxonomy singular name"
+msgid "Stainless steel types"
 msgstr ""
 
-#: functions.php:218 functions.php:221
-msgid "New greenhouse"
+#: functions.php:195
+msgid "Search Stainless steel types"
 msgstr ""
 
-#: functions.php:219
-msgid "Add new greenhouse"
+#: functions.php:196
+msgid "All Stainless steel types"
 msgstr ""
 
-#: functions.php:220
-msgid "Edit greenhouse"
+#: functions.php:197
+msgid "Parent Stainless steel type"
 msgstr ""
 
-#: functions.php:222
-msgid "View greenhouse"
+#: functions.php:198
+msgid "Parent Stainless steel type:"
 msgstr ""
 
-#: functions.php:223
-msgid "Search greenhouse"
+#: functions.php:199
+msgid "Edit Stainless steel type"
 msgstr ""
 
-#: functions.php:224
-msgid "No greenhouses found"
+#: functions.php:200
+msgid "Update Stainless steel type"
 msgstr ""
 
-#: functions.php:225
-msgid "No greenhouses found in trash"
+#: functions.php:201
+msgid "Save Stainless steel type"
 msgstr ""
 
-#: functions.php:232
-msgid "Plastics"
+#: functions.php:202
+msgid "New Stainless steel type name"
+msgstr ""
+
+#: functions.php:203
+msgid "Stainless steel types"
 msgstr ""
 
 #: functions.php:233
-msgid "Plastic"
+msgid "Greenhouses"
 msgstr ""
 
-#: functions.php:234 functions.php:237
-msgid "New plastic"
+#: functions.php:234
+msgid "Greenhouse"
 msgstr ""
 
-#: functions.php:235
-msgid "Add new plastic"
+#: functions.php:235 functions.php:238
+msgid "New greenhouse"
 msgstr ""
 
 #: functions.php:236
-msgid "Edit plastic"
+msgid "Add new greenhouse"
 msgstr ""
 
-#: functions.php:238
-msgid "View plastics"
+#: functions.php:237
+msgid "Edit greenhouse"
 msgstr ""
 
 #: functions.php:239
-msgid "Search plastics"
+msgid "View greenhouse"
 msgstr ""
 
 #: functions.php:240
-msgid "No plastics found"
+msgid "Search greenhouse"
 msgstr ""
 
 #: functions.php:241
-msgid "No plastics found in trash"
+msgid "No greenhouses found"
 msgstr ""
 
-#: functions.php:248
-msgid "Services"
+#: functions.php:242
+msgid "No greenhouses found in trash"
 msgstr ""
 
 #: functions.php:249
-msgid "Service"
+msgid "Plastics"
 msgstr ""
 
-#: functions.php:250 functions.php:253
-msgid "New service"
+#: functions.php:250
+msgid "Plastic"
 msgstr ""
 
-#: functions.php:251
-msgid "Add new service"
+#: functions.php:251 functions.php:254
+msgid "New plastic"
 msgstr ""
 
 #: functions.php:252
-msgid "Edit service"
+msgid "Add new plastic"
 msgstr ""
 
-#: functions.php:254
-msgid "View service"
+#: functions.php:253
+msgid "Edit plastic"
 msgstr ""
 
 #: functions.php:255
-msgid "Search services"
+msgid "View plastics"
 msgstr ""
 
 #: functions.php:256
-msgid "No services found"
+msgid "Search plastics"
 msgstr ""
 
 #: functions.php:257
-msgid "No services found in trash"
+msgid "No plastics found"
 msgstr ""
 
-#: functions.php:264
-msgid "Construction materials"
+#: functions.php:258
+msgid "No plastics found in trash"
 msgstr ""
 
 #: functions.php:265
-msgid "Construction material"
+msgid "Services"
 msgstr ""
 
-#: functions.php:266 functions.php:269
-msgid "New construction material"
+#: functions.php:266
+msgid "Service"
 msgstr ""
 
-#: functions.php:267
-msgid "Add new construction material"
+#: functions.php:267 functions.php:270
+msgid "New service"
 msgstr ""
 
 #: functions.php:268
-msgid "Edit construction material"
+msgid "Add new service"
 msgstr ""
 
-#: functions.php:270
-msgid "View construction material"
+#: functions.php:269
+msgid "Edit service"
 msgstr ""
 
 #: functions.php:271
-msgid "Search construction materials"
+msgid "View service"
 msgstr ""
 
 #: functions.php:272
-msgid "No construction materials found"
+msgid "Search services"
 msgstr ""
 
 #: functions.php:273
+msgid "No services found"
+msgstr ""
+
+#: functions.php:274
+msgid "No services found in trash"
+msgstr ""
+
+#: functions.php:281
+msgid "Construction materials"
+msgstr ""
+
+#: functions.php:282
+msgid "Construction material"
+msgstr ""
+
+#: functions.php:283 functions.php:286
+msgid "New construction material"
+msgstr ""
+
+#: functions.php:284
+msgid "Add new construction material"
+msgstr ""
+
+#: functions.php:285
+msgid "Edit construction material"
+msgstr ""
+
+#: functions.php:287
+msgid "View construction material"
+msgstr ""
+
+#: functions.php:288
+msgid "Search construction materials"
+msgstr ""
+
+#: functions.php:289
+msgid "No construction materials found"
+msgstr ""
+
+#: functions.php:290
 msgid "No construction materials found in trash"
 msgstr ""
 
-#: functions.php:309
+#: functions.php:297 functions.php:298
+msgid "Stainless steel"
+msgstr ""
+
+#: functions.php:299 functions.php:302
+msgid "New stainless steel"
+msgstr ""
+
+#: functions.php:300
+msgid "Add new stainless steel"
+msgstr ""
+
+#: functions.php:301
+msgid "Edit stainless steel"
+msgstr ""
+
+#: functions.php:303
+msgid "View stainless steel"
+msgstr ""
+
+#: functions.php:304
+msgid "Search stainless steel"
+msgstr ""
+
+#: functions.php:305
+msgid "No stainless steel found"
+msgstr ""
+
+#: functions.php:306
+msgid "No stainless steel found in trash"
+msgstr ""
+
+#: functions.php:342
 msgid "You should know that"
 msgstr ""
 
-#: functions.php:367
+#: functions.php:400
 msgid "Projects"
 msgstr ""
 
-#: functions.php:368
+#: functions.php:401
 msgid "Project"
 msgstr ""
 
-#: functions.php:369 functions.php:372
+#: functions.php:402 functions.php:405
 msgid "New project"
 msgstr ""
 
-#: functions.php:370
+#: functions.php:403
 msgid "Add new project"
 msgstr ""
 
-#: functions.php:371
+#: functions.php:404
 msgid "Edit project"
 msgstr ""
 
-#: functions.php:373
+#: functions.php:406
 msgid "View project"
 msgstr ""
 
-#: functions.php:374
+#: functions.php:407
 msgid "Search project"
 msgstr ""
 
-#: functions.php:375
+#: functions.php:408
 msgid "No projects found"
 msgstr ""
 
-#: functions.php:376
+#: functions.php:409
 msgid "No projects found in trash"
 msgstr ""
 
-#: functions.php:466
+#: functions.php:499
 msgid "expand"
 msgstr ""
 
-#: header.php:53
+#: header.php:44
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:137
+#: header.php:128
 msgid "Primary Menu"
 msgstr ""
 
-#: header.php:141
+#: header.php:132
 msgid "Navigation"
 msgstr ""
 
-#: header.php:162
+#: header.php:153
 msgid "Contact us today"
 msgstr ""
 
