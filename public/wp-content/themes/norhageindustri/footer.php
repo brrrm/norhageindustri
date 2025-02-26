@@ -31,7 +31,7 @@
 				
 				<dt><?php _e('Phone', 'norhageindustri'); ?></dt>
 				<dd>
-					<?php _e('<a href="tel:+4794023135">+47 940 23 135</a> <br />
+					<?php _e('<a href="tel:+4796759359">+47 967 59 359</a> <br />
 							<a href="tel:+4798367181">+47 983 67 181</a>', 'norhageindustri'); ?>
 				</dd>
 
