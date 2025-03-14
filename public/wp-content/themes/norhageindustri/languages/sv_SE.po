@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: norhage Industri\n"
-"POT-Creation-Date: 2024-09-09 14:15+0200\n"
-"PO-Revision-Date: 2024-09-09 14:15+0200\n"
+"POT-Creation-Date: 2025-03-14 11:13+0100\n"
+"PO-Revision-Date: 2025-03-14 11:14+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sv_SE\n"
@@ -34,19 +34,19 @@ msgstr "oj oj, vi var tvungna att ha ont om material."
 msgid "View all post filed under %s"
 msgstr "Visa alla inlägg arkiverat under %s"
 
-#: blocks/headerblock/headerblock.php:74
+#: blocks/headerblock/headerblock.php:76
 msgid "Industrial greenhouse projects"
 msgstr "Industriella växthusprojekt"
 
-#: blocks/headerblock/headerblock.php:88
+#: blocks/headerblock/headerblock.php:92
 msgid "Installation services"
 msgstr "Installationstjänster"
 
-#: blocks/headerblock/headerblock.php:95
+#: blocks/headerblock/headerblock.php:101
 msgid "Maintenance & restoration"
 msgstr "Underhåll & renovering"
 
-#: blocks/headerblock/headerblock.php:104
+#: blocks/headerblock/headerblock.php:112
 msgid "Roofing & facade, PVC curtains"
 msgstr "Tak och fasad, PVC-gardiner"
 
@@ -61,6 +61,10 @@ msgstr "Höger"
 #: blocks/projects-block/projectsBlock.php:71
 msgid "Read more ->"
 msgstr "Läs mer ->"
+
+#: blocks/reviews-block/reviewsBlock.php:58
+msgid "Read more"
+msgstr "Läs mer"
 
 #: footer.php:18
 msgid "Norhage Industri"
@@ -94,7 +98,7 @@ msgstr ""
 msgid "Email"
 msgstr "E-post"
 
-#: footer.php:30 header.php:163
+#: footer.php:30 header.php:154
 msgid "info@norhageindustri.com"
 msgstr "info@norhageindustri.se"
 
@@ -103,8 +107,12 @@ msgid "Phone"
 msgstr "Telefon"
 
 #: footer.php:34
+#, fuzzy
+#| msgid ""
+#| "<a href=\"tel:+4796759359\">+47 967 59 359</a> <br />\n"
+#| "\t\t\t\t\t\t\t<a href=\"tel:+4798367181\">+47 983 67 181</a>"
 msgid ""
-"<a href=\"tel:+4796759359\">+47 967 59 359</a> <br />\n"
+"<a href=\"tel:+4794023135\">+47 940 23 135</a> <br />\n"
 "\t\t\t\t\t\t\t<a href=\"tel:+4798367181\">+47 983 67 181</a>"
 msgstr "<a href=\"tel:+4796759359\">+46 728 380 058</a>"
 
@@ -278,207 +286,285 @@ msgstr "Nytt namn på materialtyp"
 msgid "Material types"
 msgstr "Typer av material"
 
-#: functions.php:216
+#: functions.php:193
+msgctxt "taxonomy general name"
+msgid "Stainless steel type"
+msgstr "Typ av rostfritt stål"
+
+#: functions.php:194
+msgctxt "taxonomy singular name"
+msgid "Stainless steel types"
+msgstr "Typer av rostfritt stål"
+
+#: functions.php:195
+msgid "Search Stainless steel types"
+msgstr "Sök Typer av rostfritt stål"
+
+#: functions.php:196
+msgid "All Stainless steel types"
+msgstr "Alla typer av rostfritt stål"
+
+#: functions.php:197
+msgid "Parent Stainless steel type"
+msgstr "Förälder Typ i rostfritt stål"
+
+#: functions.php:198
+msgid "Parent Stainless steel type:"
+msgstr "Förälder Typ av rostfritt stål:"
+
+#: functions.php:199
+msgid "Edit Stainless steel type"
+msgstr "Redigera Typ av rostfritt stål"
+
+#: functions.php:200
+msgid "Update Stainless steel type"
+msgstr "Uppdatering: Typ av rostfritt stål"
+
+#: functions.php:201
+msgid "Save Stainless steel type"
+msgstr "Spara Typ av rostfritt stål"
+
+#: functions.php:202
+msgid "New Stainless steel type name"
+msgstr "Nytt typnamn i rostfritt stål"
+
+#: functions.php:203
+msgid "Stainless steel types"
+msgstr "Typer av rostfritt stål"
+
+#: functions.php:233
 msgid "Greenhouses"
 msgstr "Växthus"
 
-#: functions.php:217
+#: functions.php:234
 msgid "Greenhouse"
 msgstr "Växthus"
 
-#: functions.php:218 functions.php:221
+#: functions.php:235 functions.php:238
 msgid "New greenhouse"
 msgstr "Nytt växthus"
 
-#: functions.php:219
+#: functions.php:236
 msgid "Add new greenhouse"
 msgstr "Lägg till nytt växthus"
 
-#: functions.php:220
+#: functions.php:237
 msgid "Edit greenhouse"
 msgstr "Redigera växthus"
 
-#: functions.php:222
+#: functions.php:239
 msgid "View greenhouse"
 msgstr "Visa växthus"
 
-#: functions.php:223
+#: functions.php:240
 msgid "Search greenhouse"
 msgstr "Sök växthus"
 
-#: functions.php:224
+#: functions.php:241
 msgid "No greenhouses found"
 msgstr "Inga växthus hittades"
 
-#: functions.php:225
+#: functions.php:242
 msgid "No greenhouses found in trash"
 msgstr "Inga växthus hittades i soporna"
 
-#: functions.php:232
+#: functions.php:249
 msgid "Plastics"
 msgstr "Plast"
 
-#: functions.php:233
+#: functions.php:250
 msgid "Plastic"
 msgstr "Plast"
 
-#: functions.php:234 functions.php:237
+#: functions.php:251 functions.php:254
 msgid "New plastic"
 msgstr "Ny plast"
 
-#: functions.php:235
+#: functions.php:252
 msgid "Add new plastic"
 msgstr "Lägg till ny plast"
 
-#: functions.php:236
+#: functions.php:253
 msgid "Edit plastic"
 msgstr "Redigera plast"
 
-#: functions.php:238
+#: functions.php:255
 msgid "View plastics"
 msgstr "Visa plast"
 
-#: functions.php:239
+#: functions.php:256
 msgid "Search plastics"
 msgstr "Sök plast"
 
-#: functions.php:240
+#: functions.php:257
 msgid "No plastics found"
 msgstr "Ingen plast hittades"
 
-#: functions.php:241
+#: functions.php:258
 msgid "No plastics found in trash"
 msgstr "Ingen plast hittades i soporna"
 
-#: functions.php:248
+#: functions.php:265
 msgid "Services"
 msgstr "Tjänster"
 
-#: functions.php:249
+#: functions.php:266
 msgid "Service"
 msgstr "Tjänst"
 
-#: functions.php:250 functions.php:253
+#: functions.php:267 functions.php:270
 msgid "New service"
 msgstr "Ny underhåll"
 
-#: functions.php:251
+#: functions.php:268
 msgid "Add new service"
 msgstr "Lägga till ny tjänst"
 
-#: functions.php:252
+#: functions.php:269
 msgid "Edit service"
 msgstr "Redigera tjänst"
 
-#: functions.php:254
+#: functions.php:271
 msgid "View service"
 msgstr "Visa tjänst"
 
-#: functions.php:255
+#: functions.php:272
 msgid "Search services"
 msgstr "Söktjänster"
 
-#: functions.php:256
+#: functions.php:273
 msgid "No services found"
 msgstr "Ingen tjänst funnen"
 
-#: functions.php:257
+#: functions.php:274
 msgid "No services found in trash"
 msgstr "Inga tjänster hittades i papperskorgen"
 
-#: functions.php:264
+#: functions.php:281
 msgid "Construction materials"
 msgstr "Byggmaterial"
 
-#: functions.php:265
+#: functions.php:282
 msgid "Construction material"
 msgstr "Byggmaterial"
 
-#: functions.php:266 functions.php:269
+#: functions.php:283 functions.php:286
 msgid "New construction material"
 msgstr "Nytt byggmaterial"
 
-#: functions.php:267
+#: functions.php:284
 msgid "Add new construction material"
 msgstr "Lägg till nytt byggmaterial"
 
-#: functions.php:268
+#: functions.php:285
 msgid "Edit construction material"
 msgstr "Redigera byggmaterial"
 
-#: functions.php:270
+#: functions.php:287
 msgid "View construction material"
 msgstr "Visa byggmaterial"
 
-#: functions.php:271
+#: functions.php:288
 msgid "Search construction materials"
 msgstr "Sök byggmaterial"
 
-#: functions.php:272
+#: functions.php:289
 msgid "No construction materials found"
 msgstr "Inget byggmaterial hittades"
 
-#: functions.php:273
+#: functions.php:290
 msgid "No construction materials found in trash"
 msgstr "Inget byggmaterial hittades i soporna"
 
-#: functions.php:309
+#: functions.php:297 functions.php:298
+msgid "Stainless steel"
+msgstr "Rostfritt stål"
+
+#: functions.php:299 functions.php:302
+msgid "New stainless steel"
+msgstr "Nytt rostfritt stål"
+
+#: functions.php:300
+msgid "Add new stainless steel"
+msgstr "Lägg till nytt rostfritt stål"
+
+#: functions.php:301
+msgid "Edit stainless steel"
+msgstr "Redigera rostfritt stål"
+
+#: functions.php:303
+msgid "View stainless steel"
+msgstr "Visa rostfritt stål"
+
+#: functions.php:304
+msgid "Search stainless steel"
+msgstr "Sök rostfritt stål"
+
+#: functions.php:305
+msgid "No stainless steel found"
+msgstr "Inget rostfritt stål hittades"
+
+#: functions.php:306
+msgid "No stainless steel found in trash"
+msgstr "Inget rostfritt stål hittades i papperskorgen"
+
+#: functions.php:342
 msgid "You should know that"
 msgstr "Det borde du veta"
 
-#: functions.php:367
+#: functions.php:400
 msgid "Projects"
 msgstr "Projekt"
 
-#: functions.php:368
+#: functions.php:401
 msgid "Project"
 msgstr "Projekt"
 
-#: functions.php:369 functions.php:372
+#: functions.php:402 functions.php:405
 msgid "New project"
 msgstr "Nytt projekt"
 
-#: functions.php:370
+#: functions.php:403
 msgid "Add new project"
 msgstr "Lägg till nytt projekt"
 
-#: functions.php:371
+#: functions.php:404
 msgid "Edit project"
 msgstr "Ändra projekt"
 
-#: functions.php:373
+#: functions.php:406
 msgid "View project"
 msgstr "Visa projekt"
 
-#: functions.php:374
+#: functions.php:407
 msgid "Search project"
 msgstr "Sök projekt"
 
-#: functions.php:375
+#: functions.php:408
 msgid "No projects found"
 msgstr "Inga projekt hittades"
 
-#: functions.php:376
+#: functions.php:409
 msgid "No projects found in trash"
 msgstr "Inga projekt hittades i papperskorgen"
 
-#: functions.php:466
+#: functions.php:499
 msgid "expand"
 msgstr "expandera"
 
-#: header.php:53
+#: header.php:44
 msgid "Skip to content"
 msgstr "Fortsätt till innehållet"
 
-#: header.php:137
+#: header.php:128
 msgid "Primary Menu"
 msgstr "Huvudmeny"
 
-#: header.php:141
+#: header.php:132
 msgid "Navigation"
 msgstr "Navigering"
 
-#: header.php:162
+#: header.php:153
 msgid "Contact us today"
 msgstr "Kontakta oss idag"
 
@@ -619,9 +705,6 @@ msgstr "https://garbo.nl"
 #~ msgctxt "taxonomy singular name"
 #~ msgid "Service types"
 #~ msgstr "Typer av tjänster"
-
-#~ msgid "Search service types"
-#~ msgstr "Typer av söktjänster"
 
 #~ msgid "All Service types"
 #~ msgstr "Alla typer av tjänster"
