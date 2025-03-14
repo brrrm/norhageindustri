@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2024-09-09 14:15+0200\n"
-"PO-Revision-Date: 2024-12-18 12:16+0100\n"
+"POT-Creation-Date: 2025-03-14 11:00+0100\n"
+"PO-Revision-Date: 2025-03-14 12:50+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: lt_LT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.1\n"
+"X-Generator: Poedit 3.5\n"
 "X-Poedit-Basepath: .\n"
 
 #: 404.php:18
@@ -26,19 +26,19 @@ msgstr "oi, mielieji, turėjome pritrūkti medžiagos.."
 msgid "View all post filed under %s"
 msgstr "Peržiūrėti visą įrašą, pateiktą pagal %s"
 
-#: blocks/headerblock/headerblock.php:74
+#: blocks/headerblock/headerblock.php:76
 msgid "Industrial greenhouse projects"
 msgstr "Pramoniniai šiltnamio efektą sukeliančių dujų projektai"
 
-#: blocks/headerblock/headerblock.php:88
+#: blocks/headerblock/headerblock.php:92
 msgid "Installation services"
 msgstr "Montavimo paslaugos"
 
-#: blocks/headerblock/headerblock.php:95
+#: blocks/headerblock/headerblock.php:101
 msgid "Maintenance & restoration"
 msgstr "Priežiūra ir restauravimas"
 
-#: blocks/headerblock/headerblock.php:104
+#: blocks/headerblock/headerblock.php:112
 msgid "Roofing & facade, PVC curtains"
 msgstr "Stogo danga ir fasadas, PVC užuolaidos"
 
@@ -53,6 +53,10 @@ msgstr "Dešinė"
 #: blocks/projects-block/projectsBlock.php:71
 msgid "Read more ->"
 msgstr "Skaityti daugiau ->"
+
+#: blocks/reviews-block/reviewsBlock.php:58
+msgid "Read more"
+msgstr "Skaityti daugiau"
 
 #: footer.php:18
 msgid "Norhage Industri"
@@ -86,7 +90,7 @@ msgstr ""
 msgid "Email"
 msgstr "El. paštas"
 
-#: footer.php:30 header.php:163
+#: footer.php:30 header.php:154
 msgid "info@norhageindustri.com"
 msgstr "info@norhageindustri.lt"
 
@@ -96,7 +100,7 @@ msgstr "Telefonas"
 
 #: footer.php:34
 msgid ""
-"<a href=\"tel:+4796759359\">+47 967 59 359</a> <br />\n"
+"<a href=\"tel:+4794023135\">+47 940 23 135</a> <br />\n"
 "\t\t\t\t\t\t\t<a href=\"tel:+4798367181\">+47 983 67 181</a>"
 msgstr ""
 "<a href=\"tel:+4796759359\">+370 671 20 024</a> <br />\n"
@@ -104,7 +108,7 @@ msgstr ""
 
 #: footer.php:38
 msgid "B2C webshop"
-msgstr "B2C internetinė parduotuvė"
+msgstr "B2C e-parduotuvė"
 
 #: footer.php:39
 msgid "https://norhage.com"
@@ -272,207 +276,285 @@ msgstr "Naujas medžiagos tipo pavadinimas"
 msgid "Material types"
 msgstr "Medžiagų tipai"
 
-#: functions.php:216
+#: functions.php:193
+msgctxt "taxonomy general name"
+msgid "Stainless steel type"
+msgstr "Nerūdijančio plieno tipas"
+
+#: functions.php:194
+msgctxt "taxonomy singular name"
+msgid "Stainless steel types"
+msgstr "Nerūdijančio plieno tipai"
+
+#: functions.php:195
+msgid "Search Stainless steel types"
+msgstr "Ieškoti nerūdijančio plieno tipų"
+
+#: functions.php:196
+msgid "All Stainless steel types"
+msgstr "Visi nerūdijančio plieno tipai"
+
+#: functions.php:197
+msgid "Parent Stainless steel type"
+msgstr "Pirminis nerūdijančio plieno tipas"
+
+#: functions.php:198
+msgid "Parent Stainless steel type:"
+msgstr "Pirminis nerūdijančio plieno tipas:"
+
+#: functions.php:199
+msgid "Edit Stainless steel type"
+msgstr "Redaguoti nerūdijančio plieno tipą"
+
+#: functions.php:200
+msgid "Update Stainless steel type"
+msgstr "Atnaujinkite nerūdijančio plieno tipą"
+
+#: functions.php:201
+msgid "Save Stainless steel type"
+msgstr "Išsaugokite nerūdijančio plieno tipą"
+
+#: functions.php:202
+msgid "New Stainless steel type name"
+msgstr "Naujas nerūdijančio plieno tipo pavadinimas"
+
+#: functions.php:203
+msgid "Stainless steel types"
+msgstr "Nerūdijančio plieno tipai"
+
+#: functions.php:233
 msgid "Greenhouses"
 msgstr "Šiltnamiai"
 
-#: functions.php:217
+#: functions.php:234
 msgid "Greenhouse"
 msgstr "Šiltnamio efektą sukeliančių"
 
-#: functions.php:218 functions.php:221
+#: functions.php:235 functions.php:238
 msgid "New greenhouse"
 msgstr "Naujas šiltnamis"
 
-#: functions.php:219
+#: functions.php:236
 msgid "Add new greenhouse"
 msgstr "Pridėti naują šiltnamį"
 
-#: functions.php:220
+#: functions.php:237
 msgid "Edit greenhouse"
 msgstr "Redaguoti šiltnamį"
 
-#: functions.php:222
+#: functions.php:239
 msgid "View greenhouse"
 msgstr "Žiūrėti šiltnamį"
 
-#: functions.php:223
+#: functions.php:240
 msgid "Search greenhouse"
 msgstr "Ieškoti šiltnamio efektą sukeliančių dujų"
 
-#: functions.php:224
+#: functions.php:241
 msgid "No greenhouses found"
 msgstr "Šiltnamių nerasta"
 
-#: functions.php:225
+#: functions.php:242
 msgid "No greenhouses found in trash"
 msgstr "Šiukšliadėžėse nerasta šiltnamių"
 
-#: functions.php:232
+#: functions.php:249
 msgid "Plastics"
 msgstr "Plastikai"
 
-#: functions.php:233
+#: functions.php:250
 msgid "Plastic"
 msgstr "Plastiko"
 
-#: functions.php:234 functions.php:237
+#: functions.php:251 functions.php:254
 msgid "New plastic"
 msgstr "Naujas plastikas"
 
-#: functions.php:235
+#: functions.php:252
 msgid "Add new plastic"
 msgstr "Įpilkite naujo plastiko"
 
-#: functions.php:236
+#: functions.php:253
 msgid "Edit plastic"
 msgstr "Redaguoti plastiką"
 
-#: functions.php:238
+#: functions.php:255
 msgid "View plastics"
 msgstr "Peržiūrėti plastiką"
 
-#: functions.php:239
+#: functions.php:256
 msgid "Search plastics"
 msgstr "Ieškoti plastikų"
 
-#: functions.php:240
+#: functions.php:257
 msgid "No plastics found"
 msgstr "Plastiko nerasta"
 
-#: functions.php:241
+#: functions.php:258
 msgid "No plastics found in trash"
 msgstr "Šiukšliadėžėje nerasta plastiko"
 
-#: functions.php:248
+#: functions.php:265
 msgid "Services"
 msgstr "Paslaugos"
 
-#: functions.php:249
+#: functions.php:266
 msgid "Service"
 msgstr "Paslauga"
 
-#: functions.php:250 functions.php:253
+#: functions.php:267 functions.php:270
 msgid "New service"
 msgstr "Nauja paslauga"
 
-#: functions.php:251
+#: functions.php:268
 msgid "Add new service"
 msgstr "Pridėti naują paslaugą"
 
-#: functions.php:252
+#: functions.php:269
 msgid "Edit service"
 msgstr "Redaguoti paslaugą"
 
-#: functions.php:254
+#: functions.php:271
 msgid "View service"
 msgstr "Peržiūrėti paslaugą"
 
-#: functions.php:255
+#: functions.php:272
 msgid "Search services"
 msgstr "Paieškos paslaugos"
 
-#: functions.php:256
+#: functions.php:273
 msgid "No services found"
 msgstr "Nerasta jokių paslaugų"
 
-#: functions.php:257
+#: functions.php:274
 msgid "No services found in trash"
 msgstr "Šiukšliadėžėje nerasta jokių paslaugų"
 
-#: functions.php:264
+#: functions.php:281
 msgid "Construction materials"
 msgstr "Statybinės medžiagos"
 
-#: functions.php:265
+#: functions.php:282
 msgid "Construction material"
 msgstr "Statybinė medžiaga"
 
-#: functions.php:266 functions.php:269
+#: functions.php:283 functions.php:286
 msgid "New construction material"
 msgstr "Nauja statybinė medžiaga"
 
-#: functions.php:267
+#: functions.php:284
 msgid "Add new construction material"
 msgstr "Pridėkite naują statybinę medžiagą"
 
-#: functions.php:268
+#: functions.php:285
 msgid "Edit construction material"
 msgstr "Redaguoti statybinę medžiagą"
 
-#: functions.php:270
+#: functions.php:287
 msgid "View construction material"
 msgstr "Peržiūrėti statybinę medžiagą"
 
-#: functions.php:271
+#: functions.php:288
 msgid "Search construction materials"
 msgstr "Ieškoti statybinių medžiagų"
 
-#: functions.php:272
+#: functions.php:289
 msgid "No construction materials found"
 msgstr "Statybinių medžiagų nerasta"
 
-#: functions.php:273
+#: functions.php:290
 msgid "No construction materials found in trash"
 msgstr "Šiukšliadėžėse nerasta statybinių medžiagų"
 
-#: functions.php:309
+#: functions.php:297 functions.php:298
+msgid "Stainless steel"
+msgstr "Nerūdijantis plienas"
+
+#: functions.php:299 functions.php:302
+msgid "New stainless steel"
+msgstr "Naujas nerūdijantis plienas"
+
+#: functions.php:300
+msgid "Add new stainless steel"
+msgstr "Pridėkite naują nerūdijantį plieną"
+
+#: functions.php:301
+msgid "Edit stainless steel"
+msgstr "Redaguoti nerūdijantį plieną"
+
+#: functions.php:303
+msgid "View stainless steel"
+msgstr "Peržiūrėkite nerūdijantį plieną"
+
+#: functions.php:304
+msgid "Search stainless steel"
+msgstr "Ieškoti nerūdijančio plieno"
+
+#: functions.php:305
+msgid "No stainless steel found"
+msgstr "Nerasta nerūdijančio plieno"
+
+#: functions.php:306
+msgid "No stainless steel found in trash"
+msgstr "Šiukšliadėžėje nerasta nerūdijančio plieno"
+
+#: functions.php:342
 msgid "You should know that"
 msgstr "Turėtumėte tai žinoti"
 
-#: functions.php:367
+#: functions.php:400
 msgid "Projects"
 msgstr "Projektai"
 
-#: functions.php:368
+#: functions.php:401
 msgid "Project"
 msgstr "Projektas"
 
-#: functions.php:369 functions.php:372
+#: functions.php:402 functions.php:405
 msgid "New project"
 msgstr "Naujas projektas"
 
-#: functions.php:370
+#: functions.php:403
 msgid "Add new project"
 msgstr "Pridėti naują projektą"
 
-#: functions.php:371
+#: functions.php:404
 msgid "Edit project"
 msgstr "Redaguoti projektą"
 
-#: functions.php:373
+#: functions.php:406
 msgid "View project"
 msgstr "Peržiūrėti projektą"
 
-#: functions.php:374
+#: functions.php:407
 msgid "Search project"
 msgstr "Paieškos projektas"
 
-#: functions.php:375
+#: functions.php:408
 msgid "No projects found"
 msgstr "Atsiprašome, jokių projektų nerasta"
 
-#: functions.php:376
+#: functions.php:409
 msgid "No projects found in trash"
 msgstr "Šiukšlių dėžėje projektų nerasta"
 
-#: functions.php:466
+#: functions.php:499
 msgid "expand"
 msgstr "Išplėsti"
 
-#: header.php:53
+#: header.php:44
 msgid "Skip to content"
 msgstr "Praleisti ir pereiti į turinį"
 
-#: header.php:137
+#: header.php:128
 msgid "Primary Menu"
 msgstr "Pagrindinis meniu"
 
-#: header.php:141
+#: header.php:132
 msgid "Navigation"
 msgstr "Navigacija"
 
-#: header.php:162
+#: header.php:153
 msgid "Contact us today"
 msgstr "Susisiekite su mumis šiandien"
 
