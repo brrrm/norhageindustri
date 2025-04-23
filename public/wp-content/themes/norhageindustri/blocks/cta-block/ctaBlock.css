@@ -1,125 +1,94 @@
-.cta-block{
+.cta-block {
 	box-sizing: border-box;
 	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
-	min-height: 80vh;
-	font-family: "kiro", sans-serif;
-}
-.cta-block .text-col{
-	flex: 40% 1 1;
 	background: var(--dark-blue);
 	color: var(--white);
-	padding:7.958rem 2.5rem 2.916rem 2.5rem;
+	font-family: "kiro", sans-serif;
+}
+
+.cta-block .text-col,
+.cta-block .form-col {
+	flex: 1 1 50%;
+	padding: 3rem 2rem;
 	box-sizing: border-box;
 }
-.cta-block .text-col h2{
-  	font-size: 1.75rem;
-	line-height: 2.0833333rem;
-	font-style: normal;
+
+.cta-block .text-col h2 {
+	font-size: 1.75rem;
+	line-height: 2.083rem;
 	font-weight: 800;
 }
-.cta-block .image-col{
-	flex: 60% 1 1;
-}
-.cta-block .image-col figure{
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	display: block;
-	position: relative;
-}
-.cta-block .image-col figure.dummy{
-	background: #ccc;
-}
-.cta-block .image-col figure img{
-	object-fit: cover;
-	width: 100%;
-	height: 100%;
-	display: block;
-	position: absolute;
-}
-@media all and (max-width:768px){
-	.cta-block{
-		display: block;
-	}
-	.cta-block .image-col{
-		height: 50vh;
-		order: 2;
-	}
-	.cta-block .text-col{
-		padding:3em 2em 1em 2em;
-		order: 1;
-	}
-}
 
-
-
-
-/**
- * contact forms
- */
-form.wpcf7-form p{
-	display: block;
-	margin: 1em 0;
-}
-form.wpcf7-form p br{
-	display: none;
-}
-form.wpcf7-form p span{
-	display: block;
-}
-form.wpcf7-form p label{
-	display: block;
-	margin: 0 0 0.3em;
-	font-weight: 600;
-	font-size: 0.667em;
-}
-form.wpcf7-form p .wpcf7-not-valid-tip{
-	font-size: 0.667em;
-	font-weight: 300;
-	font-style: italic;
-	display: block;
-	margin: 0.3em 0 0;
-}
 form.wpcf7-form p input,
-form.wpcf7-form p textarea{
-	display: block;
-	width: 100%;
-    line-height: 2em;
-    font-size: 1em;
-    font-family: 'kiro';
-    font-weight: 300;
-    padding: 0 0.5em;
-    border: none;
-    color: #fff;
-    border-bottom: 1px solid #fff;
-    background: #2d6b92;
+form.wpcf7-form p textarea {
+	background: #2d6b92;
+	color: #fff;
+	border-bottom: 1px solid #fff;
 }
-form.wpcf7-form p textarea{
-	line-height: 1.5em;
-	height: 9em;
-	padding: 0.5em;
-}
+
 form.wpcf7-form p input:focus,
-form.wpcf7-form p textarea:focus{
-	outline: none;
+form.wpcf7-form p textarea:focus {
 	background-color: #fafad8;
 	color: #000;
 }
-form.wpcf7-form p input[type="submit"]{
-    padding: 0.5em 1.5em;
-    border-bottom: none;
-    width: auto;
-    line-height: 1.5em;
-    border:2px solid var(--dark-blue);
-    background: #fff;
-    color: var(--dark-blue);
+
+form.wpcf7-form p input,
+form.wpcf7-form p textarea {
+	width: 100%;
+	padding: 0.4em 0.8em;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	border-radius: 6px;
+	background-color: #1f5e80;
+	color: #fff;
+	font-family: "kiro", sans-serif;
+	font-size: 1em;
+	transition: all 0.3s ease;
+	box-sizing: border-box;
 }
 
+form.wpcf7-form p input:focus,
+form.wpcf7-form p textarea:focus {
+	background-color: #fff;
+	color: #000;
+	border-color: #fff;
+	outline: none;
+}
 
-.wpcf7 form .wpcf7-response-output {
-	margin: 1em 0.5em 1em;
-	padding: 0.2em 1em;
-	border: 2px solid #00a0d2; /* Blue */
-	font-size: .8em;
+form.wpcf7-form p label {
+	display: block;
+	margin-bottom: 0.4em;
+	font-size: 0.9em;
+	font-weight: 600;
+	color: #fff;
+}
+
+form.wpcf7-form p textarea {
+	min-height: 5em;
+	resize: vertical;
+}
+
+/* Submit button */
+form.wpcf7-form p input[type="submit"] {
+	background-color: #fff;
+	color: var(--dark-blue);
+	border: none;
+	padding: 0.75em 2em;
+	font-weight: bold;
+	font-size: 1em;
+	border-radius: 999px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+form.wpcf7-form p input[type="submit"]:hover {
+	background-color: transparent;
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+/* Remove br space */
+form.wpcf7-form p br {
+	display: none;
 }
