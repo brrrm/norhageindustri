@@ -468,11 +468,9 @@ function norhage_menu_add_category_posts( $output, $item, $depth, $args ) {
         		$post_type = 'service';
         		break;
         }
-        if(!isset($post_type)){
-        	return $output;
-        }
+
         $posts = get_posts([
-        	'post_type'		=> $post_type,
+        	'post_type'		=> $post_type ?? NULL,
         	'numberposts'	=> -1,
         	'tax_query'		=> [
         		[
